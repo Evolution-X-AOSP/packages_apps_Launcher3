@@ -38,7 +38,9 @@
         android:theme="@style/AppTheme"
         android:largeHeap="@bool/config_largeHeap"
         android:restoreAnyVersion="true"
-        android:supportsRtl="true" >
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
 
         <!--
         Main launcher activity. When extending only change the name, and keep all the
