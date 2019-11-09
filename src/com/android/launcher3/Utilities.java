@@ -135,7 +135,8 @@ public final class Utilities {
      * @deprecated Use {@link BuildConfig#IS_DEBUG_DEVICE} directly
      */
     @Deprecated
-    public static final boolean IS_DEBUG_DEVICE = BuildConfig.IS_DEBUG_DEVICE;
+    public static final boolean IS_DEBUG_DEVICE =
+            Build.TYPE.toLowerCase(Locale.ROOT).equals("eng");
 
     public static final int TRANSLATE_UP = 0;
     public static final int TRANSLATE_DOWN = 1;
