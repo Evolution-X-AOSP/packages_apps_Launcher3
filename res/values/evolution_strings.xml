@@ -46,4 +46,8 @@
     <string name="msg_minus_one_on_left">When you swipe right from main home screen</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">When you swipe left from main home screen</string>
+
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Double tap to sleep</string>
+    <string name="pref_sleep_gesture_summary">Double tap on empty space for screen off</string>
 </resources>
