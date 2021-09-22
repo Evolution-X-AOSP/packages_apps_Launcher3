@@ -92,4 +92,7 @@
     <color name="preload_icon_background_color_dark">#40484D</color>
 
     <color name="disabled_text_color">#66000000</color> <!-- 38% black -->
+    
+    <!-- Appseat -->
+    <color name="appseat_color">#50181c1f</color>
 </resources>
