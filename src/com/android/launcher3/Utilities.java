@@ -157,6 +157,7 @@ public final class Utilities {
     public static final String KEY_DOCK_SEARCH = "pref_dock_search";
     public static final String KEY_DOCK_THEME = "pref_dock_theme";
     public static final String KEY_SEARCH_RADIUS = "pref_search_radius_size";
+    public static final String KEY_SHOW_HOTSEAT_BG = "pref_show_hotseat_bg";
 
     @IntDef({TRANSLATE_UP, TRANSLATE_DOWN, TRANSLATE_LEFT, TRANSLATE_RIGHT})
     public @interface AdjustmentDirection{}
@@ -856,5 +857,10 @@ public final class Utilities {
     public static int getCornerRadius(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getInt(KEY_SEARCH_RADIUS, 100);
+    }
+
+    public static boolean isHotseatBgEnabled(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_SHOW_HOTSEAT_BG, false);
     }
 }
