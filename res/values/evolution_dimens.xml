@@ -18,7 +18,10 @@
     <!-- Overview scrolling scale animation -->
     <dimen name="overview_scroll_scale">0.9</dimen>
 
-     <!-- Meminfo in overview -->
+    <!-- Meminfo in overview -->
     <dimen name="meminfo_bottom_margin_gesture">15dp</dimen>
     <dimen name="meminfo_bottom_margin_three_button">15dp</dimen>
+
+    <!-- For Themed icon support -->
+    <dimen name="theme_icon_size">24dp</dimen>
 </resources>
