@@ -430,7 +430,4 @@
 
     <!-- State transition -->
     <item name="workspace_content_scale" format="float" type="dimen">0.97</item>
-
-    <!-- Overview scrolling scale animation -->
-    <dimen name="overview_scroll_scale">0.9</dimen>
 </resources>
