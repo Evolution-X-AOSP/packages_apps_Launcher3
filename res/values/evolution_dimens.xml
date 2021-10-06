@@ -4,6 +4,12 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Overview scrolling scale animation -->
+    <dimen name="overview_scroll_scale">0.9</dimen>
+
     <!-- Meminfo in overview -->
     <dimen name="meminfo_bottom_margin">34dp</dimen>
+
+    <!-- For Themed icon support -->
+    <dimen name="theme_icon_size">24dp</dimen>
 </resources>
