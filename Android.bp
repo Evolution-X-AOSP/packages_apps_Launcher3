@@ -157,6 +157,7 @@ android_library {
         "com.google.android.material_material",
         "iconloader_base",
         "libGoogleFeed",
+        "monet",
         "view_capture"
     ],
     manifest: "AndroidManifest-common.xml",
