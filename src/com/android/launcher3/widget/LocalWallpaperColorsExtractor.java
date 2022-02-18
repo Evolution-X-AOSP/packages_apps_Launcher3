@@ -7,6 +7,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.graphics.RectF;
+import android.provider.Settings;
 import android.util.SparseIntArray;
 import android.view.View;
 import android.widget.RemoteViews;
@@ -21,12 +22,18 @@ import com.android.systemui.monet.ColorScheme;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class LocalWallpaperColorsExtractor extends LocalColorExtractor implements
         WallpaperManager.LocalWallpaperColorConsumer {
+    private static final String KEY_COLOR_SOURCE = "android.theme.customization.color_source";
 
     private final WallpaperManager wallpaperManager;
     private Listener listener;
     private Context mContext;
+
+    private boolean applyOverlay = true;
 
     // For calculating and returning bounds
     private final RectF tempRectF = new RectF();
@@ -100,6 +107,17 @@ public class LocalWallpaperColorsExtractor extends LocalColorExtractor implement
     public LocalWallpaperColorsExtractor(Context context) {
         mContext = context;
         wallpaperManager = (WallpaperManager) context.getSystemService(Context.WALLPAPER_SERVICE);
+
+        try {
+            String json = Settings.Secure.getString(context.getContentResolver(),
+                    Settings.Secure.THEME_CUSTOMIZATION_OVERLAY_PACKAGES);
+            if (json != null && !json.isEmpty()) {
+                JSONObject packages = new JSONObject(json);
+                applyOverlay = !"preset".equals(packages.getString(KEY_COLOR_SOURCE));
+            }
+        } catch (JSONException e) {
+            // Ignore: enabled by default
+        }
     }
 
     private static void addColorsToArray(List<Integer> list, int[] resArray, SparseIntArray array) {
@@ -155,6 +173,10 @@ public class LocalWallpaperColorsExtractor extends LocalColorExtractor implement
 
     @Override
     public SparseIntArray generateColorsOverride(WallpaperColors colors) {
+        if (!applyOverlay) {
+            return null;
+        }
+
         SparseIntArray colorRes = new SparseIntArray(5 * 13);
         boolean nightMode = (mContext.getResources().getConfiguration().uiMode
                 & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
@@ -169,6 +191,10 @@ public class LocalWallpaperColorsExtractor extends LocalColorExtractor implement
 
     @Override
     public void applyColorsOverride(Context base, WallpaperColors colors) {
+        if (!applyOverlay) {
+            return;
+        }
+
         RemoteViews.ColorResources res =
                 RemoteViews.ColorResources.create(base, generateColorsOverride(colors));
         if (res != null) {
