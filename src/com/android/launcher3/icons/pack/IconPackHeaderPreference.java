@@ -94,7 +94,7 @@ public class IconPackHeaderPreference extends RadioHeaderPreference {
         new GetLaunchableInfoTask(pm, launcherApps, PREVIEW_ICON_NUM, (aiList) -> {
             for (int i = 0; i < icons.length; i++) {
                 icons[i].setImageDrawable(iconProvider.getIcon(
-                        aiList.get(i), PREVIEW_ICON_DPI));
+                        aiList.get(i), PREVIEW_ICON_DPI, null));
             }
         }).execute();
     }

@@ -27,6 +27,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.icons.BaseIconFactory.IconOptions;
 import com.android.launcher3.icons.cache.CachingLogic;
 import com.android.launcher3.util.ResourceBasedOverride;
+import com.android.launcher3.util.Themes;
 
 /**
  * Caching logic for LauncherActivityInfo.
@@ -64,8 +65,9 @@ public class LauncherActivityCachingLogic
     @Override
     public BitmapInfo loadIcon(@NonNull Context context, @NonNull LauncherActivityInfo object) {
         try (LauncherIcons li = LauncherIcons.obtain(context)) {
+	    final String customThemedIconPack = Themes.getThemedIconPack(context);
             return li.createBadgedIconBitmap(IconProvider.INSTANCE.get(context)
-                            .getIcon(object, li.mFillResIconDpi),
+                            .getIcon(object, li.mFillResIconDpi, customThemedIconPack),
                     new IconOptions().setUser(object.getUser()));
         }
     }
