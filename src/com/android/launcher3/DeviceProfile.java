@@ -39,6 +39,7 @@ import android.content.res.TypedArray;
 import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.Rect;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.SparseArray;
 import android.view.Surface;
@@ -306,7 +307,9 @@ public class DeviceProfile {
         isPhone = !isTablet;
         isTwoPanels = isTablet && isMultiDisplay;
         boolean allowTaskbar = prefs.getBoolean(KEY_PHONE_TASKBAR, isTablet);
-        isTaskbarPresent = (isTablet || allowTaskbar) && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
+        boolean isTaskBarEnabled = Settings.System.getInt(context.getContentResolver(),
+                Settings.System.ENABLE_TASKBAR, isTablet ? 1 : 0) == 1;
+        isTaskbarPresent = (isTablet || allowTaskbar || isTaskBarEnabled) && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
 
         // Some more constants.
         context = getContext(context, info, isVerticalBarLayout() || (isTablet && isLandscape)
