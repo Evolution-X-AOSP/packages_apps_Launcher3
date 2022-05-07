@@ -131,10 +131,8 @@ public class SysUiScrim implements View.OnAttachStateChangeListener,
         mMaskHeight = ResourceUtils.pxFromDp(ALPHA_MASK_BITMAP_DP,
                 view.getResources().getDisplayMetrics());
         mTopScrim = Themes.getAttrDrawable(view.getContext(), R.attr.workspaceStatusBarScrim);
-
         SharedPreferences prefs = LauncherPrefs.getPrefs(view.getContext());
-        mHideSysUiScrim = mTopScrim == null || !prefs.getBoolean(KEY_SHOW_TOP_SHADOW, true);
-        if (mTopScrim != null) {
+        if (mTopScrim != null && prefs.getBoolean(KEY_SHOW_TOP_SHADOW, true)) {
             mTopScrim.setDither(true);
             mBottomMask = createDitheredAlphaMask();
             mHideSysUiScrim = false;
@@ -230,7 +228,6 @@ public class SysUiScrim implements View.OnAttachStateChangeListener,
     @Override
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         if (key.equals(KEY_SHOW_TOP_SHADOW)) {
-            mHideSysUiScrim = !prefs.getBoolean(KEY_SHOW_TOP_SHADOW, true);
             mRoot.invalidate();
         }
     }
