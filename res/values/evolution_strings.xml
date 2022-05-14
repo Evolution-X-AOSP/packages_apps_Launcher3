@@ -163,4 +163,8 @@
     <!-- Memory info -->
     <string name="meminfo_text">%1$s | %2$s</string>
     <string name="show_meminfo_title">Show Memory info</string>
+
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Dark status bar</string>
+    <string name="perf_dark_status_bar_summary">Use dark status bar on Home screen</string>
 </resources>
