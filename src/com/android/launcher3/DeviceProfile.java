@@ -66,6 +66,7 @@ import java.util.function.Consumer;
 public class DeviceProfile {
 
     public static final String KEY_ROW_HEIGHT = "pref_row_height";
+    public static final String KEY_PHONE_TASKBAR = "pref_allow_phone_taskbar";
 
     private static final int DEFAULT_DOT_SIZE = 100;
     private static final float ALL_APPS_TABLET_MAX_ROWS = 5.5f;
@@ -304,7 +305,8 @@ public class DeviceProfile {
         isTablet = info.isTablet(windowBounds);
         isPhone = !isTablet;
         isTwoPanels = isTablet && isMultiDisplay;
-        isTaskbarPresent = isTablet && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
+        boolean allowTaskbar = prefs.getBoolean(KEY_PHONE_TASKBAR, isTablet);
+        isTaskbarPresent = (isTablet || allowTaskbar) && ApiWrapper.TASKBAR_DRAWN_IN_PROCESS;
 
         // Some more constants.
         context = getContext(context, info, isVerticalBarLayout() || (isTablet && isLandscape)

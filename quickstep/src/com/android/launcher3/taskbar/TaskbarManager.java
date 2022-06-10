@@ -32,6 +32,8 @@ import android.content.ComponentCallbacks;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.hardware.display.DisplayManager;
@@ -48,6 +50,7 @@ import androidx.annotation.VisibleForTesting;
 
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.LauncherAppState;
+import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.anim.AnimatorPlaybackController;
 import com.android.launcher3.statemanager.StatefulActivity;
 import com.android.launcher3.taskbar.unfold.NonDestroyableScopedUnfoldTransitionProgressProvider;
@@ -69,7 +72,7 @@ import java.util.StringJoiner;
 /**
  * Class to manage taskbar lifecycle
  */
-public class TaskbarManager {
+public class TaskbarManager implements OnSharedPreferenceChangeListener {
     private static final String TAG = "TaskbarManager";
     private static final boolean DEBUG = false;
 
@@ -143,6 +146,10 @@ public class TaskbarManager {
                 SystemUiProxy.INSTANCE.get(mContext), new Handler());
         mUserSetupCompleteListener = isUserSetupComplete -> recreateTaskbar();
         mNavBarKidsModeListener = isNavBarKidsMode -> recreateTaskbar();
+
+        SharedPreferences prefs = LauncherPrefs.getPrefs(mContext);
+        prefs.registerOnSharedPreferenceChangeListener(this);
+
         // TODO(b/227669780): Consolidate this w/ DisplayController callbacks
         mComponentCallbacks = new ComponentCallbacks() {
             private Configuration mOldConfig = mContext.getResources().getConfiguration();
@@ -239,6 +246,19 @@ public class TaskbarManager {
 
         debugWhyTaskbarNotDestroyed("TaskbarManager created");
         recreateTaskbar();
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
+        switch (key) {
+            case DeviceProfile.KEY_PHONE_TASKBAR:
+                boolean enabled = LauncherPrefs.getPrefs(mContext).getBoolean(DeviceProfile.KEY_PHONE_TASKBAR, false);
+                SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
+
+                Settings.System.putInt(mContext.getContentResolver(),
+                        Settings.System.ENABLE_TASKBAR, enabled ? 1 : 0);
+                break;
+        }
     }
 
     private void destroyExistingTaskbar() {
