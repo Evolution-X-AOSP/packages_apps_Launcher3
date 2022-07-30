@@ -109,6 +109,8 @@ android_library {
         "SettingsLib",
         "colorkt",
         "themelib",
+        "bcsmartspace-google",
+        "SystemUIPluginLib",
     ],
     manifest: "AndroidManifest-common.xml",
     sdk_version: "current",
