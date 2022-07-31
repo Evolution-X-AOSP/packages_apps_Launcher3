@@ -181,7 +181,7 @@ public class LoaderTask implements Runnable {
         ArrayList<ItemInfo> allItems = mBgDataModel.getAllWorkspaceItems();
 
         // Screen set is never empty
-        IntArray allScreens = mBgDataModel.collectWorkspaceScreens();
+        IntArray allScreens = mBgDataModel.collectWorkspaceScreens(mApp.getContext());
         final int firstScreen = allScreens.get(0);
         IntSet firstScreens = IntSet.wrap(firstScreen);
 

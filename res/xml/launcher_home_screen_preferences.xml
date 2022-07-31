@@ -61,13 +61,24 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/interface_category_title">
+        android:title="@string/quickspace_category_title">
+
+        <SwitchPreference
+            android:key="pref_smartspace"
+            android:title="@string/smartspace_pref_title"
+            android:summary="@string/smartspace_pref_summary"
+            android:defaultValue="true" />
 
         <SwitchPreference
             android:key="pref_enable_minus_one"
             android:title="@string/title_show_google_app"
             android:summary="@string/pref_show_google_now_summary"
             android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/interface_category_title">
 
         <SwitchPreference
             android:key="pref_show_statusbar"
