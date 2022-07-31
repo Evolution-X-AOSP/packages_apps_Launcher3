@@ -9,4 +9,8 @@
     <!-- Application name -->
     <string name="evolution_app_name" translatable="false">Evolution X Launcher</string>
 
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">At a Glance</string>
+    <string name="smartspace_pref_summary">Show smartspace at the top of home screen</string>
+
 </resources>
