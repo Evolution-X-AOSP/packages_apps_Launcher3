@@ -163,6 +163,7 @@ public final class Utilities {
     public static final String KEY_APP_DRAWER_OPACITY = "pref_app_drawer_opacity";
     public static final String KEY_RECENTS_MEMINFO = "pref_recents_meminfo";
     public static final String KEY_DRAWER_SEARCH = "pref_drawer_search";
+    public static final String KEY_SMARTSPACE = "pref_smartspace";
 
     /**
      * Returns true if theme is dark.
@@ -848,5 +849,14 @@ public final class Utilities {
     public static boolean showSearch(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_DRAWER_SEARCH, true);
+    }
+
+    public static boolean showSmartspace(Context context) {
+        return isGSAEnabled(context) && isSmartspaceEnabled(context);
+    }
+
+    private static boolean isSmartspaceEnabled(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_SMARTSPACE, true);
     }
 }
