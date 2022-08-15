@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <color name="disabled_text_color">#66000000</color> <!-- 38% black -->
+
+    <color name="gicon_mask">#14000000</color>
+</resources>
