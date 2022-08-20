@@ -28,6 +28,7 @@ import android.graphics.Insets;
 import android.graphics.Matrix;
 import android.graphics.Rect;
 import android.os.Build;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Toast;
 
@@ -98,6 +99,11 @@ public class TaskOverlayFactory implements ResourceBasedOverride {
             }
         }
         return shortcuts;
+    }
+
+    private static boolean areWindowAnimationsDisabled(Context context) {
+        return Settings.Global.getFloat(context.getContentResolver(),
+                Settings.Global.WINDOW_ANIMATION_SCALE, 1f) == 0f;
     }
 
     public TaskOverlay createOverlay(TaskThumbnailView thumbnailView) {
