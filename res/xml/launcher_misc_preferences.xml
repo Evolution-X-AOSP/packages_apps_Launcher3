@@ -19,6 +19,16 @@
     xmlns:launcher="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.launcher3">
 
+    <Preference
+        android:key="parallel_space"
+        android:title="@string/laboratory_parallel_space_title"
+        android:summary="@string/laboratory_parallel_space_summary"
+        android:order="-994">
+        <intent
+            android:targetPackage="ink.kscope.parallelspace"
+            android:targetClass="ink.kscope.parallelspace.MainActivity" />
+    </Preference>
+
     <SwitchPreference
         android:key="pref_allow_phone_taskbar"
         android:title="@string/pref_allow_phone_taskbar_title"
