@@ -172,4 +172,8 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Scroll Vibration</string>
     <string name="pref_scroll_vibration_summary">Haptic feedback while scrolling through recent apps, if supported</string>
+
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Parallel space</string>
+    <string name="laboratory_parallel_space_summary">Allow running multiple instances of the same application in parallel</string>
 </resources>
