@@ -275,7 +275,7 @@
         launcher:numHotseatIcons="5"
         launcher:dbFile="launcher_5_by_6.db"
         launcher:defaultLayoutId="@xml/default_workspace_5x6"
-        launcher:deviceCategory="phone|multi_display" >
+        launcher:deviceCategory="phone|multi_display|tablet" >
 
         <display-option
             launcher:name="Large Phone"
@@ -298,7 +298,7 @@
         launcher:numHotseatIcons="5"
         launcher:dbFile="launcher_5_by_7.db"
         launcher:defaultLayoutId="@xml/default_workspace_5x7"
-        launcher:deviceCategory="phone|multi_display" >
+        launcher:deviceCategory="phone|multi_display|tablet" >
 
         <display-option
             launcher:name="Large Phone"
@@ -321,10 +321,10 @@
         launcher:numHotseatIcons="5"
         launcher:dbFile="launcher_5_by_8.db"
         launcher:defaultLayoutId="@xml/default_workspace_5x8"
-        launcher:deviceCategory="phone|multi_display" >
+        launcher:deviceCategory="phone|multi_display|tablet" >
 
         <display-option
-            launcher:name="Large Phone"
+            launcher:name="XLarge Phone"
             launcher:minWidthDps="406"
             launcher:minHeightDps="694"
             launcher:iconImageSize="56"
@@ -415,7 +415,7 @@
         launcher:numHotseatIcons="6"
         launcher:dbFile="launcher_6_by_6.db"
         launcher:defaultLayoutId="@xml/default_workspace_6x6"
-        launcher:deviceCategory="phone|multi_display" >
+        launcher:deviceCategory="phone|multi_display|tablet" >
 
         <display-option
             launcher:name="Large Phone"
