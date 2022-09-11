@@ -196,7 +196,7 @@ public final class FeatureFlags {
             "Enables scrim during app launch animation.");
 
     public static final BooleanFlag ENABLE_ENFORCED_ROUNDED_CORNERS = getReleaseFlag(270393258,
-            "ENABLE_ENFORCED_ROUNDED_CORNERS", true, "Enforce rounded corners on all App Widgets");
+            "ENABLE_ENFORCED_ROUNDED_CORNERS", false, "Enforce rounded corners on all App Widgets");
 
     public static final BooleanFlag NOTIFY_CRASHES = getDebugFlag(
             270393108, "NOTIFY_CRASHES", false,
