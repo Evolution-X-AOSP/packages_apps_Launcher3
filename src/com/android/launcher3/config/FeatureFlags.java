@@ -205,7 +205,7 @@ public final class FeatureFlags {
             "Enables scrim during app launch animation.");
 
     public static final BooleanFlag ENABLE_ENFORCED_ROUNDED_CORNERS = new DeviceFlag(
-            "ENABLE_ENFORCED_ROUNDED_CORNERS", true, "Enforce rounded corners on all App Widgets");
+            "ENABLE_ENFORCED_ROUNDED_CORNERS", false, "Enforce rounded corners on all App Widgets");
 
     public static final BooleanFlag NOTIFY_CRASHES = getDebugFlag("NOTIFY_CRASHES", false,
             "Sends a notification whenever launcher encounters an uncaught exception.");
