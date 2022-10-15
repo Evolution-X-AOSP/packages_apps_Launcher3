@@ -775,6 +775,7 @@
     <icon drawable="@drawable/themed_icon_nicegram" package="app.nicegram"/>
     <icon drawable="@drawable/themed_icon_node_video" package="com.shallwaystudio.nodevideo"/>
     <icon drawable="@drawable/themed_icon_noisefit" package="com.noisefit"/>
+    <icon drawable="@drawable/themed_icon_nokoprint_mobile_printing" name="NokoPrint" package="com.nokoprint"/>
     <icon drawable="@drawable/themed_icon_nordvpn" package="com.nordvpn.android"/>
     <icon drawable="@drawable/themed_icon_notebook" package="com.zoho.notebook"/>
     <icon drawable="@drawable/themed_icon_noteit" package="me.bukovitz.noteit"/>
@@ -880,6 +881,7 @@
     <icon drawable="@drawable/themed_icon_powerdirector" package="com.cyberlink.powerdirector.DRA140225_01"/>
     <icon drawable="@drawable/themed_icon_powertube" package="ussr.razar.youtube_dl"/>
     <icon drawable="@drawable/themed_icon_prime_video" package="com.amazon.avod.thirdpartyclient"/>
+    <icon drawable="@drawable/themed_icon_profili_im" name="Profili Im" package="imperiamobile.org.albtelecom"/>
     <icon drawable="@drawable/themed_icon_progressbar95" package="com.spookyhousestudios.progressbar95"/>
     <icon drawable="@drawable/themed_icon_project_themer" package="com.drsants.eggproject"/>
     <icon drawable="@drawable/themed_icon_proton_vpn" package="ch.protonvpn.android"/>
@@ -1118,6 +1120,7 @@
     <icon drawable="@drawable/themed_icon_topface" package="com.topface.topface"/>
     <icon drawable="@drawable/themed_icon_tor_browser" package="org.torproject.torbrowser"/>
     <icon drawable="@drawable/themed_icon_total_commander" package="com.ghisler.android.TotalCommander"/>
+    <icon drawable="@drawable/themed_icon_touchvpn_vpn_proxy_privacy" name="TouchVPN" package="com.northghost.touchvpn"/>
     <icon drawable="@drawable/themed_icon_toweroffantasy" package="com.levelinfinite.hotta.gp"/>
     <icon drawable="@drawable/themed_icon_track24" package="net.track24.android"/>
     <icon drawable="@drawable/themed_icon_traffix_simulator" package="com.infinity.traffix"/>
