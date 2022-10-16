@@ -1,11 +1,13 @@
 package com.android.launcher3.qsb;
 
+import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.graphics.Rect;
 import com.android.launcher3.CellLayout;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.Workspace;
 import com.android.quickstep.SystemUiProxy;
+import com.android.quickstep.util.WorkspaceUnlockAnim;
 import com.android.systemui.animation.Interpolators;
 import com.android.systemui.shared.system.smartspace.ILauncherUnlockAnimationController;
 import com.android.systemui.shared.system.smartspace.SmartspaceState;
@@ -19,6 +21,8 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
     private Rect mLauncherSmartspaceBounds = new Rect();
     private Rect mLockscreenSmartspaceBounds = new Rect();
     private final ValueAnimator mSmartspaceAnimator;
+    private final ValueAnimator mWorkspaceAnimator;
+    private final WorkspaceUnlockAnim mWorkspaceUnlockAnim;
     private boolean mShouldAnimateSmartspace;
     private boolean mUnlockAnimationPlaying;
 
@@ -29,6 +33,13 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
         mSmartspaceAnimator.addUpdateListener(animation -> {
             setSmartspaceProgressToLauncherPosition(
                 ((Float) animation.getAnimatedValue()).floatValue());
+        });
+        mWorkspaceUnlockAnim = new WorkspaceUnlockAnim(launcher);
+        mWorkspaceAnimator = ValueAnimator.ofFloat(0.0f, 1.0f);
+        mWorkspaceAnimator.setInterpolator(com.android.launcher3.anim.Interpolators.EMPHASIZED_DECELERATE);
+        mWorkspaceAnimator.addUpdateListener(animation -> {
+            mWorkspaceUnlockAnim.setUnlockAmount(
+                ((Float) animation.getAnimatedValue()).floatValue(), false);
         });
     }
 
@@ -64,11 +75,16 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
         CellLayout currentPage = workspace.getScreenWithId(
                 workspace.getScreenIdForPageIndex(workspace.getCurrentPage()));
         currentPage.getShortcutsAndWidgets().setClipChildren(!animateSmartspace);
+
+        if (animateSmartspace) mWorkspaceUnlockAnim.prepareForUnlock();
     }
 
     @Override
     public void setUnlockAmount(float amount, boolean forceIfAnimating) {
-        // we do not implement this yet
+        if (!mUnlockAnimationPlaying || forceIfAnimating) {
+            mWorkspaceUnlockAnim.setUnlockAmount(amount, false);
+            setSmartspaceProgressToLauncherPosition(amount);
+        }
     }
 
     @Override
@@ -76,8 +92,12 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
         if (mSmartspaceView != null && mShouldAnimateSmartspace) {
             mUnlockAnimationPlaying = true;
             mSmartspaceView.post(() -> {
+                AnimatorSet s = new AnimatorSet();
                 mSmartspaceAnimator.setDuration(startDelay + duration);
-                mSmartspaceAnimator.start();
+                mWorkspaceAnimator.setStartDelay(startDelay);
+                mWorkspaceAnimator.setDuration(duration);
+                s.play(mSmartspaceAnimator).with(mWorkspaceAnimator);
+                s.start();
             });
         }
     }
