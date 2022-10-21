@@ -351,6 +351,7 @@
     <icon drawable="@drawable/themed_icon_deck_shop" package="pro.deckshop.app"/>
     <icon drawable="@drawable/themed_icon_deezer" package="deezer.android.app"/>
     <icon drawable="@drawable/themed_icon_delivery_club" package="com.deliveryclub"/>
+    <icon drawable="@drawable/themed_icon_desmos" name="Desmos" package="com.desmos.calculator"/>
     <icon drawable="@drawable/themed_icon_deutschebahn" package="de.hafas.android.db"/>
     <icon drawable="@drawable/themed_icon_devcheck" package="flar2.devcheck"/>
     <icon drawable="@drawable/themed_icon_deviantart" package="com.deviantart.android.damobile"/>
