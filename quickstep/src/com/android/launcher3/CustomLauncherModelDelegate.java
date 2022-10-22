@@ -1,11 +1,14 @@
 package com.android.launcher3;
 
+import android.app.smartspace.SmartspaceAction;
 import android.app.smartspace.SmartspaceConfig;
 import android.app.smartspace.SmartspaceManager;
 import android.app.smartspace.SmartspaceSession;
 import android.app.smartspace.SmartspaceTarget;
 import android.app.smartspace.SmartspaceTargetEvent;
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 
 import com.android.launcher3.LauncherAppState;
@@ -39,6 +42,9 @@ public class CustomLauncherModelDelegate extends QuickstepModelDelegate
 
     public SmartspaceSession mSmartspaceSession;
 
+    private static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
+    private static final String GSA_WEATHER_ACTIVITY = "com.google.android.apps.search.weather.WeatherExportedActivity";
+ 
     public CustomLauncherModelDelegate(Context context) {
         super(context);
         mContext = context;
@@ -75,9 +81,45 @@ public class CustomLauncherModelDelegate extends QuickstepModelDelegate
     }
 
     public void onTargetsAvailable(List<SmartspaceTarget> targets) {
-        List<SmartspaceTarget> list = targets.stream()
-                                             .filter(t -> t.getFeatureType() != 34)
-                                             .collect(Collectors.toList());
+        List<SmartspaceTarget> list = new ArrayList<SmartspaceTarget>();
+        for (SmartspaceTarget t : targets) {
+            if (t.getFeatureType() == SmartspaceTarget.FEATURE_HOLIDAY_ALARM) {
+                continue;
+            } else if (t.getFeatureType() == SmartspaceTarget.FEATURE_WEATHER) {
+                SmartspaceAction a = t.getHeaderAction();
+                a = new SmartspaceAction.Builder(a.getId(), a.getTitle().toString())
+                        .setIcon(a.getIcon())
+                        .setSubtitle(a.getSubtitle())
+                        .setContentDescription(a.getContentDescription())
+                        .setPendingIntent(a.getPendingIntent())
+                        .setUserHandle(a.getUserHandle())
+                        .setIntent(new Intent().setComponent(
+                            new ComponentName(GSA_PACKAGE, GSA_WEATHER_ACTIVITY))
+                            .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+                        .setExtras(a.getExtras())
+                        .build();
+                list.add(new SmartspaceTarget.Builder(t.getSmartspaceTargetId(),
+                        t.getComponentName(), t.getUserHandle())
+                        .setHeaderAction(a)
+                        .setBaseAction(t.getBaseAction())
+                        .setCreationTimeMillis(t.getCreationTimeMillis())
+                        .setExpiryTimeMillis(t.getExpiryTimeMillis())
+                        .setScore(t.getScore())
+                        .setActionChips(t.getActionChips())
+                        .setIconGrid(t.getIconGrid())
+                        .setFeatureType(SmartspaceTarget.FEATURE_WEATHER)
+                        .setSensitive(t.isSensitive())
+                        .setShouldShowExpanded(t.shouldShowExpanded())
+                        .setSourceNotificationKey(t.getSourceNotificationKey())
+                        .setAssociatedSmartspaceTargetId(t.getAssociatedSmartspaceTargetId())
+                        .setSliceUri(t.getSliceUri())
+                        .setWidget(t.getWidget())
+                        .setTemplateData(t.getTemplateData())
+                        .build());
+                continue;
+            }
+            list.add(t);
+        }
         mSmartspaceTargets.offerLast(list);
         if (mSmartspaceTargets.size() > 5) {
             mSmartspaceTargets.pollFirst();
