@@ -1306,7 +1306,8 @@ public class DeviceProfile {
                     hotseatBarSizePx - hotseatBarBottomPadding - hotseatCellHeightPx;
 
             int hotseatWidth = getHotseatRequiredWidth();
-            int leftSpacing = (availableWidthPx - hotseatWidth) / 2;
+            int leftSpacing =  isTablet ? (availableWidthPx - hotseatWidth) / 2 :
+                            (availableWidthPx - hotseatQsbWidth) / 2;
             int rightSpacing = leftSpacing;
             // Hotseat aligns to the left with nav buttons
             if (hotseatBarEndOffset > 0) {
@@ -1349,7 +1350,7 @@ public class DeviceProfile {
     }
 
     private int getAdditionalQsbSpace() {
-        return isQsbInline ? hotseatQsbWidth + hotseatBorderSpace : 0;
+        return isTablet && isQsbInline ? hotseatQsbWidth + hotseatBorderSpace : 0;
     }
 
     /**
