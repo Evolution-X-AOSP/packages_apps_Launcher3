@@ -89,6 +89,7 @@
             android:theme="@style/ThemeControlHighlightWorkspaceColor" />
 
         <Space
+            android:id="@+id/action_lock_space"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_weight="1" />
