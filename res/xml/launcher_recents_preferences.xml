@@ -30,6 +30,13 @@
             android:min="0"
             settings:units="%"
             android:defaultValue="40" />
+            
+        <SwitchPreference
+            android:key="pref_show_meminfo"
+            android:title="@string/show_meminfo_title"
+            android:defaultValue="true"
+            android:persistent="true" />
+
    </PreferenceCategory>
 
     <PreferenceCategory
@@ -46,7 +53,7 @@
             android:title="@string/recents_lens_title"
             android:defaultValue="false"
             android:persistent="true" />
-
+            
         <SwitchPreference
             android:key="pref_recents_clear_all"
             android:title="@string/recents_clear_all_title"

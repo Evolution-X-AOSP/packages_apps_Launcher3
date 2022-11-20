@@ -18,6 +18,8 @@ package com.android.quickstep.views;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.AttributeSet;
@@ -26,14 +28,12 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.TextView;
-import android.graphics.Color;
-import android.graphics.Typeface;
-
 import com.android.internal.util.MemInfoReader;
 import com.android.launcher3.anim.AlphaUpdateListener;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.util.MultiValueAlpha;
 import com.android.launcher3.util.NavigationMode;
+import com.android.launcher3.Utilities;
 import com.android.launcher3.R;
 
 import java.lang.Runnable;
@@ -129,6 +129,11 @@ public class MemInfoView extends TextView {
     }
 
     private void updateMemInfoText(long availMemMiB, long totalMemMiB) {
+        if (!Utilities.showMemInfo(getContext())) {
+           setText(" ");
+           setVisibility(INVISIBLE);
+           return;
+       }
         String text = String.format(mMemInfoText,
             unitConvert(availMemMiB, false), unitConvert(totalMemMiB, true));
         setText(text);
