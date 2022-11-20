@@ -29,6 +29,7 @@ import android.widget.TextView;
 import android.graphics.Color;
 import android.graphics.Typeface;
 
+import com.android.internal.util.MemInfoReader;
 import com.android.launcher3.anim.AlphaUpdateListener;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.util.MultiValueAlpha;
@@ -138,10 +139,15 @@ public class MemInfoView extends TextView {
     private class MemInfoWorker implements Runnable {
         @Override
         public void run() {
+            MemInfoReader mMemInfoReader = new MemInfoReader();
             ActivityManager.MemoryInfo memInfo = new ActivityManager.MemoryInfo();
             mActivityManager.getMemoryInfo(memInfo);
-            long availMemMiB = memInfo.availMem / (1024 * 1024);
-            long totalMemMiB = memInfo.totalMem / (1024 * 1024);
+            mMemInfoReader.readMemInfo();
+            long totalMem = mMemInfoReader.getTotalSize();
+            long usedZramMem = (mMemInfoReader.getSwapTotalSizeKb() * 1024) - (mMemInfoReader.getSwapFreeSizeKb() * 1024);
+            long availMem = mMemInfoReader.getFreeSize() + mMemInfoReader.getKernelUsedSize() + mMemInfoReader.getCachedSize() + usedZramMem - memInfo.secondaryServerThreshold;
+            long availMemMiB = availMem / (1024 * 1024);
+            long totalMemMiB = totalMem / (1024 * 1024);
             updateMemInfoText(availMemMiB, totalMemMiB);
 
             mHandler.postDelayed(this, 1000);

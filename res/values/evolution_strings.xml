@@ -161,5 +161,5 @@
     <string name="drawer_searchbar_title">Enable app drawer searchbar</string>
     
     <!-- Memory info -->
-    <string name="meminfo_text">Approx. %1$s | %2$s</string>
+    <string name="meminfo_text">%1$s | %2$s</string>
 </resources>
