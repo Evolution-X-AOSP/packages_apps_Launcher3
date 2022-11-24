@@ -33,13 +33,13 @@
         launcher:logIdOn="615"
         launcher:logIdOff="616" />
 
-    <androidx.preference.PreferenceScreen
+    <Preference
         android:persistent="false"
         android:title="@string/suggestion_pref_screen_title"
         android:key="pref_suggestions"
         android:summary="@string/suggestion_pref_screen_desc">
         <intent android:action="android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS" />
-    </androidx.preference.PreferenceScreen>
+    </Preference>
     
     <com.android.launcher3.settings.preferences.CustomSeekBarPreference
         android:key="pref_blur_depth"
@@ -51,7 +51,7 @@
         settings:units="px"
         android:defaultValue="23" />
 
-    <androidx.preference.PreferenceScreen
+    <Preference
         android:key="pref_developer_options"
         android:persistent="false"
         android:title="@string/dev_options_title"

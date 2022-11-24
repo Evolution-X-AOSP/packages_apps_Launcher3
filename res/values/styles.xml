@@ -191,13 +191,11 @@
         <item name="qsbIconTintTertiary">@color/qsb_tertiary</item>
     </style>
 
-    <style name="HomeSettings.Theme" parent="@android:style/Theme.DeviceDefault.Settings">
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
+    <style name="HomeSettings.Theme" parent="@style/Theme.SubSettingsBase">
         <item name="preferenceTheme">@style/HomeSettings.PreferenceTheme</item>
     </style>
 
-    <style name="HomeSettings.PreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
+    <style name="HomeSettings.PreferenceTheme" parent="@style/PreferenceTheme.SettingsLib">
         <item name="preferenceFragmentCompatStyle">@style/HomeSettings.FragmentCompatStyle</item>
     </style>
 
