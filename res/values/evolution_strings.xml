@@ -156,4 +156,7 @@
     <!-- Smartspace -->
     <string name="smartspace_pref_title">At a Glance</string>
     <string name="smartspace_pref_summary">Show smartspace at the top of home screen</string>
+
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">Enable app drawer searchbar</string>
 </resources>
