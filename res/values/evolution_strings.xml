@@ -92,7 +92,7 @@
     <string name="dock_theme_title">Themed icons</string>
     <string name="dock_theme_summary">Use themed icons for search bar</string>
     <string name="search_radius_title">Corner radius</string>
-    <string name="qsb_search_hint" translatable="false">Searching for something?</string>
+    <string name="qsb_search_hint">Search your phone and more</string>
 
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Hotseat background</string>
