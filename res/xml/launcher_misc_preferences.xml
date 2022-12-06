@@ -41,7 +41,7 @@
         android:max="175"
         android:min="0"
         settings:units="px"
-        android:defaultValue="23" />
+        android:defaultValue="65" />
 
     <Preference
         android:key="pref_developer_options"
