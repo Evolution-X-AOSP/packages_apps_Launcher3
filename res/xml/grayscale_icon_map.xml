@@ -275,6 +275,7 @@
     <icon drawable="@drawable/themed_icon_camera" package="net.sourceforge.opencamera"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.scan3d"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.ruler"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.oplus.camera" />
     <icon drawable="@drawable/themed_icon_camera_go" package="com.google.android.apps.cameralite"/>
     <icon drawable="@drawable/themed_icon_camscanner" package="com.intsig.camscanner"/>
     <icon drawable="@drawable/themed_icon_canvas" package="com.canva.editor"/>
