@@ -132,4 +132,7 @@
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Sötét állapotsor</string>
     <string name="perf_dark_status_bar_summary">Használhatja a sötét állapotsort a Főképernyőn</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Rezgés görgetéskor</string>
+    <string name="pref_scroll_vibration_summary">Rezgő visszajelzés a legutóbb használt alkalmazások görgetése közben, ha támogatott</string>
 </resources>
