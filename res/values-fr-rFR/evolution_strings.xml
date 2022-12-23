@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2023 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Application name -->
+    <!-- General -->
+    <string name="settings_title">Paramètres du lanceur Evo X</string>
+    <!-- Categories -->
+    <string name="home_category_title">Ecran d\'accueil</string>
+    <string name="home_category_summary">Définir le panneau Google Now et plus</string>
+    <string name="icons_category_title">Icônes</string>
+    <string name="icons_category_summary">Définir la taille des icônes et plus</string>
+    <string name="app_drawer_category_title">Tiroir d\'applications</string>
+    <string name="app_drawer_category_summary">Personnaliser votre tiroir d\'applications</string>
+    <string name="recents_category_title">Applications récentes</string>
+    <string name="recents_category_summary">Personnaliser l\'écran des applications récentes</string>
+    <string name="misc_category_title">Divers</string>
+    <string name="misc_category_summary">Autres options</string>
+    <string name="general_category_title">Général</string>
+    <string name="interface_category_title">Interface</string>
+    <string name="search_bar_category_title">Barre de recherche</string>
+    <string name="actions_category_title">Actions rapides</string>
+    <string name="quickspace_category_title">At A Glance</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Options pour les développeurs</string>
+    <string name="dev_options_summary">Activez certaines fonctionnalités cachées à vos risques et périls</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Verrouiller la disposition</string>
+    <string name="settings_lock_layout_summary_on">Les icônes et widgets ne peuvent pas être ajoutés, supprimés ou déplacés sur l\'écran d\'accueil</string>
+    <string name="settings_lock_layout_summary_off">Les icônes et widgets peuvent être ajoutés, supprimés ou déplacés sur l\'écran d\'accueil</string>
+    <string name="settings_edit_widgets_error">Impossible d\'ajouter des widgets sur l\'écran d\'accueil</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Nom d\'application sur l\'écran d\'accueil</string>
+    <string name="drawer_show_labels">Nom d\'application dans le tiroir d\'applications</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Glisser pour accéder à l\'application Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Lors d\'un balayage vers la droite sur l\'écran d\'accueil principal</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Lors d\'un balayage vers la gauche sur l\'écran d\'accueil principal</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Double appui pour mettre en veille</string>
+    <string name="pref_sleep_gesture_summary">Appuyez deux fois sur un emplacement libre pour éteindre l\'écran</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Pause</string>
+    <string name="pause_apps_dialog_title">Suspendre %1$s?</string>
+    <string name="pause_apps_dialog_message">Les notifications pour %1$s seront suspendues</string>
+    <string name="paused_apps_dialog_title">Application suspendue</string>
+    <string name="paused_apps_dialog_message">%1$s a été suspendu directement depuis le lanceur</string>
+    <string name="paused_apps_drop_target_label">Suspendre l\'application</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valeur : <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">par défaut</string>
+    <string name="custom_seekbar_default_value_to_set">Valeur par défaut : <xliff:g id="v">%s</xliff:g>\nRester appuyer pour définir</string>
+    <string name="custom_seekbar_default_value_is_set">Valeur par défaut définie</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Taille de l\'icône</string>
+    <!-- Font size -->
+    <string name="font_size_title">Taille de police</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Lignes max pour le libellé de l\'application</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Rechercher</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Recherche vocale</string>
+    <string name="dock_music_search_title">Recherche vocale Google</string>
+    <string name="dock_music_search_summary">Utiliser la recherche de musique Google au lieu de Google Assistant lorsque l\'icône micro est pressée</string>
+    <string name="dock_search_title">Barre de recherche Google</string>
+    <string name="dock_search_summary">Barre de recherche dans le dock inférieur</string>
+    <string name="dock_theme_title">Icônes thématiques</string>
+    <string name="dock_theme_summary">Utiliser les icônes thématiques pour la barre de recherche</string>
+    <string name="search_radius_title">Courbure des angles</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Contraster le dock</string>
+    <string name="hotseat_bg_summary">Ajouter un arrière-plan translucide au dock d\'applications</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Défilement du fond d\'écran</string>
+    <string name="allow_wallpaper_scrolling_summary">Effet de défilement du fond d\'écran pour plusieurs écrans</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Zoom sur le fond d\'écran</string>
+    <string name="allow_wallpaper_zooming_summary">Zoomer et dézoomer le fond d\'écran a l\'ouverture du tiroir d\'applications ou de l\'écran des applications récentes</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Barre d\'état</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Ombre du haut</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Hauteur de ligne</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">Niveau de flou</string>
+    <string name="background_blur_summary">Définir le niveau de profondeur de flou pour les applications récentes et le tiroir d\'applications</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">Pour toutes les applications &amp; suggestions de l\'écran d\'accueil</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Opacité de l\'arrière-plan </string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Utiliser la barre des tâches</string>
+    <string name="pref_allow_phone_taskbar_summary">Pour ouvrir et changer d\'application n\'importe où</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Capture d\'écran</string>
+    <string name="recents_clear_all_title">Tout effacer</string>
+    <string name="recents_lens_title">Lens</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Icônes thématiques</string>
+    <string name="pref_themed_icons_summary">Suivre les icônes thématiques utilisées sur l\'écran d\'accueil</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Source</string>
+    <string name="app_info_source_system">Système</string>
+    <string name="app_info_last_update">Dernière mise à jour</string>
+    <string name="app_info_version">Version</string>
+    <string name="app_info_more">Plus</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Pack d\'icônes</string>
+    <string name="icon_pack_default_label">Défaut</string>
+    <string name="icon_pack_add">Installer plus</string>
+    <string name="icon_pack_no_market">Il n\'y a aucun magasin d\'applications disponible</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Tuer</string>
+    <string name="recents_app_killed">Application tuée</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s disponibles sur/%2$s au total</string>
+    <string name="recents_meminfo_title">Informations sur la RAM</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Barre de recherche d\'applications</string>
+    <string name="drawer_search_summary">Barre de recherche en haut du tiroir d\'applications</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Redémarrer</string>
+    <string name="pref_restart_summary">Redémarrer le lanceur d\'applications</string>
+    <string name="restarting_launcher">Redémarrage du lanceur d\'applications...</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Secouer le téléphone pour effacer toutes les tâches</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">At a Glance</string>
+    <string name="smartspace_pref_summary">Afficher smartspace en haut de l\'écran d\'accueil</string>
+</resources>
