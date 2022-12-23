@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Application name -->
+    <!-- Folder titles -->
+    <!-- General -->
+    <string name="settings_title">Configurações da tela inical</string>
+    <!-- Categories -->
+    <string name="home_category_title">Tela inicial</string>
+    <string name="home_category_summary">Definir o Feed do Google e mais</string>
+    <string name="icons_category_title">Ícones</string>
+    <string name="icons_category_summary">Definir tamanho do ícone e muito mais</string>
+    <string name="app_drawer_category_title">Gaveta de aplicativos</string>
+    <string name="app_drawer_category_summary">Personalizar sua gaveta de aplicativos</string>
+    <string name="recents_category_title">Recentes</string>
+    <string name="recents_category_summary">Reformular a tela inicial</string>
+    <string name="misc_category_title">Diversos</string>
+    <string name="misc_category_summary">Outras opções</string>
+    <string name="general_category_title">Geral</string>
+    <string name="interface_category_title">Interface</string>
+    <string name="search_bar_category_title">Barra de pesquisa</string>
+    <string name="actions_category_title">Ações rápidas</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Opções do desenvolvedor</string>
+    <string name="dev_options_summary">Ativar alguns recursos ocultos por sua conta e risco</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Bloquear layout</string>
+    <string name="settings_lock_layout_summary_on">Não é possível adicionar, remover e mover ícones e widgets na tela inicial</string>
+    <string name="settings_lock_layout_summary_off">Ícones e widgets podem ser adicionados, removidos e movidos na tela inicial</string>
+    <string name="settings_edit_widgets_error">Não é possível adicionar widgets à tela inicial</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Rótulos dos ícones na tela inicial</string>
+    <string name="drawer_show_labels">Rótulos dos ícones na gaveta de apps</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Deslize para acessar o feed do Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Ao deslizar para a direita na tela inicial</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Ao deslizar para a esquerda na tela inicial</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Aplicativos ocultos e protegidos</string>
+    <string name="trust_apps_auth_manager">Desbloquear para gerenciar os aplicativos ocultos e protegidos</string>
+    <string name="trust_apps_auth_open_app">Autenticar para abrir %1$s</string>
+    <string name="trust_apps_loading">Carregando...</string>
+    <string name="trust_apps_no_lock_error">Configure uma tela de bloqueio para restringir o acesso aos aplicativos</string>
+    <string name="trust_apps_help">Ajuda</string>
+    <string name="trust_apps_info_hidden">Aplicativos ocultos e seus widgets estão escondidos do menu de apps</string>
+    <string name="trust_apps_info_protected">Aplicativos protegidos exigem autenticação para serem abertos a partir do launcher</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Toque duplo para dormir</string>
+    <string name="pref_sleep_gesture_summary">Toque duas vezes no espaço vazio para desligar a tela</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Pausar</string>
+    <string name="pause_apps_dialog_title">Pausar %1$s?</string>
+    <string name="pause_apps_dialog_message">As notificações de %1$s serão pausadas</string>
+    <string name="paused_apps_dialog_title">App pausado</string>
+    <string name="paused_apps_dialog_message">%1$s foi pausado diretamente pelo launcher</string>
+    <string name="paused_apps_drop_target_label">Pausar app</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Tamanho do ícone</string>
+    <!-- Font size -->
+    <string name="font_size_title">Tamanho da fonte</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Máximo de linhas para o rótulo do aplicativo</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Pesquisar</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Pesquisa por voz</string>
+    <string name="dock_search_title">Barra de pesquisa do Google</string>
+    <string name="dock_search_summary">Barra de pesquisa na dock</string>
+    <string name="dock_theme_title">Ícones temáticos</string>
+    <string name="dock_theme_summary">Usar ícones temáticos para a barra de pesquisa</string>
+    <string name="search_radius_title">Raio de canto</string>
+    <string name="qsb_search_hint">Pesquisa no smartphone e mais</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Fundo da dock inferior</string>
+    <string name="hotseat_bg_summary">Adicionar fundo translúcido para a dock de apps</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Rolagem do papel de parede</string>
+    <string name="allow_wallpaper_scrolling_summary">Rolar papel de parede ao alternar entre as telas</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Zoom do papel de parede</string>
+    <string name="allow_wallpaper_zooming_summary">Ampliar ou diminuir o papel de parede quando estiver usando a gaveta ou aplicativos recentes</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Barra de Status</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Sombra superior</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Altura da linha</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">Intensidade do desfoque de fundo</string>
+    <string name="background_blur_summary">Definir a intensidade do desfoque para os aplicativos recentes e gaveta de aplicativos</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Sugestões</string>
+    <string name="suggestion_pref_screen_desc">Sugestões de apps na tela inicial e gaveta de aplicativos</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Opacidade do fundo</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Usar barra de tarefas</string>
+    <string name="pref_allow_phone_taskbar_summary">Para abrir e alternar entre aplicativos em quaisquer lugar</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Captura de tela</string>
+    <string name="recents_clear_all_title">Limpar tudo</string>
+    <string name="recents_lens_title">Lens</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Ícones temáticos</string>
+    <string name="pref_themed_icons_summary">Seguir ícones temáticos usados na tela inicial</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Fonte</string>
+    <string name="app_info_source_system">Sistema</string>
+    <string name="app_info_last_update">Última atualização</string>
+    <string name="app_info_version">Versão</string>
+    <string name="app_info_more">Mais</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Pacote de ícones</string>
+    <string name="icon_pack_default_label">Padrão</string>
+    <string name="icon_pack_add">Instalar mais</string>
+    <string name="icon_pack_no_market">Não há uma loja de aplicativos disponível</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Resumo</string>
+    <string name="smartspace_pref_summary">Mostrar espaço inteligente na parte superior da tela inicial</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">Ativar barra de pesquisa na gaveta de aplicativos</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s | %2$s</string>
+    <string name="show_meminfo_title">Mostrar informação de memória</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Barra de status escura</string>
+    <string name="perf_dark_status_bar_summary">Usar barra de status escura na tela inicial</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Vibração de rolagem</string>
+    <string name="pref_scroll_vibration_summary">Retorno tátil ao navegar pela guia de aplicativos recentes, se suportado</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Espaço Paralelo</string>
+    <string name="laboratory_parallel_space_summary">Permite a execução de várias instâncias do mesmo aplicativo em paralelo</string>
+</resources>
