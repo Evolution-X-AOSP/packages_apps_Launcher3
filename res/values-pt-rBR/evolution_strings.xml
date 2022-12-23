@@ -106,6 +106,7 @@
     <string name="recents_screenshot_title">Captura de tela</string>
     <string name="recents_clear_all_title">Limpar tudo</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_lock_title">Bloquear aplicativo</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Ícones temáticos</string>
     <string name="pref_themed_icons_summary">Seguir ícones temáticos usados na tela inicial</string>
