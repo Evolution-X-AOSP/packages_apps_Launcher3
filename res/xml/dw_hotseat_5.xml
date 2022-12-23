@@ -16,7 +16,7 @@
 
 <favorites xmlns:launcher="http://schemas.android.com/apk/res-auto/com.android.launcher3">
     <!-- Hotseat (We use the screen as the position of the item in the hotseat) -->
-    <!-- Dialer, Messaging, Music, Browser, Camera -->
+    <!-- Dialer, Messaging, Market, Browser, Camera -->
     <resolve
         launcher:container="-101"
         launcher:screen="0"
@@ -32,7 +32,11 @@
         launcher:screen="1"
         launcher:x="1"
         launcher:y="0" >
-        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_CONTACTS;end" />
+        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
+        <favorite launcher:uri="sms:" />
+        <favorite launcher:uri="smsto:" />
+        <favorite launcher:uri="mms:" />
+        <favorite launcher:uri="mmsto:" />
     </resolve>
 
     <resolve
@@ -40,11 +44,8 @@
         launcher:screen="2"
         launcher:x="2"
         launcher:y="0" >
-        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MESSAGING;end" />
-        <favorite launcher:uri="sms:" />
-        <favorite launcher:uri="smsto:" />
-        <favorite launcher:uri="mms:" />
-        <favorite launcher:uri="mmsto:" />
+        <favorite launcher:uri="#Intent;action=android.intent.action.MAIN;category=android.intent.category.APP_MARKET;end" />
+        <favorite launcher:uri="market://details?id=com.android.launcher" />
     </resolve>
 
     <resolve
@@ -62,6 +63,9 @@
         launcher:screen="4"
         launcher:x="4"
         launcher:y="0" >
+        <favorite
+            launcher:packageName="com.google.android.apps.cameralite"
+            launcher:className="com.google.android.apps.cameralite.capture.CaptureActivity" />
         <favorite
             launcher:packageName="org.lineageos.aperture"
             launcher:className="org.lineageos.aperture.CameraLauncher" />
