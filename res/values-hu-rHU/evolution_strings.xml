@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2023 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Application name -->
+    <!-- General -->
+    <string name="settings_title">Az \'Evo X Launcher\' beállitásai</string>
+    <!-- Categories -->
+    <string name="home_category_title">Főképernyő</string>
+    <string name="home_category_summary">A \'Google Now\' panel és egyebek beállítása</string>
+    <string name="icons_category_title">Ikonok</string>
+    <string name="icons_category_summary">Ikonméret-beállítás és egyebek</string>
+    <string name="app_drawer_category_title">Alkalmazásfiók</string>
+    <string name="app_drawer_category_summary">Az Alkalmazásfiók testreszabása</string>
+    <string name="recents_category_title">Előzmények</string>
+    <string name="recents_category_summary">Az áttekintési nézet újraformálása</string>
+    <string name="misc_category_title">Egyebek</string>
+    <string name="misc_category_summary">Egyéb lehetőségek</string>
+    <string name="general_category_title">Általános</string>
+    <string name="interface_category_title">Kezelőfelület</string>
+    <string name="search_bar_category_title">Keresősáv</string>
+    <string name="actions_category_title">Gyorsműveletek</string>
+    <string name="quickspace_category_title">Bepillantás</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Fejlesztői beállítások</string>
+    <string name="dev_options_summary">Saját felelősségére rejtett beállításokat engedélyezhet</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Elrendezés-zárolás</string>
+    <string name="settings_lock_layout_summary_on">A kezdőképernyőn nem engedélyezett az ikon- és modulhozzáadás, eltávolítás és mozgatás</string>
+    <string name="settings_lock_layout_summary_off">A kezdőképernyőn engedélyezett az ikon- és modulhozzáadás, eltávolítás és mozgatás</string>
+    <string name="settings_edit_widgets_error">Nem lehetséges modulokat hozzáadni a kezdőképernyőhöz</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Asztali ikonfeliratok</string>
+    <string name="drawer_show_labels">Alkalmazásfióki ikonfeliratok</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Google-alkalmazás csúsztatással</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">A Főképernyőn balra húzással indítható a Google-alkalmazás</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">A Főképernyőn jobbra húzással indítható a Google-alkalmazás</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Dupla érintésre alvómód</string>
+    <string name="pref_sleep_gesture_summary">Képernyő kikapcsoláshoz duplakopp egy üres területen</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Szüneteltetés</string>
+    <string name="pause_apps_dialog_title">Szünetelteti ezt: %1$s?</string>
+    <string name="pause_apps_dialog_message">%1$s értesítései szüneteltetésre kerülnek</string>
+    <string name="paused_apps_dialog_title">Alkalmazás-szüneteltetés</string>
+    <string name="paused_apps_dialog_message">%1$s közvetlen szüneteltetése a Launcherből</string>
+    <string name="paused_apps_drop_target_label">Alkalmazás-szüneteltetés</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value"><xliff:g id="v">%s</xliff:g> értékű</string>
+    <string name="custom_seekbar_default_value">alapértelmezetten</string>
+    <string name="custom_seekbar_default_value_to_set">Alapértelmezett érték <xliff:g id="v">%s</xliff:g>\nNyomja hosszan a beállításhoz</string>
+    <string name="custom_seekbar_default_value_is_set">Az alapértelmezett érték beállítva</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Ikonméret</string>
+    <!-- Font size -->
+    <string name="font_size_title">Betűméret</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Sorok maximális száma az ikoncímkékhez</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Keresés</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Hangalapú keresés</string>
+    <string name="dock_music_search_title">Zenekeresés</string>
+    <string name="dock_music_search_summary">A mikrofonikon megnyomásakor elindul a zenekeresés</string>
+    <string name="dock_search_title">Google-keresősáv</string>
+    <string name="dock_search_summary">Alsódokki keresősáv</string>
+    <string name="dock_theme_title">Témázott ikonok</string>
+    <string name="dock_theme_summary">A keresősávban témázott ikonok használhatók</string>
+    <string name="search_radius_title">Saroklekerekítés</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Hotseat-háttér</string>
+    <string name="hotseat_bg_summary">Áttetsző háttereket adhat az alkalmazásfiókhoz</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Háttérkép-görgetés</string>
+    <string name="allow_wallpaper_scrolling_summary">Háttérképgörgetési effekt többképernyős megjelenitéshez</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Háttérkép-zoomolás</string>
+    <string name="allow_wallpaper_zooming_summary">Nagyítsa vagy kicsinyítse a háttérképet az alkalmazásfiók vagy az előzmények használatakor</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Állapotsor</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Felső árnyék</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Sormagasság</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">A háttér-elmosás mélysége</string>
+    <string name="background_blur_summary">Az előzmények és az alkalmazásfiók elmosási értéke állítható itt</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Javaslatok</string>
+    <string name="suggestion_pref_screen_desc">Javaslatok a Kezdőképernyőhöz és minden alkalmazáshoz</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Háttérátlátszóság</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">a Feladatkezelő használata</string>
+    <string name="pref_allow_phone_taskbar_summary">Alkalmazásinditáshoz és váltáshoz bárhol</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Képernyőkép</string>
+    <string name="recents_clear_all_title">Az összes törlése</string>
+    <string name="recents_lens_title">Lens</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Témázott ikonok</string>
+    <string name="pref_themed_icons_summary">A kezdőképernyőn használt tematikus ikonokhoz igazodik</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Forrás</string>
+    <string name="app_info_source_system">Rendszer</string>
+    <string name="app_info_last_update">Utolsó frissítés</string>
+    <string name="app_info_version">Verzió</string>
+    <string name="app_info_more">Továbbiak</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Ikoncsomag</string>
+    <string name="icon_pack_default_label">Alapértelmezett</string>
+    <string name="icon_pack_add">Újabbak telepítése</string>
+    <string name="icon_pack_no_market">Nincs áruház ahonnan letölthetne</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Kilövés</string>
+    <string name="recents_app_killed">Alkalmazás kilőve</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%2$s memóriából %1$s érhető el</string>
+    <string name="recents_meminfo_title">Memória-információ</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Alkalmazáskereső-sáv</string>
+    <string name="drawer_search_summary">A keresősáv az Alkalmazásfiók tetején</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Újraindítás</string>
+    <string name="pref_restart_summary">A Launcher újraindítása hogy a változtatások érvénybe lépjenek</string>
+    <string name="restarting_launcher">A Launcher újraindítása...</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Az összes feladat törléséhez rázza meg a telefont</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Bepillantás</string>
+    <string name="smartspace_pref_summary">\'Bepillantás\' megjelenítése a kezdőképernyő tetején</string>
+</resources>
