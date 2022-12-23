@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Application name -->
+    <!-- Folder titles -->
+    <!-- General -->
+    <string name="settings_title">Настройки Evo X Launcher</string>
+    <!-- Categories -->
+    <string name="home_category_title">Домашний экран</string>
+    <string name="home_category_summary">Включить панель Google Now и многое другое</string>
+    <string name="icons_category_title">Иконки</string>
+    <string name="icons_category_summary">Установить размер значков и т.д.</string>
+    <string name="app_drawer_category_title">Меню приложений</string>
+    <string name="app_drawer_category_summary">Пользовательские настройки меню приложений</string>
+    <string name="recents_category_title">Недавние приложения</string>
+    <string name="recents_category_summary">Настройка экрана недавних приложений</string>
+    <string name="misc_category_title">Прочее</string>
+    <string name="misc_category_summary">Другие настройки</string>
+    <string name="general_category_title">Основные</string>
+    <string name="interface_category_title">Интерфейс</string>
+    <string name="search_bar_category_title">Панель поиска</string>
+    <string name="actions_category_title">Быстрые действия</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Для разработчиков</string>
+    <string name="dev_options_summary">Включить некоторые скрытые функции на свой страх и риск</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Запретить редактирование</string>
+    <string name="settings_lock_layout_summary_on">Значки и виджеты не могут быть добавлены, удалены и перемещены на домашний экран</string>
+    <string name="settings_lock_layout_summary_off">Значки и виджеты могут быть добавлены, удалены и перемещены на домашнем экране</string>
+    <string name="settings_edit_widgets_error">Невозможно добавить виджеты на домашний экран</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Подписи значков на рабочем столе</string>
+    <string name="drawer_show_labels">Подписи значков в меню</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Проведите для доступа к приложению Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Когда вы проведите вправо с главного экрана</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Когда вы проведите влево от главного экрана</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Скрытые и защищенные приложения</string>
+    <string name="trust_apps_auth_manager">Разблокируйте для управления скрытыми и защищенными приложениями</string>
+    <string name="trust_apps_auth_open_app">Авторизуйтесь для открытия %1$s</string>
+    <string name="trust_apps_loading">Загрузка\u2026</string>
+    <string name="trust_apps_no_lock_error">Пожалуйста, установите блокировку экрана для ограничения доступа к приложениям</string>
+    <string name="trust_apps_help">Помощь</string>
+    <string name="trust_apps_info_hidden">Скрытые приложения и их виджеты скрыты из панели</string>
+    <string name="trust_apps_info_protected">Для открытия защищенных приложений из лаунчера требуется аутентификация</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Двойное нажатие для сна</string>
+    <string name="pref_sleep_gesture_summary">Двойное нажатие по пустому месту для выключения экрана</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Пауза</string>
+    <string name="pause_apps_dialog_title">Пауза %1$s?</string>
+    <string name="pause_apps_dialog_message">Уведомления для %1$s будут приостановлены</string>
+    <string name="paused_apps_dialog_title">Приложение приостановлено</string>
+    <string name="paused_apps_dialog_message">%1$s был приостановлен из лаунчера</string>
+    <string name="paused_apps_drop_target_label">Приостановить приложение</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Размер значка</string>
+    <!-- Font size -->
+    <string name="font_size_title">Размер шрифта</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Максимальное количество строк в названии приложения</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Поиск</string>
+    <string name="label_lens">Google Объектив</string>
+    <string name="label_voice_search">Голосовой поиск</string>
+    <string name="dock_search_title">Панель поиска Google</string>
+    <string name="dock_search_summary">Показать панель поиска в нижнем док-баре</string>
+    <string name="dock_theme_title">Тематические значки</string>
+    <string name="dock_theme_summary">Использовать тематические значки для панели поиска</string>
+    <string name="search_radius_title">Радиус cкругления</string>
+    <string name="qsb_search_hint">Поиск по вашему телефону и многое другое</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Фон нижней панели</string>
+    <string name="hotseat_bg_summary">Полупрозрачный фон нижней панели приложений</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Прокрутка обоев</string>
+    <string name="allow_wallpaper_scrolling_summary">Эффект прокрутки обоев для нескольких экранов</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Масштабирование обоев</string>
+    <string name="allow_wallpaper_zooming_summary">Увеличение или уменьшение обоев в меню приложений и в списке недавних приложений</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Строка состояния</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Тень сверху</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Высота строки</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">Глубина размытия фона</string>
+    <string name="background_blur_summary">Установить силу размытия для недавних и меню приложений</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Рекомендации</string>
+    <string name="suggestion_pref_screen_desc">Для всех приложений и предложений на главном экране</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Прозрачность фона</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Использовать панель задач</string>
+    <string name="pref_allow_phone_taskbar_summary">Для открытия и переключения приложений в любом месте</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Снимок экрана</string>
+    <string name="recents_clear_all_title">Очистить всё</string>
+    <string name="recents_lens_title">Объектив</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Тематические значки</string>
+    <string name="pref_themed_icons_summary">Следовать тематическим значкам, которые используются на главном экране</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Источник</string>
+    <string name="app_info_source_system">Система</string>
+    <string name="app_info_last_update">Последнее обновление</string>
+    <string name="app_info_version">Версия</string>
+    <string name="app_info_more">Ещё</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Набор значков</string>
+    <string name="icon_pack_default_label">По умолчанию</string>
+    <string name="icon_pack_add">Установить ещё</string>
+    <string name="icon_pack_no_market">Нет доступного магазина приложений</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">At a Glance</string>
+    <string name="smartspace_pref_summary">Показывать умное пространство в верхней части главного экрана</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">Включить панель поиска в меню приложений</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Тёмная строка состояния</string>
+    <string name="perf_dark_status_bar_summary">Использовать темную строку состояния на главном экране</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Вибрация при прокрутке</string>
+    <string name="pref_scroll_vibration_summary">Виброотклик при прокрутке последних приложений, если поддерживается</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Параллельное пространство</string>
+    <string name="laboratory_parallel_space_summary">Разрешить параллельный запуск нескольких экземпляров одного и того же приложения</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Перезагрузка</string>
+    <string name="pref_restart_summary">Перезапустить лаунчер</string>
+</resources>
