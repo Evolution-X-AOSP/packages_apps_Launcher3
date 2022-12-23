@@ -132,4 +132,7 @@
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Barre d\'état sombre</string>
     <string name="perf_dark_status_bar_summary">Assombrir la barre d\'état sur l\'écran d\'accueil</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Vibration lors du défilement</string>
+    <string name="pref_scroll_vibration_summary">Retour tactile lors du défilement des applications récentes, si supporté</string>
 </resources>
