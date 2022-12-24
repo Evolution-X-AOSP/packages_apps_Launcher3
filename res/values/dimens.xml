@@ -387,6 +387,8 @@
     <dimen name="taskbar_button_space_inbetween_phone">0dp</dimen>
     <dimen name="taskbar_button_margin_split">0dp</dimen>
     <dimen name="taskbar_button_margin_6_5">0dp</dimen>
+    <dimen name="taskbar_button_margin_4_5">0dp</dimen>
+    <dimen name="taskbar_button_margin_4_4">0dp</dimen>
     <!-- Taskbar swipe up thresholds threshold -->
     <dimen name="taskbar_nav_threshold">0dp</dimen>
     <dimen name="taskbar_app_window_threshold">0dp</dimen>
