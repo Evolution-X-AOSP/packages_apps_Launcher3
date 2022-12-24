@@ -135,4 +135,7 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibração de rolagem</string>
     <string name="pref_scroll_vibration_summary">Retorno tátil ao navegar pela guia de aplicativos recentes, se suportado</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Espaço Paralelo</string>
+    <string name="laboratory_parallel_space_summary">Permite a execução de várias instâncias do mesmo aplicativo em paralelo</string>
 </resources>
