@@ -8,7 +8,7 @@
     <!-- Application name -->
     <!-- Folder titles -->
     <!-- General -->
-    <string name="settings_title">Kezdőoldal-beállítások</string>
+    <string name="settings_title">Az \'Evo X Launcher\' beállitásai</string>
     <!-- Categories -->
     <string name="home_category_title">Főképernyő</string>
     <string name="home_category_summary">A \'Google Now\' panel és egyebek beállítása</string>
@@ -135,4 +135,7 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Rezgés görgetéskor</string>
     <string name="pref_scroll_vibration_summary">Rezgő visszajelzés a legutóbb használt alkalmazások görgetése közben, ha támogatott</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Párhuzamos tér</string>
+    <string name="laboratory_parallel_space_summary">Egy alkalmazás több példányának párhuzamos futtatásának lehetősége</string>
 </resources>

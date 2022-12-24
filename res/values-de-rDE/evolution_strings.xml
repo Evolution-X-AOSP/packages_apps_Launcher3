@@ -132,4 +132,10 @@
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Dunkle Statusleiste</string>
     <string name="perf_dark_status_bar_summary">Dunkle Statusleiste auf Startbildschirm verwenden</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Scroll-Vibration</string>
+    <string name="pref_scroll_vibration_summary">Haptisches Feedback während des Scrollen durch den Anwendungsverlauf, falls unterstützt</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Zweites Profil</string>
+    <string name="laboratory_parallel_space_summary">Ermöglicht parallele Ausführung mehrerer Instanzen derselben App</string>
 </resources>
