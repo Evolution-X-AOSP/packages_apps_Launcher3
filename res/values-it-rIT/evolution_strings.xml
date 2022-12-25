@@ -48,7 +48,7 @@
     <string name="trust_apps_loading">Caricamento\u2026</string>
     <string name="trust_apps_no_lock_error">Imposta una schermata di blocco sicura per limitare l\'accesso alle app</string>
     <string name="trust_apps_help">Aiuto</string>
-    <string name="trust_apps_info_hidden">Le app nascoste e i loro widget sono nascoste dal drawer</string>
+    <string name="trust_apps_info_hidden">Le app nascoste e i loro widget sono nascosti dal drawer</string>
     <string name="trust_apps_info_protected">Le applicazioni protette richiedono l\'autenticazione per essere aperte dal launcher</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Doppio tocco per spegnere</string>
@@ -74,11 +74,11 @@
     <string name="dock_search_summary">Barra di ricerca nel dock inferiore</string>
     <string name="dock_theme_title">Icone a tema</string>
     <string name="dock_theme_summary">Usa icone a tema per la barra di ricerca</string>
-    <string name="search_radius_title">Raggio angolo</string>
-    <string name="qsb_search_hint">Cerca nel tuo telefono e oltre</string>
+    <string name="search_radius_title">Raggio angoli</string>
+    <string name="qsb_search_hint">Cerca nel tuo telefono e altro ancora</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Sfondo barra inferiore</string>
-    <string name="hotseat_bg_summary">Aggiunge uno sfondo traslucido al dock dell\'app</string>
+    <string name="hotseat_bg_summary">Aggiunge uno sfondo traslucido al dock delle app</string>
     <!-- Wallpaper scrolling -->
     <string name="allow_wallpaper_scrolling">Scorrimento dello sfondo</string>
     <string name="allow_wallpaper_scrolling_summary">Effetto di scorrimento dello sfondo per schermate multiple</string>
