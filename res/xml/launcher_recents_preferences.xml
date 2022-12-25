@@ -55,12 +55,6 @@
             android:persistent="true" />
 
         <SwitchPreference
-            android:key="pref_recents_lock"
-            android:title="@string/recents_lock_title"
-            android:defaultValue="true"
-            android:persistent="true" />
-
-        <SwitchPreference
             android:key="pref_recents_lens"
             android:title="@string/recents_lens_title"
             android:defaultValue="false"
