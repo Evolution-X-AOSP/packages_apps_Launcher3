@@ -325,7 +325,7 @@
     <icon drawable="@drawable/themed_icon_colorwaver" package="com.mrousavy.colorwaver"/>
     <icon drawable="@drawable/themed_icon_companion" package="io.homeassistant.companion.android"/>
     <icon drawable="@drawable/themed_icon_compass" package="apps.r.compass"/>
-    <icon drawable="@drawable/themed_icon_contacts" package="com.google.android.contacts"/>
+    <icon drawable="@drawable/themed_icon_google_contacts" package="com.google.android.contacts"/>
     <icon drawable="@drawable/themed_icon_contacts" package="com.android.contacts"/>
     <icon drawable="@drawable/themed_icon_covid_certificate" package="ch.admin.bag.covidcertificate.wallet"/>
     <icon drawable="@drawable/themed_icon_cpu_throttle" package="skynet.cputhrottlingtest"/>
@@ -361,7 +361,7 @@
     <icon drawable="@drawable/themed_icon_diablo_immortal" package="com.blizzard.diablo.immortal"/>
     <icon drawable="@drawable/themed_icon_diabloinmortal" package="com.blizzard.diablo.immortal"/>
     <icon drawable="@drawable/themed_icon_dialer" package="com.nll.cb"/>
-    <icon drawable="@drawable/themed_icon_dialer" package="com.google.android.dialer"/>
+    <icon drawable="@drawable/themed_icon_google_dialer" package="com.google.android.dialer"/>
     <icon drawable="@drawable/themed_icon_dialer" package="com.android.dialer"/>
     <icon drawable="@drawable/themed_icon_didup_famiglia" package="it.argosoft.didup.famiglia.new"/>
     <icon drawable="@drawable/themed_icon_digital_wellbeing" package="com.google.android.apps.wellbeing"/>
@@ -392,7 +392,7 @@
     <icon drawable="@drawable/themed_icon_dublgis" package="ru.dublgis.dgismobile"/>
     <icon drawable="@drawable/themed_icon_duckduckgo" package="com.duckduckgo.mobile.android"/>
     <icon drawable="@drawable/themed_icon_dunzo" package="com.dunzo.user"/>
-    <icon drawable="@drawable/themed_icon_duo" package="com.google.android.apps.tachyon"/>
+    <icon drawable="@drawable/themed_icon_meet" package="com.google.android.apps.tachyon"/>
     <icon drawable="@drawable/themed_icon_duolingo" package="com.duolingo"/>
     <icon drawable="@drawable/themed_icon_duomobile" package="com.duosecurity.duomobile"/>
     <icon drawable="@drawable/themed_icon_dvget" package="com.dv.get"/>
@@ -693,7 +693,7 @@
     <icon drawable="@drawable/themed_icon_mercado_libre" package="com.mercadolibre"/>
     <icon drawable="@drawable/themed_icon_mercado_libre" package="com.mercadopago.wallet"/>
     <icon drawable="@drawable/themed_icon_merge_war" package="com.wildsky.wildarmydraft"/>
-    <icon drawable="@drawable/themed_icon_messages" package="com.google.android.apps.messaging"/>
+    <icon drawable="@drawable/themed_icon_google_messages" package="com.google.android.apps.messaging"/>
     <icon drawable="@drawable/themed_icon_messages" package="com.android.messaging"/>
     <icon drawable="@drawable/themed_icon_messenger" package="com.facebook.mlite"/>
     <icon drawable="@drawable/themed_icon_messenger" package="com.facebook.orca"/>
