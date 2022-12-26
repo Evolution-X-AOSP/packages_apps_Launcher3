@@ -106,7 +106,6 @@
     <string name="recents_screenshot_title">Снимок экрана</string>
     <string name="recents_clear_all_title">Очистить всё</string>
     <string name="recents_lens_title">Объектив</string>
-    <string name="recents_lock_title">Блокировка приложения</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Тематические значки</string>
     <string name="pref_themed_icons_summary">Следовать тематическим значкам, которые используются на главном экране</string>
