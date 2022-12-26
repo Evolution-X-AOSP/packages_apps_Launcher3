@@ -106,7 +106,6 @@
     <string name="recents_screenshot_title">Bildschirmfoto</string>
     <string name="recents_clear_all_title">Alle schließen</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">App sperren</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Eingefärbte Symbole</string>
     <string name="pref_themed_icons_summary">Stil der eingefärbte Symbole auf dem Startbildschirm folgen</string>
