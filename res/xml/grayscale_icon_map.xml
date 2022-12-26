@@ -235,6 +235,7 @@
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR13F2"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.footej.camera2"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEng"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR14"/>
     <icon drawable="@drawable/themed_icon_camera" package="org.codeaurora.snapcaa"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.android.MGC"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.android.MGC.not.stable"/>
@@ -276,7 +277,7 @@
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.scan3d"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.ruler"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.oplus.camera" />
-    <icon drawable="@drawable/themed_icon_camera_go" package="com.google.android.apps.cameralite"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.apps.cameralite"/>
     <icon drawable="@drawable/themed_icon_camscanner" package="com.intsig.camscanner"/>
     <icon drawable="@drawable/themed_icon_canvas" package="com.canva.editor"/>
     <icon drawable="@drawable/themed_icon_capcut" package="com.lemon.lvoverseas"/>
