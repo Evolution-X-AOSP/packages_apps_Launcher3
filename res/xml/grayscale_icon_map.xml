@@ -805,6 +805,7 @@
     <icon drawable="@drawable/themed_icon_olx" package="com.olx.olx"/>
     <icon drawable="@drawable/themed_icon_olx" package="com.schibsted.bomnegocio.androidApp"/>
     <icon drawable="@drawable/themed_icon_olx" package="kz.slando"/>
+    <icon drawable="@drawable/themed_icon_olx" package="com.olx.southasia"/>
     <icon drawable="@drawable/themed_icon_one_dm_plus" package="idm.internet.download.manager"/>
     <icon drawable="@drawable/themed_icon_one_dm_plus" package="idm.internet.download.manager.plus"/>
     <icon drawable="@drawable/themed_icon_onefootball" package="de.motain.iliga"/>
