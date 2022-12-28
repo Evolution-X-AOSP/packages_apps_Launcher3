@@ -67,6 +67,14 @@
     </Preference>
 
     <Preference
+        android:key="pref_suggestions"
+        android:title="@string/suggestion_pref_screen_title"
+        android:summary="@string/suggestion_pref_screen_desc"
+        android:icon="@drawable/ic_settings_suggestions">
+        <intent android:action="android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS" />
+    </Preference>
+
+    <Preference
         android:key="miscellaneous"
         android:title="@string/misc_category_title"
         android:summary="@string/misc_category_summary"
