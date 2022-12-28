@@ -69,7 +69,7 @@ public class LauncherIconProvider extends IconProvider {
     @Override
     public String getSystemIconState() {
         return super.getSystemIconState() + (mSupportsIconTheme ? ",with-theme" : ",no-theme")
-                + "," + Build.VERSION.INCREMENTAL;
+                + "," + String.valueOf(Build.TIME);
     }
 
     private Map<String, ThemeData> getThemedIconMap() {
