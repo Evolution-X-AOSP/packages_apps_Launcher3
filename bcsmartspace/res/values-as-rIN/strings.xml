@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <string name="accessibility_next_alarm">পৰৱৰ্তী এলাৰ্ম %sত</string>
+    <string name="accessibility_smartspace_page">%2$d খন পৃষ্ঠাৰ %1$d নম্বৰখন</string>
+    <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
+    <string name="smartspace_flight_card_gate_header">গে’ট</string>
+    <string name="smartspace_flight_card_seat_header">আসন</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Now</string>
+    <string name="smartspace_shopping_list_overflow">আৰু %1$d টা</string>
+    <string name="weather_description">%1$s, %2$s</string>
+</resources>

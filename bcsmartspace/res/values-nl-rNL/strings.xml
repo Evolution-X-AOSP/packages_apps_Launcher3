@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <string name="accessibility_next_alarm">Volgende wekker om %s</string>
+    <string name="accessibility_smartspace_page">Pagina %1$d van %2$d</string>
+    <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
+    <string name="smartspace_flight_card_gate_header">Gate</string>
+    <string name="smartspace_flight_card_seat_header">Stoel</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Nu</string>
+    <string name="smartspace_shopping_list_overflow">+ nog %1$d</string>
+    <string name="weather_description">%1$s, %2$s</string>
+</resources>
