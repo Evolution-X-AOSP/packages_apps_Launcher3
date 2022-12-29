@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <string name="accessibility_next_alarm">Következő ébresztés időpontja: %s</string>
+    <string name="accessibility_smartspace_page">%1$d. oldal, összesen: %2$d oldal</string>
+    <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
+    <string name="smartspace_flight_card_gate_header">Kapu</string>
+    <string name="smartspace_flight_card_seat_header">Ülés</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Most</string>
+    <string name="smartspace_shopping_list_overflow">és %1$d további</string>
+    <string name="weather_description">%1$s, %2$s</string>
+</resources>
