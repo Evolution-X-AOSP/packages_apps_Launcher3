@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <string name="accessibility_next_alarm">次のアラーム: %s</string>
+    <string name="accessibility_smartspace_page">%1$d/%2$d ページ</string>
+    <string name="generic_smartspace_concatenated_desc">%1$s、%2$s</string>
+    <string name="smartspace_flight_card_gate_header">ゲート</string>
+    <string name="smartspace_flight_card_seat_header">座席</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">たった今</string>
+    <string name="smartspace_shopping_list_overflow">他 %1$d 件</string>
+    <string name="weather_description">%1$s、%2$s</string>
+</resources>

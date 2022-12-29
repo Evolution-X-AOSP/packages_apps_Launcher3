@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <string name="accessibility_next_alarm">Keyingi signal: %s</string>
+    <string name="accessibility_smartspace_page">Sahifa: %1$d / %2$d</string>
+    <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
+    <string name="smartspace_flight_card_gate_header">Darvoza</string>
+    <string name="smartspace_flight_card_seat_header">Joy</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Hozir</string>
+    <string name="smartspace_shopping_list_overflow">+ %1$d ta</string>
+    <string name="weather_description">%1$s, %2$s</string>
+</resources>
