@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+    <string name="accessibility_next_alarm">闹钟的下一次响铃时间是：%s</string>
+    <string name="accessibility_smartspace_page">第 %1$d 页，共 %2$d 页</string>
+    <string name="generic_smartspace_concatenated_desc">%1$s，%2$s</string>
+    <string name="smartspace_flight_card_gate_header">登机口</string>
+    <string name="smartspace_flight_card_seat_header">座位</string>
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">现在</string>
+    <string name="smartspace_shopping_list_overflow">+ 另外 %1$d 个</string>
+    <string name="weather_description">%1$s，%2$s</string>
+</resources>
