@@ -191,9 +191,7 @@ public class SearchTransitionController {
             int adapterPosition = searchRecyclerView.getChildAdapterPosition(searchResultView);
             int spanIndex = getSpanIndex(searchRecyclerView, adapterPosition);
             appRowComplete |= appRowHeight > 0 && spanIndex == 0;
-            // We don't animate the first (currently only) app row we see, as that is assumed to be
-            // predicted/prefix-matched apps.
-            boolean shouldAnimate = !isAppIcon(searchResultView) || appRowComplete;
+            boolean shouldAnimate = true;
 
             float contentAlpha = 1f;
             float backgroundAlpha = 1f;
