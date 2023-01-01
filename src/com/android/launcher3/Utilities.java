@@ -837,7 +837,7 @@ public final class Utilities {
 
     public static int getAllAppsOpacity(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
-        return prefs.getInt(KEY_APP_DRAWER_OPACITY, 80);
+        return prefs.getInt(KEY_APP_DRAWER_OPACITY, 100);
     }
 
     public static boolean isShowMeminfo(Context context) {
