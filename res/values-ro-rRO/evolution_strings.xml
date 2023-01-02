@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Application name -->
+    <!-- Folder titles -->
+    <!-- General -->
+    <string name="settings_title">Setări Lansator Evo X</string>
+    <!-- Categories -->
+    <string name="home_category_title">Ecranul principal</string>
+    <string name="home_category_summary">Setează panoul Google Now și altele</string>
+    <string name="icons_category_title">Pictograme</string>
+    <string name="icons_category_summary">Setează dimensiunea pictogramelor și mai multe</string>
+    <string name="app_drawer_category_title">Sertar aplicații</string>
+    <string name="app_drawer_category_summary">Personalizați sertarul de aplicații</string>
+    <string name="recents_category_title">Recente</string>
+    <string name="recents_category_summary">Renovați ecranul de prezentare generală</string>
+    <string name="misc_category_title">Diverse</string>
+    <string name="misc_category_summary">Alte opțiuni</string>
+    <string name="general_category_title">General</string>
+    <string name="interface_category_title">Interfață</string>
+    <string name="search_bar_category_title">Bara de căutare</string>
+    <string name="actions_category_title">Actiuni rapide</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Opțiuni dezvoltator</string>
+    <string name="dev_options_summary">Activează pe propriul risc unele caracteristici ascunse</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Blocare aspect</string>
+    <string name="settings_lock_layout_summary_on">Pictogramele și widget-urile nu pot fi adăugate, eliminate și mutate pe ecranul principal</string>
+    <string name="settings_lock_layout_summary_off">Pictogramele și widget-urile pot fi adăugate, eliminate și mutate pe ecranul principal</string>
+    <string name="settings_edit_widgets_error">Nu este posibil să adăugați widget-uri pe ecranul de pornire</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Arată etichetele pictogramelor de pe ecran principal</string>
+    <string name="drawer_show_labels">Arată etichetele pictogramelor în sertarul cu aplicații</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Glisați pentru a accesa aplicația Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Când glisați stânga din ecranul principal de pornire</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Când glisați stânga din ecranul acasă principal</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Aplicații Ascunse și Protejate</string>
+    <string name="trust_apps_auth_manager">Deblocați pentru a gestiona aplicațiile ascunse și protejate</string>
+    <string name="trust_apps_auth_open_app">Autentificați-vă pentru a deschide %1$s</string>
+    <string name="trust_apps_loading">Se încarcă\u2026</string>
+    <string name="trust_apps_no_lock_error">Setați un ecran de blocare sigur pentru a restricționa accesul spre aplicații</string>
+    <string name="trust_apps_help">Ajutor</string>
+    <string name="trust_apps_info_hidden">Aplicațiile ascunse și widget-urile lor sunt ascunse în sertar</string>
+    <string name="trust_apps_info_protected">Aplicațiile protejate necesită autentificare pentru a fi deschise din lansator</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Apăsare dublă pentru a opri ecranul</string>
+    <string name="pref_sleep_gesture_summary">Atingeți de două ori spațiul gol pentru oprirea ecranului</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Pauză</string>
+    <string name="pause_apps_dialog_title">Întrerupeți %1$s?</string>
+    <string name="pause_apps_dialog_message">Notificările pentru %1$s vor fi întrerupte</string>
+    <string name="paused_apps_dialog_title">Aplicație întreruptă</string>
+    <string name="paused_apps_dialog_message">%1$s a fost întreruptă direct din lansator</string>
+    <string name="paused_apps_drop_target_label">Întrerupere aplicație</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Dimensiune pictogramă</string>
+    <!-- Font size -->
+    <string name="font_size_title">Dimensiuni font</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Linii maxime pentru eticheta aplicației</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Căutare</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Căutare vocală</string>
+    <string name="dock_search_title">Bara de căutare Google</string>
+    <string name="dock_search_summary">Arată bara de căutare în partea de jos a dock-ului</string>
+    <string name="dock_theme_title">Pictograme tematice</string>
+    <string name="dock_theme_summary">Folosește pictograme tematice pentru bara de căutare</string>
+    <string name="search_radius_title">Raza de colț</string>
+    <string name="qsb_search_hint">Căutare pe telefon și altele</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Afișare fundal andocare</string>
+    <string name="hotseat_bg_summary">Adaugă fundal translucid în andocare aplicații</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Derulare imagine de fundal</string>
+    <string name="allow_wallpaper_scrolling_summary">Efect de defilare a imaginii de fundal pentru mai multe ecrane</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Mărirea imaginii de fundal</string>
+    <string name="allow_wallpaper_zooming_summary">Mărește sau micșorează imaginea de fundal când se utilizează sertarul sau aplicațiile recente</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Bară de stare</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Umbra de sus</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Înălțimea rândului</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">Adâncime încețoșare fundal</string>
+    <string name="background_blur_summary">Setați nivelul de adâncime încețoșare pentru aplicațiile recente și lista aplicațiilor</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Sugestii</string>
+    <string name="suggestion_pref_screen_desc">Pentru toate aplicațiile și sugestiile pentru ecranul de pornire</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Opacitate fundal</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Folosește bara de activități</string>
+    <string name="pref_allow_phone_taskbar_summary">Pentru deschiderea și schimbarea aplicațiilor oriunde</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Captură de ecran</string>
+    <string name="recents_clear_all_title">Goliți tot</string>
+    <string name="recents_lens_title">Obiectiv</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Pictograme tematice</string>
+    <string name="pref_themed_icons_summary">Urmărește pictogramele tematice utilizate pe ecranul de pornire</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Sursă</string>
+    <string name="app_info_source_system">Sistem</string>
+    <string name="app_info_last_update">Ultima actualizare</string>
+    <string name="app_info_version">Versiune</string>
+    <string name="app_info_more">Mai multe</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Pachet pictograme</string>
+    <string name="icon_pack_default_label">Implicit</string>
+    <string name="icon_pack_add">Instalează mai multe</string>
+    <string name="icon_pack_no_market">Nu există un magazin de aplicații disponibil</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Pe scurt</string>
+    <string name="smartspace_pref_summary">Arată spațiul inteligent în partea de sus a ecranului principal</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">Activare bară de căutare a aplicațiilor</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Bară de stare întunecată</string>
+    <string name="perf_dark_status_bar_summary">Utilizează bara de stare întunecată pe ecranul de pornire</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Vibrație la derulare</string>
+    <string name="pref_scroll_vibration_summary">Vibrații în timpul derulării prin aplicații recente, dacă este acceptat</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Spațiu paralel</string>
+    <string name="laboratory_parallel_space_summary">Permite rularea mai multor instanțe ale aceleiași aplicații în paralel</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Repornire</string>
+    <string name="pref_restart_summary">Repornire lansator</string>
+</resources>
