@@ -125,9 +125,6 @@
     <string name="smartspace_pref_summary">Betekintő megjelenítése a kezdőképernyő tetején</string>
     <!-- App drawer searchbar -->
     <string name="drawer_searchbar_title">Alkalmazásfióki keresősáv engedélyezése</string>
-    <!-- Memory info -->
-    <string name="meminfo_text">%1$s - %2$s</string>
-    <string name="show_meminfo_title">Memóriainformációk megjelenítése</string>
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Sötét állapotsor</string>
     <string name="perf_dark_status_bar_summary">Használhatja a sötét állapotsort a Főképernyőn</string>
@@ -137,4 +134,7 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Párhuzamos tér</string>
     <string name="laboratory_parallel_space_summary">Egy alkalmazás több példányának párhuzamos futtatásának lehetősége</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Újraindítás</string>
+    <string name="pref_restart_summary">A Launcher újraindítása</string>
 </resources>
