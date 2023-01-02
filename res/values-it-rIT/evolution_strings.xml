@@ -125,9 +125,6 @@
     <string name="smartspace_pref_summary">Mostra smartspace nella parte superiore della schermata home</string>
     <!-- App drawer searchbar -->
     <string name="drawer_searchbar_title">Abilita la barra di ricerca del drawer</string>
-    <!-- Memory info -->
-    <string name="meminfo_text">%1$s | %2$s</string>
-    <string name="show_meminfo_title">Mostra informazioni memoria</string>
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Barra di stato scura</string>
     <string name="perf_dark_status_bar_summary">Usa la barra di stato scura sulla schermata home</string>
@@ -137,4 +134,7 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Spazio parallelo</string>
     <string name="laboratory_parallel_space_summary">Consente l\'esecuzione di istanze multiple della stessa applicazione in parallelo</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Riavvia</string>
+    <string name="pref_restart_summary">Riavvia il launcher</string>
 </resources>
