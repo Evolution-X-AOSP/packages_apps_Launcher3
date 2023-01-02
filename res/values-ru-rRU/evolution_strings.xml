@@ -17,7 +17,7 @@
     <string name="app_drawer_category_title">Меню приложений</string>
     <string name="app_drawer_category_summary">Пользовательские настройки меню приложений</string>
     <string name="recents_category_title">Недавние приложения</string>
-    <string name="recents_category_summary">Обновить экран обзора</string>
+    <string name="recents_category_summary">Настройка экрана недавних приложений</string>
     <string name="misc_category_title">Прочее</string>
     <string name="misc_category_summary">Другие настройки</string>
     <string name="general_category_title">Основные</string>
@@ -36,13 +36,13 @@
     <string name="desktop_show_labels">Подписи значков на рабочем столе</string>
     <string name="drawer_show_labels">Подписи значков в меню</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Смахните для доступа к приложению Google</string>
+    <string name="title_show_google_app">Проведите для доступа к приложению Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_left">Когда вы проведите вправо с главного экрана</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Когда вы проведите влево от главного экрана</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Скрытые &amp; Защищенные приложения</string>
+    <string name="trust_apps_manager_name">Скрытые и защищенные приложения</string>
     <string name="trust_apps_auth_manager">Разблокируйте для управления скрытыми и защищенными приложениями</string>
     <string name="trust_apps_auth_open_app">Авторизуйтесь для открытия %1$s</string>
     <string name="trust_apps_loading">Загрузка\u2026</string>
@@ -68,7 +68,7 @@
     <string name="icon_max_lines_title">Максимальное количество строк в названии приложения</string>
     <!-- Hotseat searchbar -->
     <string name="label_search">Поиск</string>
-    <string name="label_lens">Google Lens</string>
+    <string name="label_lens">Google Объектив</string>
     <string name="label_voice_search">Голосовой поиск</string>
     <string name="dock_search_title">Панель поиска Google</string>
     <string name="dock_search_summary">Показать панель поиска в нижнем док-баре</string>
@@ -125,9 +125,6 @@
     <string name="smartspace_pref_summary">Показывать умное пространство в верхней части главного экрана</string>
     <!-- App drawer searchbar -->
     <string name="drawer_searchbar_title">Включить панель поиска в меню приложений</string>
-    <!-- Memory info -->
-    <string name="meminfo_text">%1$s | %2$s</string>
-    <string name="show_meminfo_title">Показать информацию о памяти</string>
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Тёмная строка состояния</string>
     <string name="perf_dark_status_bar_summary">Использовать темную строку состояния на главном экране</string>
@@ -137,4 +134,7 @@
     <!-- Parallel space -->
     <string name="laboratory_parallel_space_title">Параллельный запуск</string>
     <string name="laboratory_parallel_space_summary">Разрешить параллельный запуск нескольких экземпляров одного и того же приложения</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Перезагрузка</string>
+    <string name="pref_restart_summary">Перезапустить лаунчер</string>
 </resources>
