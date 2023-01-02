@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Application name -->
+    <!-- Folder titles -->
+    <!-- General -->
+    <string name="settings_title">Evo X ランチャー設定</string>
+    <!-- Categories -->
+    <string name="home_category_title">ホーム画面</string>
+    <string name="home_category_summary">Google Now パネルやその他の設定をする</string>
+    <string name="icons_category_title">アイコン</string>
+    <string name="icons_category_summary">アイコンサイズなどを設定する</string>
+    <string name="app_drawer_category_title">アプリドロワー</string>
+    <string name="app_drawer_category_summary">アプリドロワーを編集する</string>
+    <string name="recents_category_title">アプリ履歴</string>
+    <string name="recents_category_summary">概要画面を一新させる</string>
+    <string name="misc_category_title">その他</string>
+    <string name="misc_category_summary">その他のオプション</string>
+    <string name="general_category_title">一般</string>
+    <string name="interface_category_title">インターフェース</string>
+    <string name="search_bar_category_title">検索バー</string>
+    <string name="actions_category_title">クイックアクション</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">開発者向けオプション</string>
+    <string name="dev_options_summary">非表示の機能を自己責任で有効にする</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">レイアウトをロック</string>
+    <string name="settings_lock_layout_summary_on">アイコンやウィジェットの追加、削除、移動を許可しない。</string>
+    <string name="settings_lock_layout_summary_off">アイコンやウィジェットの追加、削除、移動を許可する。</string>
+    <string name="settings_edit_widgets_error">ホーム画面にウィジェットを追加できません</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">アイコンのラベルを表示</string>
+    <string name="drawer_show_labels">アイコンのラベルを表示</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">スワイプして Google アプリに移動</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">メインホーム画面から右にスワイプして表示</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">メインホーム画面から左にスワイプして表示</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">非表示・保護アプリ</string>
+    <string name="trust_apps_auth_manager">ロック解除して非表示と保護アプリを管理する</string>
+    <string name="trust_apps_auth_open_app">認証して %1$s を開く</string>
+    <string name="trust_apps_loading">読み込み中\u2026</string>
+    <string name="trust_apps_no_lock_error">アプリのアクセスを制限するためにロック画面の保護をセットアップして下さい</string>
+    <string name="trust_apps_help">ヘルプ</string>
+    <string name="trust_apps_info_hidden">非表示アプリとそのウィジェットはドロワーから非表示になります</string>
+    <string name="trust_apps_info_protected">保護アプリはランチャーから開くのに認証が必要です</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">ダブルタップでスリープ</string>
+    <string name="pref_sleep_gesture_summary">空白領域をダブルタップして画面を消灯する</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">一時停止</string>
+    <string name="pause_apps_dialog_title">%1$s を一時停止しますか?</string>
+    <string name="pause_apps_dialog_message">%1$s の通知は一時停止されます</string>
+    <string name="paused_apps_dialog_title">アプリを一時停止しました</string>
+    <string name="paused_apps_dialog_message">%1$s はランチャーから直接一時停止しました</string>
+    <string name="paused_apps_drop_target_label">アプリを一時停止</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">アイコンサイズ</string>
+    <!-- Font size -->
+    <string name="font_size_title">フォントサイズ</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">ラベルの最大行数</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">検索</string>
+    <string name="label_lens">Google レンズ</string>
+    <string name="label_voice_search">音声検索</string>
+    <string name="dock_search_title">Google 検索バー</string>
+    <string name="dock_search_summary">ドックの下部に検索バーを表示する</string>
+    <string name="dock_theme_title">アイコンのテーマ</string>
+    <string name="dock_theme_summary">検索バーにアイコンのテーマを使用する</string>
+    <string name="search_radius_title">角の半径</string>
+    <string name="qsb_search_hint">お使いの携帯電話などを検索する</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">ドックの背景</string>
+    <string name="hotseat_bg_summary">アプリドックに半透明の背景を追加する</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">壁紙のスクロール</string>
+    <string name="allow_wallpaper_scrolling_summary">複数画面への壁紙のスクロール効果を有効化する</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">壁紙のズーム</string>
+    <string name="allow_wallpaper_zooming_summary">ドロワーやアプリ履歴を使用時に壁紙をズームインやズームアウトする</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">ステータスバー</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">上部の影</string>
+    <!-- Row Height -->
+    <string name="row_height_title">行の高さ</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">背景ぼかしの深さ</string>
+    <string name="background_blur_summary">アプリ履歴とアプリドロワーのぼかしの深さを設定する</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">候補</string>
+    <string name="suggestion_pref_screen_desc">全てのアプリとホーム画面の候補</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">背景の透明度</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">タスクバーを使用</string>
+    <string name="pref_allow_phone_taskbar_summary">アプリをどこでも開いたり切り替えたりするために使用されます</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">スクリーンショット</string>
+    <string name="recents_clear_all_title">全て消去</string>
+    <string name="recents_lens_title">レンズ</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">アイコンのテーマ</string>
+    <string name="pref_themed_icons_summary">ランチャーのテーマアイコンに従う</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">ソース</string>
+    <string name="app_info_source_system">システム</string>
+    <string name="app_info_last_update">最終更新</string>
+    <string name="app_info_version">バージョン</string>
+    <string name="app_info_more">その他</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">アイコンパック</string>
+    <string name="icon_pack_default_label">既定</string>
+    <string name="icon_pack_add">追加でインストール</string>
+    <string name="icon_pack_no_market">利用可能なアプリストアがありません</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">At A Glance</string>
+    <string name="smartspace_pref_summary">ホーム画面の上部にスマートスペースを表示する</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">アプリドロワーの検索バーを有効化する</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">暗いステータスバー</string>
+    <string name="perf_dark_status_bar_summary">ホーム画面で暗いステータスバーを使用する</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">スクロール振動</string>
+    <string name="pref_scroll_vibration_summary">サポートされている場合はアプリ履歴をスクロール中に触覚フィードバックをする</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">パラレルスペース</string>
+    <string name="laboratory_parallel_space_summary">同じアプリの複数のインスタンスが同時に動作できるようにします</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">再起動</string>
+    <string name="pref_restart_summary">Перезапустить лаунчер</string>
+</resources>
