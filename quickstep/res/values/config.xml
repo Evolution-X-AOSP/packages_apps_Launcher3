@@ -39,7 +39,7 @@
 
     <string name="wellbeing_provider_pkg" translatable="false"/>
 
-    <dimen name="max_depth_blur_radius">23dp</dimen>
+    <dimen name="max_depth_blur_radius">125px</dimen>
 
     <!-- Accessibility actions -->
     <item type="id" name="action_move_to_top_or_left" />
