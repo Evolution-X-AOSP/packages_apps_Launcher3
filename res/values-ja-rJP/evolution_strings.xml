@@ -136,5 +136,5 @@
     <string name="laboratory_parallel_space_summary">同じアプリの複数のインスタンスが同時に動作できるようにします</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">再起動</string>
-    <string name="pref_restart_summary">Перезапустить лаунчер</string>
+    <string name="pref_restart_summary">ランチャーを再起動</string>
 </resources>
