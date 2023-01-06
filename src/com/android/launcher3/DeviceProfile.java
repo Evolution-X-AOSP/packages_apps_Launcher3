@@ -412,7 +412,7 @@ public class DeviceProfile {
         numShownAllAppsColumns =
                 isTwoPanels ? inv.numDatabaseAllAppsColumns : inv.numAllAppsColumns;
 
-        int hotseatBarBottomSpace = showQsb ? pxFromDp(
+        int hotseatBarBottomSpace = showQsb || isTaskbarPresent ? pxFromDp(
                 inv.hotseatBarBottomSpace[mTypeIndex], mMetrics) : 0;
         int minQsbMargin = res.getDimensionPixelSize(R.dimen.min_qsb_margin);
         hotseatQsbSpace = showQsb ? pxFromDp(inv.hotseatQsbSpace[mTypeIndex], mMetrics) : 0;
