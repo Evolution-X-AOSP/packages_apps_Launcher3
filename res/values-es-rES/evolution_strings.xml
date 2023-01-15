@@ -106,7 +106,6 @@
     <string name="recents_screenshot_title">Captura de pantalla</string>
     <string name="recents_clear_all_title">Borrar todo</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">Fijar aplicación</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Iconos tematizados</string>
     <string name="pref_themed_icons_summary">Seguir iconos tematizados usados en la pantalla de inicio</string>
@@ -126,9 +125,6 @@
     <string name="smartspace_pref_summary">Mostrar espacio inteligente en la parte superior de la pantalla de inicio</string>
     <!-- App drawer searchbar -->
     <string name="drawer_searchbar_title">Activar barra de búsqueda del cajón de aplicaciones</string>
-    <!-- Memory info -->
-    <string name="meminfo_text">%1$s | %2$s</string>
-    <string name="show_meminfo_title">Mostrar el uso de memoria</string>
     <!-- Dark Status Bar -->
     <string name="perf_dark_status_bar_title">Barra de estado oscura</string>
     <string name="perf_dark_status_bar_summary">Usar barra de estado oscura en la pantalla de inicio</string>
@@ -136,4 +132,9 @@
     <string name="pref_scroll_vibration_title">Vibración de desplazamiento</string>
     <string name="pref_scroll_vibration_summary">Respuesta háptica (si es soportada) mientras se desplaza a través de aplicaciones recientes</string>
     <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Espacio paralelo</string>
+    <string name="laboratory_parallel_space_summary">Permite ejecutar múltiples instancias de la misma aplicación en paralelo</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Reiniciar</string>
+    <string name="pref_restart_summary">Reinicia el launcher</string>
 </resources>
