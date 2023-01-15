@@ -75,7 +75,7 @@
     <string name="dock_theme_title">Ícones temáticos</string>
     <string name="dock_theme_summary">Usar ícones temáticos para a barra de pesquisa</string>
     <string name="search_radius_title">Raio de canto</string>
-    <string name="qsb_search_hint">Pesquisa no smartphone e mais</string>
+    <string name="qsb_search_hint">Pesquisa no smartphone</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Fundo da dock inferior</string>
     <string name="hotseat_bg_summary">Adicionar fundo translúcido para a dock de apps</string>

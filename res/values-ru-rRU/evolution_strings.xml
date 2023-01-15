@@ -132,7 +132,7 @@
     <string name="pref_scroll_vibration_title">Вибрация при прокрутке</string>
     <string name="pref_scroll_vibration_summary">Виброотклик при прокрутке последних приложений, если поддерживается</string>
     <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Параллельный запуск</string>
+    <string name="laboratory_parallel_space_title">Параллельное пространство</string>
     <string name="laboratory_parallel_space_summary">Разрешить параллельный запуск нескольких экземпляров одного и того же приложения</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Перезагрузка</string>

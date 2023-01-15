@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- Application name -->
+    <!-- Folder titles -->
+    <!-- General -->
+    <string name="settings_title">Ajustaments de la pantalla d\' inici</string>
+    <!-- Categories -->
+    <string name="home_category_title">Pantalla d\' inici</string>
+    <string name="home_category_summary">Configurar panell de Google Now i més</string>
+    <string name="icons_category_title">Icones</string>
+    <string name="icons_category_summary">Configurar mida de les icones i més</string>
+    <string name="app_drawer_category_title">Calaix d\' aplicacions</string>
+    <string name="app_drawer_category_summary">Personalitza el teu calaix d\'aplicacions</string>
+    <string name="recents_category_title">Recents</string>
+    <string name="recents_category_summary">Personalitza la pantalla de Recents</string>
+    <string name="misc_category_title">Diversos</string>
+    <string name="misc_category_summary">Altres opcions</string>
+    <string name="general_category_title">General</string>
+    <string name="interface_category_title">Interfície</string>
+    <string name="search_bar_category_title">Barra de recerca</string>
+    <string name="actions_category_title">Accions ràpides</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Opcions de desenvolupament</string>
+    <string name="dev_options_summary">Activa algunes característiques ocultes sota el teu propi risc</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Bloquejar disseny</string>
+    <string name="settings_lock_layout_summary_on">No es pot afegir, moure o eliminar icones i widgets a la pantalla d\'inici</string>
+    <string name="settings_lock_layout_summary_off">Les icones i widgets poden ser afegits, eliminades i mogudes a la pantalla d\'inici</string>
+    <string name="settings_edit_widgets_error">No és possible afegir widgets a la pantalla d\'inici</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Etiquetes d\'icones a l\'escriptori</string>
+    <string name="drawer_show_labels">Etiquetes d\'icones al calaix</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Lliscar per accedir al Feed de Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Quan llisques a la dreta des de la pantalla d\'inici</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Quan llisques a l\'esquerra des de la pantalla d\'inici</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Aplicacions ocultes &amp; protegides</string>
+    <string name="trust_apps_auth_manager">Desbloquejar per administrar les aplicacions ocultes i protegides</string>
+    <string name="trust_apps_auth_open_app">Autenticar per obrir %1$s</string>
+    <string name="trust_apps_loading">Carregant\u2026</string>
+    <string name="trust_apps_no_lock_error">Per favor, configura un bloqueig de pantalla segur per restringir l\'accés a les aplicacions</string>
+    <string name="trust_apps_help">Ajut</string>
+    <string name="trust_apps_info_hidden">Les aplicacions ocultes i els seus widgets no apareixen al calaix d\'aplicacions</string>
+    <string name="trust_apps_info_protected">Les aplicacions protegides requereixen autenticació per ser obertes des del launcher</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Doble toc per apagar pantalla</string>
+    <string name="pref_sleep_gesture_summary">Doble toc en un espai buit per apagar la pantalla</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Posa en pausa</string>
+    <string name="pause_apps_dialog_title">¿Pausar %1$s?</string>
+    <string name="pause_apps_dialog_message">Les notificacions de %1$s es pausaran</string>
+    <string name="paused_apps_dialog_title">Aplicació pausada</string>
+    <string name="paused_apps_dialog_message">%1$s va ser pausada directament des del launcher</string>
+    <string name="paused_apps_drop_target_label">Pausar aplicació</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Mida de les icones</string>
+    <!-- Font size -->
+    <string name="font_size_title">Mida de la font</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Màxim de línies en etiqueta d\' aplicació</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Cerca</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Cerca per veu</string>
+    <string name="dock_search_title">Barra de busqueda de Google</string>
+    <string name="dock_search_summary">Barra de recerca sota el dock</string>
+    <string name="dock_theme_title">Icones tematitzades</string>
+    <string name="dock_theme_summary">Usar icones tematitzades a la barra de recerca</string>
+    <string name="search_radius_title">Ràdio de les cantonades</string>
+    <string name="qsb_search_hint">Busca al teu telèfon i més</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Fons del dock</string>
+    <string name="hotseat_bg_summary">Afegir fons translúcid al dock</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Desplaçament de fons de pantalla</string>
+    <string name="allow_wallpaper_scrolling_summary">Efecte de desplaçament del fons de pantalla per a múltiples pantalles</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Zoom del fons de pantalla</string>
+    <string name="allow_wallpaper_zooming_summary">Acostar o allunyar el fons de pantalla en usar el calaix o aplicacions recents</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Barra d\' estat</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Ombra superior</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Alçada de les files</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">Desenfocament de fons</string>
+    <string name="background_blur_summary">Establir nivell de desenfocament per a recents i calaix d\' aplicacions</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggeriments</string>
+    <string name="suggestion_pref_screen_desc">Suggeriments per a totes les aplicacions &amp; pantalla d\' inici</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Opacitat del fons</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Usar barra de tasques</string>
+    <string name="pref_allow_phone_taskbar_summary">Per obrir i canviar d\' aplicacions en qualsevol lloc</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Captura de pantalla</string>
+    <string name="recents_clear_all_title">Esborrar tot</string>
+    <string name="recents_lens_title">Lens</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Icones tematitzades</string>
+    <string name="pref_themed_icons_summary">Seguir icones tematitzades usades a la pantalla d\'inici</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Origen</string>
+    <string name="app_info_source_system">Sistema</string>
+    <string name="app_info_last_update">Darrera actualització</string>
+    <string name="app_info_version">Versió</string>
+    <string name="app_info_more">Més</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Paquet d\'icones</string>
+    <string name="icon_pack_default_label">Predeterminat</string>
+    <string name="icon_pack_add">Instal·la\'n més</string>
+    <string name="icon_pack_no_market">No hi ha una botiga d\'aplicacions disponible</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">D\'una ullada</string>
+    <string name="smartspace_pref_summary">Mostrar espai intel·ligent a la part superior de la pantalla d\'inici</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_searchbar_title">Activa la barra de cerca del calaix d\'aplicacions</string>
+    <!-- Dark Status Bar -->
+    <string name="perf_dark_status_bar_title">Barra d\'estat fosca</string>
+    <string name="perf_dark_status_bar_summary">Utilitza la barra d\'estat fosca a la pantalla d\'inici</string>
+    <!-- Scroll Vibration -->
+    <string name="pref_scroll_vibration_title">Vibració de desplaçament</string>
+    <string name="pref_scroll_vibration_summary">Resposta hàptica (si és suportada) mentre es desplaça a través d\'aplicacions recents</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Espai paral·lel</string>
+    <string name="laboratory_parallel_space_summary">Permet executar diverses versions d\'una mateixa aplicació en paral·lel</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Reinicia</string>
+    <string name="pref_restart_summary">Reinicia el llançador</string>
+</resources>
