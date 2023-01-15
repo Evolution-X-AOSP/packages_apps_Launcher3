@@ -7,4 +7,6 @@
     <color name="disabled_text_color">#66000000</color> <!-- 38% black -->
 
     <color name="gicon_mask">#14000000</color>
+
+    <color name="mid_clear_all_background_color">@*android:color/system_neutral2_0</color>
 </resources>

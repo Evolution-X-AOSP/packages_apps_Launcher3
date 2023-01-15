@@ -5,4 +5,6 @@
 -->
 <resources>
     <color name="gicon_mask">#1AFFFFFF</color>
+
+    <color name="mid_clear_all_background_color">@*android:color/system_neutral2_900</color>
 </resources>
