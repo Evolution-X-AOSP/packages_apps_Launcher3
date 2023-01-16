@@ -401,7 +401,7 @@ public class DeviceProfile {
         boolean canQsbInline = (isTwoPanels ? inv.inlineQsb[INDEX_TWO_PANEL_PORTRAIT]
                 || inv.inlineQsb[INDEX_TWO_PANEL_LANDSCAPE]
                 : inv.inlineQsb[INDEX_DEFAULT] || inv.inlineQsb[INDEX_LANDSCAPE])
-                && hotseatQsbHeight > 0 && Utilities.showQSB(context);
+                && hotseatQsbHeight > 0;
         isQsbInline = inv.inlineQsb[mTypeIndex] && canQsbInline;
 
         areNavButtonsInline = isTaskbarPresent && !isGestureMode;
@@ -411,14 +411,11 @@ public class DeviceProfile {
         numShownAllAppsColumns =
                 isTwoPanels ? inv.numDatabaseAllAppsColumns : inv.numAllAppsColumns;
 
-        int hotseatBarBottomSpace = Utilities.showQSB(context)
-                ? pxFromDp(inv.hotseatBarBottomSpace[mTypeIndex], mMetrics) : 0;
+        int hotseatBarBottomSpace = pxFromDp(inv.hotseatBarBottomSpace[mTypeIndex], mMetrics);
         int minQsbMargin = res.getDimensionPixelSize(R.dimen.min_qsb_margin);
-        hotseatQsbSpace = Utilities.showQSB(context)
-                ? pxFromDp(inv.hotseatQsbSpace[mTypeIndex], mMetrics) : 0;
+        hotseatQsbSpace = pxFromDp(inv.hotseatQsbSpace[mTypeIndex], mMetrics);
         // Have a little space between the inset and the QSB
-        if (Utilities.showQSB(context) &&
-                (mInsets.bottom + minQsbMargin) > hotseatBarBottomSpace) {
+        if (mInsets.bottom + minQsbMargin > hotseatBarBottomSpace) {
             int availableSpace = hotseatQsbSpace - (mInsets.bottom - hotseatBarBottomSpace);
 
             // Only change the spaces if there is space
