@@ -33,9 +33,9 @@
     <dimen name="dynamic_grid_hotseat_bottom_tall_padding">0dp</dimen>
     <dimen name="spring_loaded_hotseat_top_margin">76dp</dimen>
 
-    <dimen name="qsb_widget_height">63dp</dimen>
+    <dimen name="qsb_widget_height">61dp</dimen>
     <dimen name="qsb_icon_width">56dp</dimen>
-    <dimen name="qsb_icon_padding">12dp</dimen>
+    <dimen name="qsb_icon_padding">10dp</dimen>
     <dimen name="qsb_widget_vertical_padding">6dp</dimen>
 
     <!-- Qsb -->
