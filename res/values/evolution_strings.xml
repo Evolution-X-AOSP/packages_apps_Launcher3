@@ -87,6 +87,8 @@
     <string name="label_search">Search</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Voice search</string>
+    <string name="dock_music_search_title">Google music search</string>
+    <string name="dock_music_search_summary">Use Google music search instead of Google Assistant on mic icon pressed</string>
     <string name="dock_search_title">Google search bar</string>
     <string name="dock_search_summary">Search bar in the bottom dock</string>
     <string name="dock_theme_title">Themed icons</string>
