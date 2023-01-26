@@ -104,6 +104,7 @@ public class SettingsHomescreen extends CollapsingToolbarBaseActivity
             case Utilities.KEY_SEARCH_RADIUS:
             case Utilities.KEY_SHOW_HOTSEAT_BG:
             case Utilities.KEY_STATUS_BAR:
+            case Utilities.KEY_DOCK_MUSIC_SEARCH:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
             default:
