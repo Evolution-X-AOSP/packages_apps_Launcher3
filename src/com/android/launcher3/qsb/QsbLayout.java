@@ -57,12 +57,9 @@ public class QsbLayout extends FrameLayout {
         clipIconRipples();
 
         boolean isThemed = Utilities.isThemedIconsEnabled(mContext);
+        boolean isMusicSearchEnabled = Utilities.isMusicSearchEnabled(mContext);
 
-        if (Utilities.isMusicSearchEnabled(mContext)) {
-            micIcon.setImageResource(isThemed ? R.drawable.ic_music_themed : R.drawable.ic_music_color);
-        } else {
-            micIcon.setImageResource(isThemed ? R.drawable.ic_mic_themed : R.drawable.ic_mic_color);
-        }
+        micIcon.setImageResource(isThemed ? (isMusicSearchEnabled ? R.drawable.ic_music_themed : R.drawable.ic_mic_themed) : (isMusicSearchEnabled ? R.drawable.ic_music_color : R.drawable.ic_mic_color));
         gIcon.setImageResource(isThemed ? R.drawable.ic_super_g_themed : R.drawable.ic_super_g_color);
         lensIcon.setImageResource(isThemed ? R.drawable.ic_lens_themed : R.drawable.ic_lens_color);
 
