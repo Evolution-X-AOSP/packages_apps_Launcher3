@@ -117,7 +117,7 @@
     <string name="app_info_more">Más</string>
     <!-- Icon pack -->
     <string name="icon_pack_title">Paquete de iconos</string>
-    <string name="icon_pack_default_label">Predeterminado</string>
+    <string name="icon_pack_default_label">Por defecto</string>
     <string name="icon_pack_add">Instalar más</string>
     <string name="icon_pack_no_market">No hay una tienda de aplicaciones disponible</string>
     <!-- Smartspace -->
