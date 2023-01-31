@@ -236,6 +236,10 @@
     <icon drawable="@drawable/themed_icon_camera" package="com.footej.camera2"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEng"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR14"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR15"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR16"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR17"/>
+    <icon drawable="@drawable/themed_icon_camera" package="com.google.android.GoogleCameraEngR18"/>
     <icon drawable="@drawable/themed_icon_camera" package="org.codeaurora.snapcaa"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.android.MGC"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.android.MGC.not.stable"/>
