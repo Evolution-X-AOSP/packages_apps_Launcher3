@@ -60,8 +60,7 @@
             android:id="@+id/lens_space"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"
-            android:visibility="gone" />
+            android:layout_weight="1" />
 
         <Button
             android:drawableStart="@drawable/ic_lens"
@@ -70,8 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/recents_lens_title"
-            android:theme="@style/ThemeControlHighlightWorkspaceColor"
-            android:visibility="gone" />
+            android:theme="@style/ThemeControlHighlightWorkspaceColor" />
 
         <Space
             android:id="@+id/clear_all_space"
@@ -87,6 +85,23 @@
             android:drawableStart="@drawable/ic_clear_all"
             android:text="@string/recents_clear_all_title"
             android:theme="@style/ThemeControlHighlightWorkspaceColor" />
+
+        <Space
+            android:id="@+id/kill_app_space"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/kill_app"
+            android:layout_gravity="center_vertical"
+            style="@style/OverviewActionButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:drawableStart="@drawable/ic_kill_app_recents"
+            android:theme="@style/ThemeControlHighlightWorkspaceColor"
+            android:visibility="gone" />
 
         <Space
             android:layout_width="0dp"
