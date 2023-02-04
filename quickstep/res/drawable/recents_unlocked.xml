@@ -32,7 +32,7 @@
                 <path
                     android:name="line"
                     android:pathData="M 7, 6 L 9, 6 L 9, 8 L 7, 8 L 7, 6"
-                    android:fillColor="?attr/workspaceTextColor"/>
+                    android:fillColor="#FF000000"/>
             </group>
         </vector>
     </aapt:attr>
