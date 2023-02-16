@@ -15,15 +15,16 @@
     <string name="icons_category_title">Pictograme</string>
     <string name="icons_category_summary">Setează dimensiunea pictogramelor și mai multe</string>
     <string name="app_drawer_category_title">Sertar aplicații</string>
-    <string name="app_drawer_category_summary">Personalizați sertarul de aplicații</string>
+    <string name="app_drawer_category_summary">Personalizare sertar de aplicații</string>
     <string name="recents_category_title">Recente</string>
-    <string name="recents_category_summary">Renovați ecranul de prezentare generală</string>
+    <string name="recents_category_summary">Renovează ecranul de prezentare generală</string>
     <string name="misc_category_title">Diverse</string>
     <string name="misc_category_summary">Alte opțiuni</string>
     <string name="general_category_title">General</string>
     <string name="interface_category_title">Interfață</string>
     <string name="search_bar_category_title">Bara de căutare</string>
-    <string name="actions_category_title">Actiuni rapide</string>
+    <string name="actions_category_title">Acțiuni rapide</string>
+    <string name="quickspace_category_title">Pe scurt</string>
     <!-- Developer options -->
     <string name="dev_options_title">Opțiuni dezvoltator</string>
     <string name="dev_options_summary">Activează pe propriul risc unele caracteristici ascunse</string>
@@ -31,31 +32,31 @@
     <string name="settings_lock_layout_title">Blocare aspect</string>
     <string name="settings_lock_layout_summary_on">Pictogramele și widget-urile nu pot fi adăugate, eliminate și mutate pe ecranul principal</string>
     <string name="settings_lock_layout_summary_off">Pictogramele și widget-urile pot fi adăugate, eliminate și mutate pe ecranul principal</string>
-    <string name="settings_edit_widgets_error">Nu este posibil să adăugați widget-uri pe ecranul de pornire</string>
+    <string name="settings_edit_widgets_error">Nu este posibil de adăugat widget-uri pe ecranul de pornire</string>
     <!-- Hide labels -->
     <string name="desktop_show_labels">Arată etichetele pictogramelor de pe ecran principal</string>
     <string name="drawer_show_labels">Arată etichetele pictogramelor în sertarul cu aplicații</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Glisați pentru a accesa aplicația Google</string>
+    <string name="title_show_google_app">Glisează pentru a accesa aplicația Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Când glisați stânga din ecranul principal de pornire</string>
+    <string name="msg_minus_one_on_left">Din ecranul principal, glisează în stânga pentru a deschide aplicația Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Când glisați stânga din ecranul acasă principal</string>
+    <string name="msg_minus_one_on_right">La glisarea în stânga din ecranul principal</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Aplicații Ascunse și Protejate</string>
-    <string name="trust_apps_auth_manager">Deblocați pentru a gestiona aplicațiile ascunse și protejate</string>
-    <string name="trust_apps_auth_open_app">Autentificați-vă pentru a deschide %1$s</string>
+    <string name="trust_apps_auth_manager">Deblochează ca să gestionezi aplicațiile ascunse și protejate</string>
+    <string name="trust_apps_auth_open_app">Autentifică-te pentru a deschide %1$s</string>
     <string name="trust_apps_loading">Se încarcă\u2026</string>
-    <string name="trust_apps_no_lock_error">Setați un ecran de blocare sigur pentru a restricționa accesul spre aplicații</string>
+    <string name="trust_apps_no_lock_error">Setează un ecran de blocare sigur pentru a restricționa accesul la aplicații</string>
     <string name="trust_apps_help">Ajutor</string>
     <string name="trust_apps_info_hidden">Aplicațiile ascunse și widget-urile lor sunt ascunse în sertar</string>
     <string name="trust_apps_info_protected">Aplicațiile protejate necesită autentificare pentru a fi deschise din lansator</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Apăsare dublă pentru a opri ecranul</string>
-    <string name="pref_sleep_gesture_summary">Atingeți de două ori spațiul gol pentru oprirea ecranului</string>
+    <string name="pref_sleep_gesture_summary">Atinge de două ori spațiul gol pentru oprirea ecranului</string>
     <!-- Pause apps shortcut -->
     <string name="pause">Pauză</string>
-    <string name="pause_apps_dialog_title">Întrerupeți %1$s?</string>
+    <string name="pause_apps_dialog_title">Întrerupi %1$s?</string>
     <string name="pause_apps_dialog_message">Notificările pentru %1$s vor fi întrerupte</string>
     <string name="paused_apps_dialog_title">Aplicație întreruptă</string>
     <string name="paused_apps_dialog_message">%1$s a fost întreruptă direct din lansator</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Căutare</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Căutare vocală</string>
+    <string name="dock_music_search_title">Căutare muzică Google</string>
+    <string name="dock_music_search_summary">Utilizează căutarea de muzică Google în loc de Asistentul Google după apăsarea pictogramei microfon</string>
     <string name="dock_search_title">Bara de căutare Google</string>
     <string name="dock_search_summary">Arată bara de căutare în partea de jos a dock-ului</string>
     <string name="dock_theme_title">Pictograme tematice</string>
@@ -93,7 +96,7 @@
     <string name="row_height_title">Înălțimea rândului</string>
     <!-- Background blur -->
     <string name="background_blur_title">Adâncime încețoșare fundal</string>
-    <string name="background_blur_summary">Setați nivelul de adâncime încețoșare pentru aplicațiile recente și lista aplicațiilor</string>
+    <string name="background_blur_summary">Setează nivelul de adâncime estompare pentru aplicațiile recente și lista aplicațiilor</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Sugestii</string>
     <string name="suggestion_pref_screen_desc">Pentru toate aplicațiile și sugestiile pentru ecranul de pornire</string>
@@ -104,8 +107,9 @@
     <string name="pref_allow_phone_taskbar_summary">Pentru deschiderea și schimbarea aplicațiilor oriunde</string>
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Captură de ecran</string>
-    <string name="recents_clear_all_title">Goliți tot</string>
+    <string name="recents_clear_all_title">Elimină tot</string>
     <string name="recents_lens_title">Obiectiv</string>
+    <string name="recents_lock_title">Fixează aplicația</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Pictograme tematice</string>
     <string name="pref_themed_icons_summary">Urmărește pictogramele tematice utilizate pe ecranul de pornire</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibrație la derulare</string>
     <string name="pref_scroll_vibration_summary">Vibrații în timpul derulării prin aplicații recente, dacă este acceptat</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Spațiu paralel</string>
-    <string name="laboratory_parallel_space_summary">Permite rularea mai multor instanțe ale aceleiași aplicații în paralel</string>
     <!-- Restart launcher -->
-    <string name="pref_restart_title">Repornire</string>
+    <string name="pref_restart_title">Repornește</string>
     <string name="pref_restart_summary">Repornire lansator</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Disponibil | %2$s Total</string>
+    <string name="recents_meminfo_title">Informații memorie</string>
 </resources>
