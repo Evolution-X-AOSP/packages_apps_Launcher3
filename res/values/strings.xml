@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
 * Copyright (C) 2008 The Android Open Source Project
 *
@@ -100,8 +101,14 @@
     <!-- Tab label. A user can tap this tab to access their work widgets. [CHAR_LIMIT=25] -->
     <string name="widgets_full_sheet_work_tab">Work</string>
 
+    <!-- A widget category label for grouping widgets related to battery. [CHAR_LIMIT=30] -->
+    <string name="widget_category_battery">Battery</string>
+
     <!-- A widget category label for grouping widgets related to conversations. [CHAR_LIMIT=30] -->
     <string name="widget_category_conversations">Conversations</string>
+
+    <!-- A widget category label for grouping widgets related to weather. [CHAR_LIMIT=30] -->
+    <string name="widget_category_weather">Weather</string>
 
     <!-- Title of a dialog. This dialog lets a user know how they can use widgets on their phone.
          [CHAR_LIMIT=NONE] -->
