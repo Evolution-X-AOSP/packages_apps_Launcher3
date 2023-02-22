@@ -24,6 +24,7 @@
     <string name="interface_category_title">Інтерфейс</string>
     <string name="search_bar_category_title">Рядок пошуку</string>
     <string name="actions_category_title">Швидкі дії</string>
+    <string name="quickspace_category_title">З одного погляду</string>
     <!-- Developer options -->
     <string name="dev_options_title">Опції для розробника</string>
     <string name="dev_options_summary">Увімкнути деякі приховані функції на свій страх і ризик</string>
@@ -38,7 +39,7 @@
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Проведіть для доступу до додатку Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Під час гортання праворуч від головного екрану</string>
+    <string name="msg_minus_one_on_left">На головному екрані проведіть ліворуч, щоб відкрити додаток Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Під час гортання ліворуч від головного екрану</string>
     <!-- Trust apps -->
@@ -70,6 +71,8 @@
     <string name="label_search">Пошук</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Голосовий пошук</string>
+    <string name="dock_music_search_title">Голосовий пошук Google</string>
+    <string name="dock_music_search_summary">Використовувати пошук по Google music замість натиснутого на значок мікрофону</string>
     <string name="dock_search_title">Рядок пошуку Google</string>
     <string name="dock_search_summary">Показувати рядок пошуку в нижній панелі</string>
     <string name="dock_theme_title">Тематичні іконки</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Знімок екрану</string>
     <string name="recents_clear_all_title">Очистити все</string>
     <string name="recents_lens_title">Об\'єктив</string>
+    <string name="recents_lock_title">Закріпити додаток</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Тематичні іконки</string>
     <string name="pref_themed_icons_summary">Тематичні піктограми, які використовуються на головному екрані</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Вібрація при прокрутці</string>
     <string name="pref_scroll_vibration_summary">Вібровідгук під час прокрутки нещодавніх додатків, якщо підтримується</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Паралельний простір</string>
-    <string name="laboratory_parallel_space_summary">Дозволити паралельний запуск кількох екземплярів одного додатка</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Перезавантажити</string>
     <string name="pref_restart_summary">Перезавантажити інтерфейс</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Доступно | %2$s Загалом</string>
+    <string name="recents_meminfo_title">Статус пам\'яті</string>
 </resources>
