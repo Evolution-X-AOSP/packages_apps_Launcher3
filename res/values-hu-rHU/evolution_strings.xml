@@ -24,6 +24,7 @@
     <string name="interface_category_title">Kezelőfelület</string>
     <string name="search_bar_category_title">Keresősáv</string>
     <string name="actions_category_title">Gyorsműveletek</string>
+    <string name="quickspace_category_title">Betekintés</string>
     <!-- Developer options -->
     <string name="dev_options_title">Fejlesztői beállítások</string>
     <string name="dev_options_summary">Saját felelősségére rejtett beállításokat engedélyezhet</string>
@@ -38,9 +39,9 @@
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Google-alkalmazás csúsztatással</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Amikor a főképernyőn jobbra csúsztat</string>
+    <string name="msg_minus_one_on_left">A Főképernyőn balra húzással indítható a Google-alkalmazás</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Amikor a főképernyőn balra csúsztat</string>
+    <string name="msg_minus_one_on_right">A Főképernyőn jobbra húzással indítható a Google-alkalmazás</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Rejtett és védett alkalmazások</string>
     <string name="trust_apps_auth_manager">Feloldás a rejtett és védett alkalmazások kezeléséhez</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Keresés</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Hangalapú keresés</string>
+    <string name="dock_music_search_title">Google zenekeresés</string>
+    <string name="dock_music_search_summary">A mikrofonikon megnyomásakor a Google zenekeresés induljon, ne a Google-asszisztens</string>
     <string name="dock_search_title">Google-keresősáv</string>
     <string name="dock_search_summary">Alsódokki keresősáv</string>
     <string name="dock_theme_title">Témázott ikonok</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Képernyőkép</string>
     <string name="recents_clear_all_title">Az összes törlése</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_lock_title">Rögzítőalkalmazás</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Témázott ikonok</string>
     <string name="pref_themed_icons_summary">A kezdőképernyőn használt tematikus ikonokhoz igazodik</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Rezgés görgetéskor</string>
     <string name="pref_scroll_vibration_summary">Rezgő visszajelzés a legutóbb használt alkalmazások görgetése közben, ha támogatott</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Párhuzamos tér</string>
-    <string name="laboratory_parallel_space_summary">Egy alkalmazás több példányának párhuzamos futtatásának lehetősége</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Újraindítás</string>
     <string name="pref_restart_summary">A Launcher újraindítása</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%2$s memóriából %1$s érhető el</string>
+    <string name="recents_meminfo_title">Memória-információ</string>
 </resources>
