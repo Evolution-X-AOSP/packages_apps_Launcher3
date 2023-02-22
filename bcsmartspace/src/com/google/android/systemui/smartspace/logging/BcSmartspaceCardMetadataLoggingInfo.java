@@ -1,44 +1,46 @@
 package com.google.android.systemui.smartspace.logging;
 
-import java.util.Objects;
+public class BcSmartspaceCardMetadataLoggingInfo {
+    private final int mCardTypeId;
+    private final int mInstanceId;
 
-public final class BcSmartspaceCardMetadataLoggingInfo {
-    public final int mCardTypeId;
-    public final int mInstanceId;
-
-    public static final class Builder {
-        public int mCardTypeId;
-        public int mInstanceId;
+    private BcSmartspaceCardMetadataLoggingInfo(Builder builder) {
+        mInstanceId = builder.mInstanceId;
+        mCardTypeId = builder.mCardTypeId;
     }
 
-    public final boolean equals(Object obj) {
-        boolean z = true;
-        if (this == obj) {
-            return true;
+    public int getInstanceId() {
+        return mInstanceId;
+    }
+
+    public int getCardTypeId() {
+        return mCardTypeId;
+    }
+
+    public String toString() {
+        return "BcSmartspaceCardMetadataLoggingInfo{mInstanceId="
+                + mInstanceId
+                + ", mCardTypeId="
+                + mCardTypeId
+                + '}';
+    }
+
+    public static class Builder {
+        private int mCardTypeId;
+        private int mInstanceId;
+
+        public Builder setInstanceId(int i) {
+            mInstanceId = i;
+            return this;
         }
-        if (!(obj instanceof BcSmartspaceCardMetadataLoggingInfo)) {
-            return false;
+
+        public Builder setCardTypeId(int i) {
+            mCardTypeId = i;
+            return this;
         }
-        BcSmartspaceCardMetadataLoggingInfo bcSmartspaceCardMetadataLoggingInfo = (BcSmartspaceCardMetadataLoggingInfo) obj;
-        if (this.mInstanceId != bcSmartspaceCardMetadataLoggingInfo.mInstanceId || this.mCardTypeId != bcSmartspaceCardMetadataLoggingInfo.mCardTypeId) {
-            z = false;
+
+        public BcSmartspaceCardMetadataLoggingInfo build() {
+            return new BcSmartspaceCardMetadataLoggingInfo(this);
         }
-        return z;
-    }
-
-    public final String toString() {
-        StringBuilder m = LogBuilder.m("BcSmartspaceCardMetadataLoggingInfo{mInstanceId=");
-        m.append(this.mInstanceId);
-        m.append(", mCardTypeId=");
-        return LogBuilder.m(m, this.mCardTypeId, '}');
-    }
-
-    public BcSmartspaceCardMetadataLoggingInfo(Builder builder) {
-        this.mInstanceId = builder.mInstanceId;
-        this.mCardTypeId = builder.mCardTypeId;
-    }
-
-    public final int hashCode() {
-        return Objects.hash(Integer.valueOf(this.mInstanceId), Integer.valueOf(this.mCardTypeId));
     }
 }

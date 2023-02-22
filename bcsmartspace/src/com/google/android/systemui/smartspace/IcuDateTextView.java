@@ -9,16 +9,18 @@ import android.icu.text.DisplayContext;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.util.AttributeSet;
+
 import com.android.systemui.bcsmartspace.R;
+
 import java.util.Locale;
 import java.util.Objects;
 
 public class IcuDateTextView extends DoubleShadowTextView {
-    public DateFormat mFormatter;
-    public Handler mHandler;
-    public final BroadcastReceiver mIntentReceiver;
-    public String mText;
-    public final Runnable mTicker;
+    private DateFormat mFormatter;
+    private Handler mHandler;
+    private final BroadcastReceiver mIntentReceiver;
+    private String mText;
+    private final Runnable mTicker;
 
     public IcuDateTextView(Context context) {
         this(context, null);
@@ -26,68 +28,82 @@ public class IcuDateTextView extends DoubleShadowTextView {
 
     public IcuDateTextView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
-        this.mTicker = this::onTimeTick;
-        this.mIntentReceiver = new BroadcastReceiver() { // from class: com.google.android.systemui.smartspace.IcuDateTextView.1
-            @Override // android.content.BroadcastReceiver
-            public void onReceive(Context context2, Intent intent) {
-                IcuDateTextView.this.onTimeChanged(!"android.intent.action.TIME_TICK".equals(intent.getAction()));
-            }
-        };
+        mTicker =
+                new Runnable() {
+                    @Override
+                    public final void run() {
+                        onTimeTick();
+                    }
+                };
+        mIntentReceiver =
+                new BroadcastReceiver() {
+                    @Override
+                    public void onReceive(Context context2, Intent intent) {
+                        onTimeChanged(
+                                !"android.intent.action.TIME_TICK".equals(intent.getAction()));
+                    }
+                };
     }
 
-    @Override // android.widget.TextView, android.view.View
+    @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.intent.action.TIME_SET");
         intentFilter.addAction("android.intent.action.TIMEZONE_CHANGED");
-        getContext().registerReceiver(this.mIntentReceiver, intentFilter);
+        getContext().registerReceiver(mIntentReceiver, intentFilter);
         onTimeChanged(true);
-        this.mHandler = new Handler();
+        mHandler = new Handler();
     }
 
-    @Override // android.view.View
+    @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        if (this.mHandler != null) {
-            getContext().unregisterReceiver(this.mIntentReceiver);
-            this.mHandler = null;
+        if (mHandler != null) {
+            getContext().unregisterReceiver(mIntentReceiver);
+            mHandler = null;
         }
     }
 
-    private void onTimeTick() {
+    public void onTimeTick() {
         onTimeChanged(false);
-        if (this.mHandler != null) {
+        if (mHandler != null) {
             long uptimeMillis = SystemClock.uptimeMillis();
-            this.mHandler.postAtTime(this.mTicker, uptimeMillis + (1000 - (uptimeMillis % 1000)));
+            mHandler.postAtTime(mTicker, uptimeMillis + (1000 - (uptimeMillis % 1000)));
         }
     }
 
-    @Override // android.view.View
-    public void onVisibilityAggregated(boolean isVisible) {
-        super.onVisibilityAggregated(isVisible);
-        if (this.mHandler != null) {
-            this.mHandler.removeCallbacks(this.mTicker);
-            if (isVisible) {
-                this.mTicker.run();
+    @Override
+    public void onVisibilityAggregated(boolean z) {
+        super.onVisibilityAggregated(z);
+        Handler handler = mHandler;
+        if (handler != null) {
+            handler.removeCallbacks(mTicker);
+            if (!z) {
+                return;
             }
+            mTicker.run();
         }
     }
 
-    public void onTimeChanged(boolean force) {
+    public void onTimeChanged(boolean z) {
         if (!isShown()) {
             return;
         }
-        if (this.mFormatter == null || force) {
-            DateFormat format = DateFormat.getInstanceForSkeleton(getContext().getString(R.string.smartspace_icu_date_pattern), Locale.getDefault());
-            this.mFormatter = format;
-            format.setContext(DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE);
+        if (mFormatter == null || z) {
+            DateFormat instanceForSkeleton =
+                    DateFormat.getInstanceForSkeleton(
+                            getContext().getString(R.string.smartspace_icu_date_pattern),
+                            Locale.getDefault());
+            mFormatter = instanceForSkeleton;
+            instanceForSkeleton.setContext(DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE);
         }
-        String format2 = this.mFormatter.format(Long.valueOf(System.currentTimeMillis()));
-        if (!Objects.equals(this.mText, format2)) {
-            this.mText = format2;
-            setText(format2);
-            setContentDescription(format2);
+        String format = mFormatter.format(Long.valueOf(System.currentTimeMillis()));
+        if (Objects.equals(mText, format)) {
+            return;
         }
+        mText = format;
+        setText(format);
+        setContentDescription(format);
     }
 }
