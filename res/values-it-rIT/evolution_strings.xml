@@ -24,6 +24,7 @@
     <string name="interface_category_title">Interfaccia</string>
     <string name="search_bar_category_title">Barra di ricerca</string>
     <string name="actions_category_title">Azioni rapide</string>
+    <string name="quickspace_category_title">At A Glance</string>
     <!-- Developer options -->
     <string name="dev_options_title">Opzioni sviluppatore</string>
     <string name="dev_options_summary">Abilita alcune funzioni nascoste a tuo rischio</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Cerca</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Ricerca vocale</string>
+    <string name="dock_music_search_title">Ricerca musicale Google</string>
+    <string name="dock_music_search_summary">Usa la ricerca musicale di Google invece di Google Assistant alla pressione dell\'icona microfono</string>
     <string name="dock_search_title">Barra di ricerca Google</string>
     <string name="dock_search_summary">Barra di ricerca nel dock inferiore</string>
     <string name="dock_theme_title">Icone a tema</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Cattura schermo</string>
     <string name="recents_clear_all_title">Cancella tutto</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_lock_title">Fissa app</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Icone a tema</string>
     <string name="pref_themed_icons_summary">Segui le icone a tema usate nella schermata home</string>
@@ -121,7 +125,7 @@
     <string name="icon_pack_add">Installa altri</string>
     <string name="icon_pack_no_market">Nessun app store disponibile</string>
     <!-- Smartspace -->
-    <string name="smartspace_pref_title">Smartspace</string>
+    <string name="smartspace_pref_title">At a Glance</string>
     <string name="smartspace_pref_summary">Mostra smartspace nella parte superiore della schermata home</string>
     <!-- App drawer searchbar -->
     <string name="drawer_searchbar_title">Abilita la barra di ricerca del drawer</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibrazione allo scorrimento</string>
     <string name="pref_scroll_vibration_summary">Feedback aptico durante lo scorrimento delle app recenti, se supportato</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Spazio parallelo</string>
-    <string name="laboratory_parallel_space_summary">Consente l\'esecuzione di istanze multiple della stessa applicazione in parallelo</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Riavvia</string>
     <string name="pref_restart_summary">Riavvia il launcher</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s disponibile | %2$s totale</string>
+    <string name="recents_meminfo_title">Info memoria</string>
 </resources>
