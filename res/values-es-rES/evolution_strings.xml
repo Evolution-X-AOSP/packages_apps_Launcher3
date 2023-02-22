@@ -103,7 +103,7 @@
     <string name="pref_allow_phone_taskbar_title">Usar barra de tareas</string>
     <string name="pref_allow_phone_taskbar_summary">Para abrir y cambiar de aplicaciones en cualquier lugar</string>
     <!-- Recents icons -->
-    <string name="recents_screenshot_title">Captura de pantalla</string>
+    <string name="recents_screenshot_title">Captura</string>
     <string name="recents_clear_all_title">Borrar todo</string>
     <string name="recents_lens_title">Lens</string>
     <!-- All apps themed icons -->
