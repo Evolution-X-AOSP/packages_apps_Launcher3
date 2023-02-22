@@ -24,6 +24,7 @@
     <string name="interface_category_title">Interface</string>
     <string name="search_bar_category_title">Barra de pesquisa</string>
     <string name="actions_category_title">Ações rápidas</string>
+    <string name="quickspace_category_title">Resumo</string>
     <!-- Developer options -->
     <string name="dev_options_title">Opções do desenvolvedor</string>
     <string name="dev_options_summary">Ativar alguns recursos ocultos por sua conta e risco</string>
@@ -38,9 +39,9 @@
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Deslize para acessar o feed do Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Ao deslizar para a direita na tela inicial</string>
+    <string name="msg_minus_one_on_left">Na tela inicial, deslize para a direita para acessar o feed do Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Ao deslizar para a esquerda na tela inicial</string>
+    <string name="msg_minus_one_on_right">Na tela inicial, deslize para a esquerda para acessar o feed do Google</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Aplicativos ocultos e protegidos</string>
     <string name="trust_apps_auth_manager">Desbloquear para gerenciar os aplicativos ocultos e protegidos</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Pesquisar</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Pesquisa por voz</string>
+    <string name="dock_music_search_title">Pesquisa de música</string>
+    <string name="dock_music_search_summary">Substituir o Google Assistente pela Pesquisa de Música no ícone do microfone</string>
     <string name="dock_search_title">Barra de pesquisa do Google</string>
     <string name="dock_search_summary">Barra de pesquisa na dock</string>
     <string name="dock_theme_title">Ícones temáticos</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Captura de tela</string>
     <string name="recents_clear_all_title">Limpar tudo</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_lock_title">Fixar aplicativo</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Ícones temáticos</string>
     <string name="pref_themed_icons_summary">Seguir ícones temáticos usados na tela inicial</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibração de rolagem</string>
     <string name="pref_scroll_vibration_summary">Retorno tátil ao navegar pela guia de aplicativos recentes, se suportado</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Espaço Paralelo</string>
-    <string name="laboratory_parallel_space_summary">Permite a execução de várias instâncias do mesmo aplicativo em paralelo</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Reiniciar</string>
     <string name="pref_restart_summary">Reiniciar o launcher</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Disponível - %2$s Total</string>
+    <string name="recents_meminfo_title">Informações da memória</string>
 </resources>
