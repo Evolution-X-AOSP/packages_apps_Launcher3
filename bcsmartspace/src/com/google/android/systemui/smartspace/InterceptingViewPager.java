@@ -4,65 +4,60 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
+
 import androidx.viewpager.widget.ViewPager;
 
 public class InterceptingViewPager extends ViewPager {
-    public boolean mHasPerformedLongPress;
-    public boolean mHasPostedLongPress;
-    public final Runnable mLongPressCallback;
-    public final EventProxy mSuperOnIntercept;
-    public final EventProxy mSuperOnTouch;
+    private boolean mHasPerformedLongPress;
+    private boolean mHasPostedLongPress;
+    private final EventProxy mSuperOnTouch = (motionEvent) -> {
+            return super.onTouchEvent(motionEvent);
+    };
+    private final EventProxy mSuperOnIntercept = (motionEvent) -> {
+            return super.onInterceptTouchEvent(motionEvent);
+    };
+    private final Runnable mLongPressCallback = () -> {
+            triggerLongPress();
+    };
 
     public interface EventProxy {
         boolean delegateEvent(MotionEvent motionEvent);
     }
 
-    public boolean superOnTouchEvent(MotionEvent event) {
-        return super.onTouchEvent(event);
-    }
-
-    public boolean superOnInterceptTouchEvent(MotionEvent event) {
-        return super.onInterceptTouchEvent(event);
-    }
-
     public InterceptingViewPager(Context context) {
         super(context);
-        this.mSuperOnTouch = this::superOnTouchEvent;
-        this.mSuperOnIntercept = this::superOnInterceptTouchEvent;
-        this.mLongPressCallback = this::triggerLongPress;
     }
 
-    public InterceptingViewPager(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        this.mSuperOnTouch = this::superOnTouchEvent;
-        this.mSuperOnIntercept = this::superOnInterceptTouchEvent;
-        this.mLongPressCallback = this::triggerLongPress;
+    public InterceptingViewPager(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
     }
 
-    public boolean onInterceptTouchEvent(MotionEvent event) {
-        return handleTouchOverride(event, this.mSuperOnIntercept);
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
+        return handleTouchOverride(motionEvent, mSuperOnIntercept);
     }
 
-    public boolean onTouchEvent(MotionEvent event) {
-        return handleTouchOverride(event, this.mSuperOnTouch);
+    @Override
+    public boolean onTouchEvent(MotionEvent motionEvent) {
+        return handleTouchOverride(motionEvent, mSuperOnTouch);
     }
 
-    private boolean handleTouchOverride(MotionEvent event, EventProxy proxy) {
-        int action = event.getAction();
+    private boolean handleTouchOverride(MotionEvent motionEvent, EventProxy eventProxy) {
+        int action = motionEvent.getAction();
         if (action == 0) {
-            this.mHasPerformedLongPress = false;
+            mHasPerformedLongPress = false;
             if (isLongClickable()) {
                 cancelScheduledLongPress();
-                this.mHasPostedLongPress = true;
-                postDelayed(this.mLongPressCallback, ViewConfiguration.getLongPressTimeout());
+                mHasPostedLongPress = true;
+                postDelayed(mLongPressCallback, ViewConfiguration.getLongPressTimeout());
             }
         } else if (action == 1 || action == 3) {
             cancelScheduledLongPress();
         }
-        if (this.mHasPerformedLongPress) {
+        if (mHasPerformedLongPress) {
             cancelScheduledLongPress();
             return true;
-        } else if (!proxy.delegateEvent(event)) {
+        } else if (!eventProxy.delegateEvent(motionEvent)) {
             return false;
         } else {
             cancelScheduledLongPress();
@@ -71,14 +66,14 @@ public class InterceptingViewPager extends ViewPager {
     }
 
     private void cancelScheduledLongPress() {
-        if (this.mHasPostedLongPress) {
-            this.mHasPostedLongPress = false;
-            removeCallbacks(this.mLongPressCallback);
+        if (mHasPostedLongPress) {
+            mHasPostedLongPress = false;
+            removeCallbacks(mLongPressCallback);
         }
     }
 
     public void triggerLongPress() {
-        this.mHasPerformedLongPress = true;
+        mHasPerformedLongPress = true;
         if (performLongClick()) {
             getParent().requestDisallowInterceptTouchEvent(true);
         }
