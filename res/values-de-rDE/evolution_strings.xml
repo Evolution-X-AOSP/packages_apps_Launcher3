@@ -24,6 +24,7 @@
     <string name="interface_category_title">Oberfläche</string>
     <string name="search_bar_category_title">Suchleiste</string>
     <string name="actions_category_title">Schnellzugriffe</string>
+    <string name="quickspace_category_title">Auf einen Blick (At a Glance)</string>
     <!-- Developer options -->
     <string name="dev_options_title">Entwickler-Optionen</string>
     <string name="dev_options_summary">Einige versteckte Funktionen auf eigene Gefahr aktivieren</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Suche</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Sprachsuche</string>
+    <string name="dock_music_search_title">Google-Sound-Suche</string>
+    <string name="dock_music_search_summary">Google-Sound-Suche statt Google Assistant bei gedrücktem Mikrofon verwenden</string>
     <string name="dock_search_title">Google-Suchleiste</string>
     <string name="dock_search_summary">Suchleiste unten im Dock anzeigen</string>
     <string name="dock_theme_title">Eingefärbte Symbole</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Bildschirmfoto</string>
     <string name="recents_clear_all_title">Alle schließen</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_lock_title">App anheften</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Eingefärbte Symbole</string>
     <string name="pref_themed_icons_summary">Stil der eingefärbte Symbole auf dem Startbildschirm folgen</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Scroll-Vibration</string>
     <string name="pref_scroll_vibration_summary">Haptisches Feedback während des Scrollen durch den Anwendungsverlauf, falls unterstützt</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Zweites Profil</string>
-    <string name="laboratory_parallel_space_summary">Ermöglicht parallele Ausführung mehrerer Instanzen derselben App</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Neustart</string>
     <string name="pref_restart_summary">Launcher neu starten</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Verfügbar | %2$s Gesamt</string>
+    <string name="recents_meminfo_title">Speicher-Info</string>
 </resources>
