@@ -24,6 +24,7 @@
     <string name="interface_category_title">Interface</string>
     <string name="search_bar_category_title">Barre de recherche</string>
     <string name="actions_category_title">Actions rapides</string>
+    <string name="quickspace_category_title">At A Glance</string>
     <!-- Developer options -->
     <string name="dev_options_title">Options pour les développeurs</string>
     <string name="dev_options_summary">Activez certaines fonctionnalités cachées à vos risques et périls</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Rechercher</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Recherche vocale</string>
+    <string name="dock_music_search_title">Recherche vocale Google</string>
+    <string name="dock_music_search_summary">Utiliser la recherche de musique Google au lieu de Google Assistant lorsque l\'icône micro est pressée</string>
     <string name="dock_search_title">Barre de recherche Google</string>
     <string name="dock_search_summary">Barre de recherche dans le dock inférieur</string>
     <string name="dock_theme_title">Icônes thématiques</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Capture d\'écran</string>
     <string name="recents_clear_all_title">Tout effacer</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_lock_title">Épingler l\'application</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Icônes thématiques</string>
     <string name="pref_themed_icons_summary">Suivre les icônes thématiques utilisées sur l\'écran d\'accueil</string>
@@ -131,10 +135,10 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibration lors du défilement</string>
     <string name="pref_scroll_vibration_summary">Retour tactile lors du défilement des applications récentes, si supporté</string>
-    <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Espace parallèle</string>
-    <string name="laboratory_parallel_space_summary">Autoriser l\'exécution de plusieurs instances de la même application en simultané</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Redémarrer</string>
     <string name="pref_restart_summary">Redémarrer le lanceur d\'applications</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s disponibles sur/%2$s au total</string>
+    <string name="recents_meminfo_title">Informations sur la RAM</string>
 </resources>
