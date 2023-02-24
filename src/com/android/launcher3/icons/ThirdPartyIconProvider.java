@@ -22,12 +22,12 @@ public class ThirdPartyIconProvider extends LauncherIconProvider {
 
     @SuppressLint("WrongConstant")
     @Override
-    public Drawable getIcon(LauncherActivityInfo launcherActivityInfo, int iconDpi, String themedIconPack) {
+    public Drawable getIcon(LauncherActivityInfo launcherActivityInfo, int iconDpi) {
         ComponentKey key = new ComponentKey(
                 launcherActivityInfo.getComponentName(), launcherActivityInfo.getUser());
 
         IconResolver.DefaultDrawableProvider fallback =
-                () -> super.getIcon(launcherActivityInfo, iconDpi, themedIconPack);
+                () -> super.getIcon(launcherActivityInfo, iconDpi);
         Drawable icon = ThirdPartyIconUtils.getByKey(mContext, key, iconDpi, fallback);
 
         if (icon == null) {

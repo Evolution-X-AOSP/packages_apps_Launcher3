@@ -17,8 +17,6 @@ package com.android.launcher3.icons;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.XmlResourceParser;
 import android.os.Build;
 import android.text.TextUtils;
@@ -48,13 +46,10 @@ public class LauncherIconProvider extends IconProvider {
 
     private Map<String, ThemeData> mThemedIconMap;
     private boolean mSupportsIconTheme;
-    
-    protected final Context mContext;
 
     public LauncherIconProvider(Context context) {
         super(context);
-        mContext = context;
-        setIconThemeSupported(Themes.isThemedIconEnabled(mContext));
+        setIconThemeSupported(Themes.isThemedIconEnabled(context));
     }
 
     /**
@@ -67,8 +62,8 @@ public class LauncherIconProvider extends IconProvider {
     }
 
     @Override
-    protected ThemeData getThemeDataForPackage(String packageName, String themedIconPack) {
-        return getThemedIconMap(themedIconPack).get(packageName);
+    protected ThemeData getThemeDataForPackage(String packageName) {
+        return getThemedIconMap().get(packageName);
     }
 
     @Override
@@ -77,19 +72,13 @@ public class LauncherIconProvider extends IconProvider {
                 + "," + String.valueOf(Build.TIME);
     }
 
-    private Map<String, ThemeData> getThemedIconMap(String themedIconPack) {
+    private Map<String, ThemeData> getThemedIconMap() {
+        if (mThemedIconMap != null) {
+            return mThemedIconMap;
+        }
         ArrayMap<String, ThemeData> map = new ArrayMap<>();
         Resources res = mContext.getResources();
-        boolean themedIconPackAvailable = false;
-        if (themedIconPack != null) {
-             try {
-                res = mContext.getPackageManager().getResourcesForApplication(themedIconPack);
-                themedIconPackAvailable = true;
-             } catch(Exception e) {}
-        }
-        int resID = res.getIdentifier("grayscale_icon_map", "xml",
-                themedIconPackAvailable ? themedIconPack : mContext.getPackageName());
-        try (XmlResourceParser parser = res.getXml(resID)) {
+        try (XmlResourceParser parser = res.getXml(R.xml.grayscale_icon_map)) {
             final int depth = parser.getDepth();
             int type;
             while ((type = parser.next()) != XmlPullParser.START_TAG
