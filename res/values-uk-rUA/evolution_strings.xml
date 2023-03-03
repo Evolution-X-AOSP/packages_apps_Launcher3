@@ -109,7 +109,7 @@
     <string name="recents_screenshot_title">Знімок екрану</string>
     <string name="recents_clear_all_title">Очистити все</string>
     <string name="recents_lens_title">Об\'єктив</string>
-    <string name="recents_lock_title">Закріпити додаток</string>
+    <string name="recents_kill_app">Завершити додаток</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Тематичні іконки</string>
     <string name="pref_themed_icons_summary">Тематичні піктограми, які використовуються на головному екрані</string>
@@ -135,6 +135,9 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Вібрація при прокрутці</string>
     <string name="pref_scroll_vibration_summary">Вібровідгук під час прокрутки нещодавніх додатків, якщо підтримується</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Паралельний простір</string>
+    <string name="laboratory_parallel_space_summary">Дозволити паралельний запуск кількох екземплярів одного додатка</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Перезавантажити</string>
     <string name="pref_restart_summary">Перезавантажити інтерфейс</string>
