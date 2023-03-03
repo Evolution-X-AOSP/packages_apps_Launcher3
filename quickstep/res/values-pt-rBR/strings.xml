@@ -20,106 +20,106 @@
     <!-- Application name -->
     <!-- Options for recent tasks -->
     <!-- Title for an option to keep an app pinned to the screen until it is unpinned -->
-    <string name="recent_task_option_pin">固定</string>
+    <string name="recent_task_option_pin">Fixar</string>
     <!-- Title for an option to enter freeform mode for a given app -->
-    <string name="recent_task_option_freeform">自由形式</string>
+    <string name="recent_task_option_freeform">Forma livre</string>
     <!-- Recents: The empty recents string. [CHAR LIMIT=NONE] -->
-    <string name="recents_empty_message">最近沒有任何項目</string>
+    <string name="recents_empty_message">Nenhum item recente</string>
     <!-- Content description for the recent apps's accessibility option that opens its usage settings. [CHAR LIMIT=NONE] -->
-    <string name="accessibility_app_usage_settings">應用程式使用情況設定</string>
+    <string name="accessibility_app_usage_settings">Configurações de uso do app</string>
     <!-- Recents: Title of a button that clears the task list, i.e. closes all tasks. [CHAR LIMIT=30] -->
-    <string name="recents_clear_all">全部清除</string>
+    <string name="recents_clear_all">Limpar tudo</string>
     <!-- Accessibility title for the list of recent apps [CHAR_LIMIT=none] -->
-    <string name="accessibility_recent_apps">最近使用的應用程式</string>
+    <string name="accessibility_recent_apps">Apps recentes</string>
     <!-- Accessibility confirmation for task closed -->
-    <string name="task_view_closed">閂咗工作</string>
+    <string name="task_view_closed">Tarefa encerrada</string>
     <!-- Accessibility title for an app card in Recents for apps that have time limit set
      [CHAR_LIMIT=none] -->
-    <string name="task_contents_description_with_remaining_time"><xliff:g id="TASK_DESCRIPTION">%1$s</xliff:g>，<xliff:g id="REMAINING_TIME">%2$s</xliff:g></string>
+    <string name="task_contents_description_with_remaining_time"><xliff:g id="task_description" example="GMail">%1$s</xliff:g>, <xliff:g id="remaining_time" example="7 minutes left today">%2$s</xliff:g></string>
     <!-- Text to show total app usage per day if it is less than 1 minute ("&lt;" is the
      escaped form of '<'). [CHAR LIMIT=15] -->
-    <string name="shorter_duration_less_than_one_minute">少於 1 分鐘</string>
+    <string name="shorter_duration_less_than_one_minute">&lt; 1 minuto</string>
     <!-- Annotation shown on an app card in Recents, telling that the app has a usage limit set by
     the user, and a given time is left for it today [CHAR LIMIT=22] -->
-    <string name="time_left_for_app">今天剩餘時間：<xliff:g id="TIME">%1$s</xliff:g></string>
+    <string name="time_left_for_app"><xliff:g id="time" example="7 minutes">%1$s</xliff:g> saiu hoje</string>
     <!-- Accessibility title for the row of all-apps containing app predictions. [CHAR LIMIT=50] -->
-    <string name="title_app_suggestions">應用程式建議</string>
+    <string name="title_app_suggestions">Sugestões de aplicativos</string>
     <!-- Text of the tip when user lands in all apps view for the first time, indicating where the tip toast points to is the predicted apps section. [CHAR_LIMIT=50] -->
-    <string name="all_apps_prediction_tip">您的預測應用程式</string>
+    <string name="all_apps_prediction_tip">Aplicativos acessados frequentemente</string>
     <!-- Content description for a close button. [CHAR LIMIT=NONE] -->
     <!-- Hotseat educational strings for users who don't qualify for migration -->
-    <string name="hotseat_edu_title_migrate">在主畫面底部取得應用程式建議</string>
-    <string name="hotseat_edu_title_migrate_landscape">在主畫面「我的最愛」列取得應用程式建議</string>
-    <string name="hotseat_edu_message_migrate">在主畫面輕鬆存取常用的應用程式。系統會根據您的日常安排更改建議，並將底部的應用程式移到主畫面。</string>
-    <string name="hotseat_edu_message_migrate_landscape">在主畫面輕鬆存取最常用的應用程式。系統會根據您的日常安排變更建議，「我的最愛」列中的應用程式會移至主畫面。</string>
+    <string name="hotseat_edu_title_migrate">Mostrar sugestões de apps na parte inferior da sua tela inicial</string>
+    <string name="hotseat_edu_title_migrate_landscape">Mostrar sugestões de apps na aba de favoritos na tela inicial</string>
+    <string name="hotseat_edu_message_migrate">Acesse facilmente os apps mais usados diretamente na Tela inicial. As sugestões mudarão com base nas suas rotinas. Os apps na parte inferior da lista vão mudar para a Tela inicial. </string>
+    <string name="hotseat_edu_message_migrate_landscape">Acesse facilmente os apps mais usados ​​diretamente na tela inicial. As sugestões mudarão com base nas suas rotinas. Os apps na linha de favoritos serão movidos para a tela inicial. </string>
     <!-- Button text to opt in for fully predicted hotseat -->
-    <string name="hotseat_edu_accept">取得應用程式建議</string>
+    <string name="hotseat_edu_accept">Mostrar sugestões de apps</string>
     <!-- Button text to dismiss opt in for fully predicted hotseat -->
-    <string name="hotseat_edu_dismiss">不用了，謝謝</string>
+    <string name="hotseat_edu_dismiss">Não, obrigado</string>
     <!-- action shown to toggle predictions after onboarding -->
-    <string name="hotseat_prediction_settings">設定</string>
+    <string name="hotseat_prediction_settings">Configurações</string>
     <!-- tip shown if user has no items in hotseat to migrate -->
-    <string name="hotseat_auto_enrolled">最常用的應用程式會在這裡顯示，並會根據日常安排變更</string>
+    <string name="hotseat_auto_enrolled">Os aplicativos mais usados aparecem aqui, e mudam baseado na sua rotina de uso</string>
     <!-- tip shown if user declines migration and has no open spots for prediction -->
-    <string name="hotseat_tip_no_empty_slots">將應用程式從底列拖曳出來，即可獲取應用程式建議</string>
+    <string name="hotseat_tip_no_empty_slots">Arraste os aplicativos para fora da linha inferior para obter as sugestões de aplicativos</string>
     <!-- tip shown if user declines migration and has some open spots for prediction -->
-    <string name="hotseat_tip_gaps_filled">系統會將應用程式建議新增至空白位置</string>
+    <string name="hotseat_tip_gaps_filled">Sugestões de aplicativos adicionadas ao espaço vazio</string>
     <!-- tip shown when user migrates and predictions are enabled in hotseat -->
-    <string name="hotsaet_tip_prediction_enabled">已啟用應用程式建議</string>
+    <string name="hotsaet_tip_prediction_enabled">Sugestões de aplicativos ativadas</string>
     <!-- tip shown when hotseat edu is requested while predictions are disabled -->
-    <string name="hotsaet_tip_prediction_disabled">已停用應用程式建議</string>
+    <string name="hotsaet_tip_prediction_disabled">Sugestões de aplicativos desativadas</string>
     <!-- content description for hotseat items -->
-    <string name="hotseat_prediction_content_description">預測應用程式：<xliff:g id="TITLE">%1$s</xliff:g></string>
+    <string name="hotseat_prediction_content_description">Aplicativo previsto: <xliff:g id="title" example="Chrome">%1$s</xliff:g></string>
     <!-- Feedback shown during interactive parts of Back gesture tutorial for right edge when the gesture is too far from the edge. [CHAR LIMIT=100] -->
-    <string name="back_gesture_feedback_swipe_too_far_from_edge">請從螢幕右側或左側邊緣滑動。</string>
+    <string name="back_gesture_feedback_swipe_too_far_from_edge">Certifique-se de deslizar da extrema-direita ou da extrema-esquerda.</string>
     <!-- Feedback shown during interactive parts of Back gesture tutorial for right edge when the gesture is cancelled. [CHAR LIMIT=100] -->
-    <string name="back_gesture_feedback_cancelled">請從螢幕右側或左側邊緣往中央滑動，然後放開手指。</string>
+    <string name="back_gesture_feedback_cancelled">Certifique-se de deslizar da borda direita ou esquerda para o centro da tela e solte.</string>
     <!-- Feedback shown after completing the back gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
-    <string name="back_gesture_feedback_complete_with_overview_follow_up">您已瞭解如何透過「由右向左滑動」手勢返回。接下來一起瞭解如何切換應用程式。</string>
+    <string name="back_gesture_feedback_complete_with_overview_follow_up">Você aprendeu como deslizar da direita para voltar. Em seguida, aprenda como alternar entre apps.</string>
     <!-- Feedback shown after completing the back gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
-    <string name="back_gesture_feedback_complete_without_follow_up">您已完成「返回」手勢的教學課程。</string>
+    <string name="back_gesture_feedback_complete_without_follow_up">Você completou o gesto voltar.</string>
     <!-- Feedback shown during interactive parts of Back gesture tutorial when the gesture is within the nav bar region. [CHAR LIMIT=100] -->
-    <string name="back_gesture_feedback_swipe_in_nav_bar">滑動時，手的位置不要太接近螢幕底部。</string>
+    <string name="back_gesture_feedback_swipe_in_nav_bar">Certifique-se de não deslizar para muito perto da parte inferior da tela.</string>
     <!-- Subtitle shown on the confirmation screen after successful gesture. [CHAR LIMIT=60] -->
-    <string name="back_gesture_tutorial_confirm_subtitle">如要變更「返回」手勢的敏感度，請前往「設定」</string>
+    <string name="back_gesture_tutorial_confirm_subtitle">Para alterar a sensibilidade do gesto voltar, acesse as Configurações</string>
     <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is started too far from the edge. [CHAR LIMIT=100] -->
     <!-- Introduction title for the Back gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="back_gesture_intro_title">滑動即可返回</string>
+    <string name="back_gesture_intro_title">Deslize para voltar</string>
     <!-- Introduction subtitle for the Back gesture tutorial. [CHAR LIMIT=200] -->
-    <string name="back_gesture_intro_subtitle">如要返回上一個畫面，請從螢幕左側或右側邊緣往中央滑動。</string>
+    <string name="back_gesture_intro_subtitle">Para voltar para a última tela, deslize da borda esquerda ou direita para o centro da tela.</string>
     <!-- Introduction subtitle for the Back gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=200] -->
-    <string name="back_gesture_spoken_intro_subtitle">如要返回上一個畫面，請用 2 隻手指從螢幕左側或右側邊緣往中央滑動。</string>
-    <string name="home_gesture_feedback_swipe_too_far_from_edge">請從螢幕底部邊緣向上滑動。</string>
+    <string name="back_gesture_spoken_intro_subtitle">Para voltar para a última tela, deslize com 2 dedos da borda esquerda ou direita para o centro da tela.</string>
+    <string name="home_gesture_feedback_swipe_too_far_from_edge">Certifique-se de deslizar para cima na borda inferior da tela.</string>
     <!-- Feedback shown during interactive parts of Home gesture tutorial when the Overview gesture is detected. [CHAR LIMIT=100] -->
-    <string name="home_gesture_feedback_overview_detected">放開手指前請勿停下來。</string>
+    <string name="home_gesture_feedback_overview_detected">Certifique-se de não interromper o gesto antes de completar.</string>
     <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
-    <string name="home_gesture_feedback_wrong_swipe_direction">請向上滑動。</string>
+    <string name="home_gesture_feedback_wrong_swipe_direction">Certifique-se de deslizar diretamente para cima.</string>
     <!-- Feedback shown after completing the home gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
-    <string name="home_gesture_feedback_complete_with_follow_up">您已完成「返回主畫面」手勢的教學課程。接著，一起來瞭解如何返回上一個畫面。</string>
+    <string name="home_gesture_feedback_complete_with_follow_up">Você completou o gesto de voltar para a tela inicial. Em seguida, aprenda como voltar.</string>
     <!-- Feedback shown after completing the home gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
-    <string name="home_gesture_feedback_complete_without_follow_up">您已完成「返回主畫面」手勢的教學課程。</string>
+    <string name="home_gesture_feedback_complete_without_follow_up">Você completou o gesto de voltar para a tela inicial.</string>
     <!-- Introduction title for the Home gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="home_gesture_intro_title">向上滑動即可返回主畫面</string>
+    <string name="home_gesture_intro_title">Deslize para ir para a tela inicial</string>
     <!-- Introduction subtitle for the Home gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="home_gesture_intro_subtitle">從螢幕底部向上滑動。這個手勢在所有畫面下都可讓您返回主畫面。</string>
+    <string name="home_gesture_intro_subtitle">Deslize para cima da parte inferior da tela. Este gesto sempre o levará para a Tela inicial.</string>
     <!-- Introduction subtitle for the Home gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=100] -->
-    <string name="home_gesture_spoken_intro_subtitle">請用 2 隻手指從螢幕底部向上滑動。這個手勢在所有畫面下都可讓您返回主畫面。</string>
+    <string name="home_gesture_spoken_intro_subtitle">Deslizar para cima com 2 dedos da parte inferior da tela. Este gesto sempre o levará para a Tela inicial.</string>
     <!-- Feedback shown during interactive parts of Overview gesture tutorial when the gesture is started too far from the edge. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_feedback_swipe_too_far_from_edge">請從螢幕底部邊緣向上滑動。</string>
+    <string name="overview_gesture_feedback_swipe_too_far_from_edge">Certifique-se de deslizar para cima na borda inferior da tela.</string>
     <!-- Feedback shown during interactive parts of Overview gesture tutorial when the Home gesture is detected. The window refers to the current app's window during the gesture. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_feedback_home_detected">請嘗試按住視窗更長時間，然後再放開。</string>
+    <string name="overview_gesture_feedback_home_detected">Tente segurar a janela por mais tempo antes de soltar.</string>
     <!-- Feedback shown during interactive parts of Overview gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_feedback_wrong_swipe_direction">請向上滑動，然後停住。</string>
+    <string name="overview_gesture_feedback_wrong_swipe_direction">Certifique-se de deslizar para cima e depois pausar.</string>
     <!-- Feedback shown after completing the overview gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_feedback_complete_with_follow_up">您已學會如何使用手勢。如要關閉手勢，請前往「設定」。</string>
+    <string name="overview_gesture_feedback_complete_with_follow_up">Você aprendeu a usar gestos. Para desativar os gestos, vá para Configurações.</string>
     <!-- Feedback shown after completing the overview gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_feedback_complete_without_follow_up">您已完成「切換應用程式」手勢的教學課程。</string>
+    <string name="overview_gesture_feedback_complete_without_follow_up">Você completou o gesto de alternar entre aplicativos.</string>
     <!-- Introduction title for the Overview gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_intro_title">滑動即可切換應用程式</string>
+    <string name="overview_gesture_intro_title">Deslize para alternar aplicativos</string>
     <!-- Introduction subtitle for the Overview gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_intro_subtitle">如要切換應用程式，請從螢幕底部向上滑動並按住，然後放開。</string>
+    <string name="overview_gesture_intro_subtitle">Para alternar aplicativos, deslize de baixo para cima, segure e solte.</string>
     <!-- Introduction subtitle for the Overview gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_spoken_intro_subtitle">如要切換應用程式，請用 2 隻手指從螢幕底部向上滑動並按住，然後放開手指。</string>
+    <string name="overview_gesture_spoken_intro_subtitle">Para alternar aplicativos, deslize de baixo para cima com dois dedos da tela, mantenha a tela pressionada e depois solte.</string>
     <!-- Title shown during interactive part of Assistant gesture tutorial. [CHAR LIMIT=30] -->
     <!-- Subtitle shown during interactive parts of Assistant gesture tutorial. [CHAR LIMIT=60] -->
     <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture is started too far from the corner. [CHAR LIMIT=100] -->
@@ -133,89 +133,89 @@
     <!-- Feedback shown in sandbox mode when the overview gesture is a successfully issued. [CHAR LIMIT=60] -->
     <!-- Feedback shown in sandbox mode when the back gesture swipe is too far from the edge. [CHAR LIMIT=60] -->
     <!-- Title shown on the confirmation screen after successful gesture. [CHAR LIMIT=30] -->
-    <string name="gesture_tutorial_confirm_title">大功告成</string>
+    <string name="gesture_tutorial_confirm_title">Tudo pronto</string>
     <!-- Button text shown on a button on the feedback popup to complete the gesture tutorial. [CHAR LIMIT=14] -->
-    <string name="gesture_tutorial_action_button_label">完成</string>
+    <string name="gesture_tutorial_action_button_label">Concluído</string>
     <!-- Button text shown on a button to go to Settings. [CHAR LIMIT=14] -->
-    <string name="gesture_tutorial_action_button_label_settings">設定</string>
+    <string name="gesture_tutorial_action_button_label_settings">Configurações</string>
     <!-- Feedback title to try again. [CHAR LIMIT=30] -->
-    <string name="gesture_tutorial_try_again">再試一次</string>
+    <string name="gesture_tutorial_try_again">Tente novamente</string>
     <!-- Feedback title for a successful gesture. [CHAR LIMIT=30] -->
-    <string name="gesture_tutorial_nice">做得好！</string>
+    <string name="gesture_tutorial_nice">Ótimo!</string>
     <!-- Feedback subtext displaying the current step and the total number of steps for the tutorial. [CHAR LIMIT=30] -->
-    <string name="gesture_tutorial_step">教學課程 <xliff:g id="CURRENT">%1$d</xliff:g>/<xliff:g id="TOTAL">%2$d</xliff:g></string>
+    <string name="gesture_tutorial_step">Tutorial <xliff:g id="current">%1$d</xliff:g>/<xliff:g id="total">%2$d</xliff:g></string>
     <!-- Title of "All Set" page [CHAR LIMIT=NONE] -->
-    <string name="allset_title">設定完成！</string>
+    <string name="allset_title">Tudo pronto!</string>
     <!-- Hint string at the bottom of "All Set" page [CHAR LIMIT=NONE] -->
-    <string name="allset_hint">向上滑動即可前往主畫面</string>
+    <string name="allset_hint">Deslize para ir para a tela inicial</string>
     <!-- Description of "All Set" page on phones [CHAR LIMIT=NONE] -->
-    <string name="allset_description">您可以開始使用手機了</string>
+    <string name="allset_description">Você\u2019está pronto para começar a usar seu telefone</string>
     <!-- Description of "All Set" page on tablets [CHAR LIMIT=NONE] -->
-    <string name="allset_description_tablet">您可以開始使用平板電腦了</string>
+    <string name="allset_description_tablet">Você\u2019está pronto para começar a usar seu tablet</string>
     <!-- String linking to navigation settings on "All Set" page [CHAR LIMIT=NONE] -->
-    <string name="allset_navigation_settings"><annotation id="link">\"系統導覽設定\"</annotation></string>
+    <string name="allset_navigation_settings"><annotation id="link">Configurações de navegação do sistema</annotation></string>
     <!-- ******* Overview ******* -->
     <!-- Label for a button that causes the current overview app to be shared. [CHAR_LIMIT=40] -->
-    <string name="action_share">分享</string>
+    <string name="action_share">Compartilhar</string>
     <!-- Label for a button that causes a screen shot of the current app to be taken. [CHAR_LIMIT=40] -->
-    <string name="action_screenshot">螢幕截圖</string>
+    <string name="action_screenshot">Captura de tela</string>
     <!-- Label for a button that enters split screen selection mode. [CHAR_LIMIT=20] -->
-    <string name="action_split">分割</string>
+    <string name="action_split">Dividir</string>
     <!-- Label for toast with instructions for split screen selection mode. [CHAR_LIMIT=50] -->
-    <string name="toast_split_select_app">輕按其他應用程式以使用分割螢幕</string>
+    <string name="toast_split_select_app">Toque em outro app para usar a tela dividida</string>
     <!-- Label for toast when app selected for split isn't supported. [CHAR_LIMIT=50] -->
-    <string name="toast_split_app_unsupported">應用程式不支援分割螢幕。</string>
+    <string name="toast_split_app_unsupported">O app não é compatível com a divisão de tela.</string>
     <!-- Message shown when an action is blocked by a policy enforced by the app or the organization managing the device. [CHAR_LIMIT=NONE] -->
-    <string name="blocked_by_policy">應用程式或您的機構不允許此操作</string>
+    <string name="blocked_by_policy">A captura de tela não é permitida pelo app ou por sua organização</string>
     <!-- ******* Skip tutorial dialog ******* -->
     <!-- Title for the dialog that allows the user to skip the gesture navigation tutorial. [CHAR_LIMIT=40] -->
-    <string name="skip_tutorial_dialog_title">要略過手勢操作教學課程嗎？</string>
+    <string name="skip_tutorial_dialog_title">Pular tutorial de navegação?</string>
     <!-- Subtitle for the dialog that allows the user to skip the gesture navigation tutorial. This directs the user to where they can find the gesture tutorial again. [CHAR_LIMIT=100] -->
-    <string name="skip_tutorial_dialog_subtitle">您之後可以在「<xliff:g id="NAME">%1$s</xliff:g>」應用程式找到這些說明</string>
+    <string name="skip_tutorial_dialog_subtitle">Você pode encontrar isso mais tarde no aplicativo <xliff:g id="name">%1$s</xliff:g></string>
     <!-- Button text shown on a button on the tutorial skip dialog to return to the tutorial. [CHAR LIMIT=14] -->
-    <string name="gesture_tutorial_action_button_label_cancel">取消</string>
+    <string name="gesture_tutorial_action_button_label_cancel">Cancelar</string>
     <!-- Button text shown on a button on the tutorial skip dialog to exit the tutorial. [CHAR LIMIT=14] -->
-    <string name="gesture_tutorial_action_button_label_skip">略過</string>
+    <string name="gesture_tutorial_action_button_label_skip">Pular</string>
     <!-- Accessibility label for the rotation suggestion button -->
-    <string name="accessibility_rotate_button">旋轉螢幕</string>
+    <string name="accessibility_rotate_button">Girar tela</string>
     <!-- ******* Taskbar Edu ******* -->
     <!-- Accessibility text spoken when the taskbar education panel appears [CHAR_LIMIT=NONE] -->
-    <string name="taskbar_edu_opened">顯示咗工作列教學</string>
+    <string name="taskbar_edu_opened">O tutorial para a barra de tarefas está visível</string>
     <!-- Accessibility text spoken when the taskbar education panel disappears [CHAR_LIMIT=NONE] -->
-    <string name="taskbar_edu_closed">閂咗工作列教學</string>
+    <string name="taskbar_edu_closed">Tutorial para barra de tarefas fechado</string>
     <!-- Text in dialog that lets a user know how they can use the taskbar to switch apps on their device.
          [CHAR_LIMIT=60] -->
-    <string name="taskbar_edu_switch_apps">使用工作列即可切換應用程式</string>
+    <string name="taskbar_edu_switch_apps">Use a barra de tarefas para alterar entre aplicativos</string>
     <!-- Text in dialog that lets a user know how they can use the taskbar to use multiple apps at once on their device.
          [CHAR_LIMIT=60] -->
-    <string name="taskbar_edu_splitscreen">拖曳至一側即可同時使用兩個應用程式</string>
+    <string name="taskbar_edu_splitscreen">Arraste para o lado para usar dois apps de uma vez</string>
     <!-- Text in dialog that lets a user know how they can hide the taskbar on their device.
          [CHAR_LIMIT=60] -->
-    <string name="taskbar_edu_stashing">按住即可隱藏工作列</string>
+    <string name="taskbar_edu_stashing">Toque &amp; segure para ocultar a barra de tarefas</string>
     <!-- Text on button to go to the next screen of a tutorial [CHAR_LIMIT=16] -->
-    <string name="taskbar_edu_next">繼續</string>
+    <string name="taskbar_edu_next">Próxima</string>
     <!-- Text on button to go to the previous screen of a tutorial [CHAR_LIMIT=16] -->
-    <string name="taskbar_edu_previous">返回</string>
+    <string name="taskbar_edu_previous">Voltar</string>
     <!-- Text on button to exit a tutorial [CHAR_LIMIT=16] -->
-    <string name="taskbar_edu_close">關閉</string>
+    <string name="taskbar_edu_close">Fechar</string>
     <!-- Text on button to finish a tutorial [CHAR_LIMIT=16] -->
-    <string name="taskbar_edu_done">完成</string>
+    <string name="taskbar_edu_done">Concluído</string>
     <!-- Content description for home button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_home">住宅</string>
+    <string name="taskbar_button_home">Início</string>
     <!-- Content description for accessibility button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_a11y">無障礙功能</string>
+    <string name="taskbar_button_a11y">Acessibilidade</string>
     <!-- Content description for back button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_back">返回</string>
+    <string name="taskbar_button_back">Voltar</string>
     <!-- Content description for ime switcher button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_ime_switcher">輸入法編輯器切換工具</string>
+    <string name="taskbar_button_ime_switcher">Alternador do método de entrada</string>
     <!-- Content description for recents button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_recents">最近</string>
+    <string name="taskbar_button_recents">Recentes</string>
     <!-- Content description for notifications button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_notifications">通知</string>
+    <string name="taskbar_button_notifications">Notificações</string>
     <!-- Content description for quick settings button [CHAR_LIMIT=16] -->
-    <string name="taskbar_button_quick_settings">快速設定</string>
+    <string name="taskbar_button_quick_settings">Configurações rápidas</string>
     <!-- Label for moving drop target to the top or left side of the screen, depending on orientation (from the taskbar only). -->
-    <string name="move_drop_target_top_or_left">移至上方/左側</string>
+    <string name="move_drop_target_top_or_left">Mover para cima&#47;à esquerda</string>
     <!-- Label for moving drop target to the bottom or right side of the screen, depending on orientation (from the taskbar only). -->
-    <string name="move_drop_target_bottom_or_right">移至底部/右側</string>
+    <string name="move_drop_target_bottom_or_right">Mover para baixo&#47;à direita</string>
 </resources>

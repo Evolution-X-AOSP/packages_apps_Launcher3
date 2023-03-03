@@ -24,6 +24,7 @@
     <string name="interface_category_title">インターフェース</string>
     <string name="search_bar_category_title">検索バー</string>
     <string name="actions_category_title">クイックアクション</string>
+    <string name="quickspace_category_title">At A Glance</string>
     <!-- Developer options -->
     <string name="dev_options_title">開発者向けオプション</string>
     <string name="dev_options_summary">非表示の機能を自己責任で有効にする</string>
@@ -70,6 +71,8 @@
     <string name="label_search">検索</string>
     <string name="label_lens">Google レンズ</string>
     <string name="label_voice_search">音声検索</string>
+    <string name="dock_music_search_title">Google 音楽検索</string>
+    <string name="dock_music_search_summary">マイクアイコンを押した際に Google アシスタントの代わりに Google 音楽検索を使用します</string>
     <string name="dock_search_title">Google 検索バー</string>
     <string name="dock_search_summary">ドックの下部に検索バーを表示する</string>
     <string name="dock_theme_title">アイコンのテーマ</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">スクリーンショット</string>
     <string name="recents_clear_all_title">全て消去</string>
     <string name="recents_lens_title">レンズ</string>
+    <string name="recents_kill_app">アプリの終了</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">アイコンのテーマ</string>
     <string name="pref_themed_icons_summary">ランチャーのテーマアイコンに従う</string>
@@ -137,4 +141,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">再起動</string>
     <string name="pref_restart_summary">ランチャーを再起動する</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s 利用可能 | %2$s 合計</string>
+    <string name="recents_meminfo_title">メモリ情報</string>
 </resources>

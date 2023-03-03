@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Label for app share drop target. [CHAR_LIMIT=20] -->
+    <string name="app_share_drop_target_label">Compartilhar aplicativo</string>
+    <!-- ******* Overview ******* -->
+    <!-- Label for a button that lets the user listen to the content of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_listen">Ouvir</string>
+    <!-- Label for a button that translates a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_translate">Traduzir</string>
+    <!-- Label for a button that triggers Search on a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_search">Lens</string>
+    <!-- ******* Dialogs ******* -->
+    <!-- Label for a button that acknowledges the contents of the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_acknowledge">ENTENDI</string>
+    <!-- Label for a button that cancels the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_cancel">CANCELAR</string>
+    <!-- Label for a button that redirects the user to Settings. [CHAR_LIMIT=40] -->
+    <string name="dialog_settings">CONFIGURAÇÕES</string>
+    <!-- ******* NIU Actions First-Run Confirmation Dialog ******* -->
+    <!-- Dialog title -->
+    <string name="niu_actions_confirmation_title">Traduzir ou ouvir texto na tela</string>
+    <!-- Dialog content -->
+    <string name="niu_actions_confirmation_text">Informações como texto na sua tela, endereços da web e capturas de tela podem ser compartilhadas com o Google.\n\nPara alterar quais informações você compartilha, vá para <b>configurações &gt; aplicativos &gt; aplicativos padrão &gt; Assistente digital</b>.</string>
+    <!-- ******* NIU Actions Default Assistant Error Dialogs ******* -->
+    <!-- Assistant not selected: Dialog title -->
+    <string name="assistant_not_selected_title">Escolha um assistente para usar este recurso</string>
+    <!-- Assistant not selected: Dialog content -->
+    <string name="assistant_not_selected_text">Para ouvir ou traduzir texto na sua tela, escolha um aplicativo de assistente digital em Configurações</string>
+    <!-- Assistant not supported: Dialog title -->
+    <string name="assistant_not_supported_title">Mude seu assistente para utilizar este recurso</string>
+    <!-- Assistant not supported: Dialog content -->
+    <string name="assistant_not_supported_text">Para ouvir ou traduzir texto na sua tela, mude o aplicativo de assistente digital em Configurações</string>
+    <!-- ******* NIU Actions Tooltip ******* -->
+    <!-- Tooltip to highlight and explain the Listen button -->
+    <string name="tooltip_listen">Toque aqui para ouvir o texto nesta tela</string>
+    <!-- Tooltip to highlight and explain the Translate button -->
+    <string name="tooltip_translate">Toque aqui para traduzir o texto nesta tela</string>
+    <!-- ******* Toast Messages ******* -->
+    <!-- Toast to indicate that an app cannot be shared -->
+    <string name="toast_p2p_app_not_shareable">Este app não pode ser compartilhado</string>
+</resources>

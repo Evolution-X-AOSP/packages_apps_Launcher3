@@ -8,5 +8,5 @@
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">Şimdi</string>
     <string name="smartspace_shopping_list_overflow">+ %1$d tane daha</string>
-    <string name="weather_description">%1$s, %2$s</string>
+    <string name="weather_description">%1$s，%2$s</string>
 </resources>

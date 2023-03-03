@@ -8,7 +8,7 @@
     <!-- Application name -->
     <!-- Folder titles -->
     <!-- General -->
-    <string name="settings_title">Setelan peluncur EvolutionX</string>
+    <string name="settings_title">Setelan peluncur Evolution X</string>
     <!-- Categories -->
     <string name="home_category_title">Layar beranda</string>
     <string name="home_category_summary">Atur panel Google Now dan lainnya</string>
@@ -24,6 +24,7 @@
     <string name="interface_category_title">Tampilan</string>
     <string name="search_bar_category_title">Bilah pencarian</string>
     <string name="actions_category_title">Tindakan cepat</string>
+    <string name="quickspace_category_title">Widget Beranda</string>
     <!-- Developer options -->
     <string name="dev_options_title">Opsi Pengembang</string>
     <string name="dev_options_summary">Mengaktifkan fitur tersembunyi dengan risiko Anda</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Cari</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Pencarian suara</string>
+    <string name="dock_music_search_title">Google penelusuran musik</string>
+    <string name="dock_music_search_summary">Gunakan Google penelusuran musik alih-alih Google Asisten pada ikon mikrofon yang ditekan</string>
     <string name="dock_search_title">Bilah pencarian Google</string>
     <string name="dock_search_summary">Bilah pencarian di dok bawah</string>
     <string name="dock_theme_title">Ikon bertema</string>
@@ -96,7 +99,7 @@
     <string name="background_blur_summary">Setel tingkat kedalaman blur untuk baru-baru ini dan laci aplikasi</string>
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Saran</string>
-    <string name="suggestion_pref_screen_desc">Untuk semua aplikasi &amp; saran layar beranda</string>
+    <string name="suggestion_pref_screen_desc">Untuk semua aplikasi dan saran layar beranda</string>
     <!-- Background opacity -->
     <string name="background_opacity_title">Opasitas latar belakang</string>
     <!-- Taskbar -->
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Tangkapan Layar</string>
     <string name="recents_clear_all_title">Hapus semua</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_kill_app">Matikan aplikasi</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Ikon bertema</string>
     <string name="pref_themed_icons_summary">Ikuti ikon bertema yang digunakan di layar beranda</string>
@@ -121,7 +125,7 @@
     <string name="icon_pack_add">Instal lebih banyak</string>
     <string name="icon_pack_no_market">Tidak ada toko aplikasi yang tersedia</string>
     <!-- Smartspace -->
-    <string name="smartspace_pref_title">Sekilas</string>
+    <string name="smartspace_pref_title">Widget Beranda</string>
     <string name="smartspace_pref_summary">Tampilkan ruang pintar di bagian atas layar beranda</string>
     <!-- App drawer searchbar -->
     <string name="drawer_searchbar_title">Aktifkan bilah pencarian laci aplikasi</string>
@@ -132,9 +136,12 @@
     <string name="pref_scroll_vibration_title">Getaran Gulir</string>
     <string name="pref_scroll_vibration_summary">Umpan balik haptik saat menggulir aplikasi terbaru, jika didukung</string>
     <!-- Parallel space -->
-    <string name="laboratory_parallel_space_title">Parallel space</string>
+    <string name="laboratory_parallel_space_title">Ruang paralel</string>
     <string name="laboratory_parallel_space_summary">Izinkan menjalankan beberapa hal dari aplikasi yang sama secara paralel</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Mulai ulang</string>
     <string name="pref_restart_summary">Mulai ulang peluncur</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Tersedia | %2$s Total</string>
+    <string name="recents_meminfo_title">Info memori</string>
 </resources>

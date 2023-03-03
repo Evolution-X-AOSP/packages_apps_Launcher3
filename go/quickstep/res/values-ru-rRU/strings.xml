@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Label for app share drop target. [CHAR_LIMIT=20] -->
+    <string name="app_share_drop_target_label">Поделиться приложением</string>
+    <!-- ******* Overview ******* -->
+    <!-- Label for a button that lets the user listen to the content of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_listen">Прослушать</string>
+    <!-- Label for a button that translates a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_translate">Переводчик</string>
+    <!-- Label for a button that triggers Search on a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_search">Объектив</string>
+    <!-- ******* Dialogs ******* -->
+    <!-- Label for a button that acknowledges the contents of the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_acknowledge">ЯСНО</string>
+    <!-- Label for a button that cancels the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_cancel">ОТМЕНА</string>
+    <!-- Label for a button that redirects the user to Settings. [CHAR_LIMIT=40] -->
+    <string name="dialog_settings">НАСТРОЙКИ</string>
+    <!-- ******* NIU Actions First-Run Confirmation Dialog ******* -->
+    <!-- Dialog title -->
+    <string name="niu_actions_confirmation_title">Перевести или прослушать текст на экране</string>
+    <!-- Dialog content -->
+    <string name="niu_actions_confirmation_text">Такая информация, как текст на вашем экране, веб-адреса и скриншоты, может быть передана Google.\n\nЧтобы изменить информацию, которой вы делитесь, перейдите в <b>Настройки &gt; Приложения &gt; Приложения по умолчанию &gt; Приложение «Цифровой помощник»</b>.</string>
+    <!-- ******* NIU Actions Default Assistant Error Dialogs ******* -->
+    <!-- Assistant not selected: Dialog title -->
+    <string name="assistant_not_selected_title">Выберите помощника для использования этой функции</string>
+    <!-- Assistant not selected: Dialog content -->
+    <string name="assistant_not_selected_text">Чтобы прослушать или перевести текст на экране, выберите цифрового помощника в настройках</string>
+    <!-- Assistant not supported: Dialog title -->
+    <string name="assistant_not_supported_title">Измените помощника, чтобы использовать эту функцию</string>
+    <!-- Assistant not supported: Dialog content -->
+    <string name="assistant_not_supported_text">Чтобы слушать или переводить текст на экране, измените приложение цифрового помощника в настройках</string>
+    <!-- ******* NIU Actions Tooltip ******* -->
+    <!-- Tooltip to highlight and explain the Listen button -->
+    <string name="tooltip_listen">Нажмите здесь, чтобы прослушать текст на этом экране</string>
+    <!-- Tooltip to highlight and explain the Translate button -->
+    <string name="tooltip_translate">Нажмите здесь, чтобы прослушать текст на этом экране</string>
+    <!-- ******* Toast Messages ******* -->
+    <!-- Toast to indicate that an app cannot be shared -->
+    <string name="toast_p2p_app_not_shareable">Этим приложением нельзя поделиться</string>
+</resources>
