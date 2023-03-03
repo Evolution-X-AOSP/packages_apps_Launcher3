@@ -109,7 +109,7 @@
     <string name="recents_screenshot_title">Cattura schermo</string>
     <string name="recents_clear_all_title">Cancella tutto</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">Blocca app</string>
+    <string name="recents_kill_app">Termina applicazione</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Icone a tema</string>
     <string name="pref_themed_icons_summary">Segui le icone a tema usate nella schermata home</string>
@@ -135,6 +135,9 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibrazione allo scorrimento</string>
     <string name="pref_scroll_vibration_summary">Feedback aptico durante lo scorrimento delle app recenti, se supportato</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Spazio parallelo</string>
+    <string name="laboratory_parallel_space_summary">Consente l\'esecuzione di istanze multiple della stessa applicazione in parallelo</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Riavvia</string>
     <string name="pref_restart_summary">Riavvia il launcher</string>
