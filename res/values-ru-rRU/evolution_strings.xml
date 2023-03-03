@@ -24,6 +24,7 @@
     <string name="interface_category_title">Интерфейс</string>
     <string name="search_bar_category_title">Панель поиска</string>
     <string name="actions_category_title">Быстрые действия</string>
+    <string name="quickspace_category_title">At A Glance</string>
     <!-- Developer options -->
     <string name="dev_options_title">Для разработчиков</string>
     <string name="dev_options_summary">Включить некоторые скрытые функции на свой страх и риск</string>
@@ -40,7 +41,7 @@
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_left">Когда вы проведите вправо с главного экрана</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Когда вы проведите влево от главного экрана</string>
+    <string name="msg_minus_one_on_right">На главном экране проведите вправо, чтобы открыть приложение Google</string>
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Скрытые и защищенные приложения</string>
     <string name="trust_apps_auth_manager">Разблокируйте для управления скрытыми и защищенными приложениями</string>
@@ -48,7 +49,7 @@
     <string name="trust_apps_loading">Загрузка\u2026</string>
     <string name="trust_apps_no_lock_error">Пожалуйста, установите блокировку экрана для ограничения доступа к приложениям</string>
     <string name="trust_apps_help">Помощь</string>
-    <string name="trust_apps_info_hidden">Скрытые приложения и их виджеты скрыты из панели</string>
+    <string name="trust_apps_info_hidden">Скрытые приложения и их виджеты не отображаются в меню приложений</string>
     <string name="trust_apps_info_protected">Для открытия защищенных приложений из лаунчера требуется аутентификация</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Двойное нажатие для сна</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Поиск</string>
     <string name="label_lens">Google Объектив</string>
     <string name="label_voice_search">Голосовой поиск</string>
+    <string name="dock_music_search_title">Поиск музыки от Google</string>
+    <string name="dock_music_search_summary">Использовать поиск музыки Google вместо Google Assistant при нажатии микрофона</string>
     <string name="dock_search_title">Панель поиска Google</string>
     <string name="dock_search_summary">Показать панель поиска в нижнем док-баре</string>
     <string name="dock_theme_title">Тематические значки</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Снимок экрана</string>
     <string name="recents_clear_all_title">Очистить всё</string>
     <string name="recents_lens_title">Объектив</string>
+    <string name="recents_kill_app">Закрыть приложение</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Тематические значки</string>
     <string name="pref_themed_icons_summary">Следовать тематическим значкам, которые используются на главном экране</string>
@@ -137,4 +141,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Перезагрузка</string>
     <string name="pref_restart_summary">Перезапустить лаунчер</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">Доступно: %1$s | Всего: %2$s</string>
+    <string name="recents_meminfo_title">Информация о памяти</string>
 </resources>
