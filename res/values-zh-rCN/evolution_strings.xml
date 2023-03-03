@@ -24,6 +24,7 @@
     <string name="interface_category_title">界面</string>
     <string name="search_bar_category_title">搜索框</string>
     <string name="actions_category_title">快捷操作</string>
+    <string name="quickspace_category_title">一目了然</string>
     <!-- Developer options -->
     <string name="dev_options_title">开发者选项</string>
     <string name="dev_options_summary">承担风险开启一些隐藏功能</string>
@@ -70,6 +71,8 @@
     <string name="label_search">搜索</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">语音搜索</string>
+    <string name="dock_music_search_title">Google 音乐搜索</string>
+    <string name="dock_music_search_summary">在麦克风图标上使用谷歌音乐搜索而不是谷歌助手</string>
     <string name="dock_search_title">Google 搜索栏</string>
     <string name="dock_search_summary">在底部 Dock 栏处显示搜索栏</string>
     <string name="dock_theme_title">主题图标</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">屏幕截图</string>
     <string name="recents_clear_all_title">全部清除</string>
     <string name="recents_lens_title">Lens</string>
+    <string name="recents_kill_app">终止程序</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">主题图标</string>
     <string name="pref_themed_icons_summary">依照主屏幕上使用的主题图标</string>
@@ -137,4 +141,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">重启</string>
     <string name="pref_restart_summary">重启启动器</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Available | %2$s Total</string>
+    <string name="recents_meminfo_title">内存信息</string>
 </resources>

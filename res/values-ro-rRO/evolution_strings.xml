@@ -109,7 +109,7 @@
     <string name="recents_screenshot_title">Captură de ecran</string>
     <string name="recents_clear_all_title">Elimină tot</string>
     <string name="recents_lens_title">Obiectiv</string>
-    <string name="recents_lock_title">Fixează aplicația</string>
+    <string name="recents_kill_app">Opreşte aplicaţia</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Pictograme tematice</string>
     <string name="pref_themed_icons_summary">Urmărește pictogramele tematice utilizate pe ecranul de pornire</string>
@@ -135,6 +135,9 @@
     <!-- Scroll Vibration -->
     <string name="pref_scroll_vibration_title">Vibrație la derulare</string>
     <string name="pref_scroll_vibration_summary">Vibrații în timpul derulării prin aplicații recente, dacă este acceptat</string>
+    <!-- Parallel space -->
+    <string name="laboratory_parallel_space_title">Spațiu paralel</string>
+    <string name="laboratory_parallel_space_summary">Permite rularea mai multor instanțe ale aceleiași aplicații în paralel</string>
     <!-- Restart launcher -->
     <string name="pref_restart_title">Repornește</string>
     <string name="pref_restart_summary">Repornire lansator</string>

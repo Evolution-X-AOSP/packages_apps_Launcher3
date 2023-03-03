@@ -24,6 +24,7 @@
     <string name="interface_category_title">Interfejs</string>
     <string name="search_bar_category_title">Pasek wyszukiwania</string>
     <string name="actions_category_title">Szybkie działania</string>
+    <string name="quickspace_category_title">W skrócie</string>
     <!-- Developer options -->
     <string name="dev_options_title">Opcje programistyczne</string>
     <string name="dev_options_summary">Włącz ukryte funkcje na własne ryzyko</string>
@@ -70,6 +71,8 @@
     <string name="label_search">Szukaj</string>
     <string name="label_lens">Obiektyw Google</string>
     <string name="label_voice_search">Wyszukiwanie głosowe</string>
+    <string name="dock_music_search_title">Wyszukiwarka dźwięku Google</string>
+    <string name="dock_music_search_summary">Użyj wyszukiwania muzyki Google zamiast Asystenta Google po naciśnięciu ikony mikrofonu</string>
     <string name="dock_search_title">Wyszukiwarka Google</string>
     <string name="dock_search_summary">Pasek wyszukiwania w dolnym panelu</string>
     <string name="dock_theme_title">Ikony dostosowane do motywu</string>
@@ -106,6 +109,7 @@
     <string name="recents_screenshot_title">Zrzut ekranu</string>
     <string name="recents_clear_all_title">Wyczyść wszystko</string>
     <string name="recents_lens_title">Obiektyw</string>
+    <string name="recents_kill_app">Zabij aplikację</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Ikony dostosowane do motywu</string>
     <string name="pref_themed_icons_summary">Dopasuj ikony dostosowane do motywu na ekranie głównym</string>
@@ -137,4 +141,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Uruchom ponownie</string>
     <string name="pref_restart_summary">Zrestartuj launcher</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Dostępne | %2$s Łącznie</string>
+    <string name="recents_meminfo_title">Informacje o pamięci</string>
 </resources>
