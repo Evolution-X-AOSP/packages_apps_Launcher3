@@ -78,7 +78,7 @@
     <string name="dock_theme_title">Тематические значки</string>
     <string name="dock_theme_summary">Использовать тематические значки для панели поиска</string>
     <string name="search_radius_title">Радиус cкругления</string>
-    <string name="qsb_search_hint">Поиск по вашему телефону и многое другое</string>
+    <string name="qsb_search_hint">Поиск на телефоне</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Фон нижней панели</string>
     <string name="hotseat_bg_summary">Полупрозрачный фон нижней панели приложений</string>
