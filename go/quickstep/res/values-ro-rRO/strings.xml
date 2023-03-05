@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Label for app share drop target. [CHAR_LIMIT=20] -->
+    <string name="app_share_drop_target_label">Distribuie aplicația</string>
+    <!-- ******* Overview ******* -->
+    <!-- Label for a button that lets the user listen to the content of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_listen">Ascultă</string>
+    <!-- Label for a button that translates a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_translate">Traducere</string>
+    <!-- Label for a button that triggers Search on a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_search">Obiectiv</string>
+    <!-- ******* Dialogs ******* -->
+    <!-- Label for a button that acknowledges the contents of the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_acknowledge">AM ÎNȚELES</string>
+    <!-- Label for a button that cancels the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_cancel">ANULEAZĂ</string>
+    <!-- Label for a button that redirects the user to Settings. [CHAR_LIMIT=40] -->
+    <string name="dialog_settings">SETĂRI</string>
+    <!-- ******* NIU Actions First-Run Confirmation Dialog ******* -->
+    <!-- Dialog title -->
+    <string name="niu_actions_confirmation_title">Tradu sau ascultă textul de pe ecran</string>
+    <!-- Dialog content -->
+    <string name="niu_actions_confirmation_text">Informații precum textul de pe ecran, adresele web și capturile de ecran pot fi partajate cu Google.\n\nPentru a schimba ce informații se partajează, mergi la <b>Setări &gt; Aplicații &gt; Aplicații implicite &gt; Aplicație Asistent Digital</b>.</string>
+    <!-- ******* NIU Actions Default Assistant Error Dialogs ******* -->
+    <!-- Assistant not selected: Dialog title -->
+    <string name="assistant_not_selected_title">Alege un asistent pentru a utiliza această caracteristică</string>
+    <!-- Assistant not selected: Dialog content -->
+    <string name="assistant_not_selected_text">Pentru a asculta sau a traduce textul pe ecran, alege o aplicație asistent digital în Setări</string>
+    <!-- Assistant not supported: Dialog title -->
+    <string name="assistant_not_supported_title">Schimbă asistentul pentru a utiliza această funcție</string>
+    <!-- Assistant not supported: Dialog content -->
+    <string name="assistant_not_supported_text">Pentru a asculta sau a traduce textul pe ecran, schimbă aplicația asistent digital din Setări</string>
+    <!-- ******* NIU Actions Tooltip ******* -->
+    <!-- Tooltip to highlight and explain the Listen button -->
+    <string name="tooltip_listen">Apasă aici pentru a asculta textul pe acest ecran</string>
+    <!-- Tooltip to highlight and explain the Translate button -->
+    <string name="tooltip_translate">Apasă aici pentru a traduce textul pe acest ecran</string>
+    <!-- ******* Toast Messages ******* -->
+    <!-- Toast to indicate that an app cannot be shared -->
+    <string name="toast_p2p_app_not_shareable">Această aplicație nu poate fi partajată</string>
+</resources>
