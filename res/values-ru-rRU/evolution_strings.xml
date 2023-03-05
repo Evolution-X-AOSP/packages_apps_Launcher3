@@ -10,7 +10,7 @@
     <!-- General -->
     <string name="settings_title">Настройки Evo X Launcher</string>
     <!-- Categories -->
-    <string name="home_category_title">Домашний экран</string>
+    <string name="home_category_title">Главный экран</string>
     <string name="home_category_summary">Включить панель Google Now и многое другое</string>
     <string name="icons_category_title">Иконки</string>
     <string name="icons_category_summary">Установить размер значков и т.д.</string>
@@ -30,9 +30,9 @@
     <string name="dev_options_summary">Включить некоторые скрытые функции на свой страх и риск</string>
     <!-- Edit workspace -->
     <string name="settings_lock_layout_title">Запретить редактирование</string>
-    <string name="settings_lock_layout_summary_on">Значки и виджеты не могут быть добавлены, удалены и перемещены на домашний экран</string>
+    <string name="settings_lock_layout_summary_on">Значки и виджеты не могут быть добавлены, удалены и перемещены на главный экран</string>
     <string name="settings_lock_layout_summary_off">Значки и виджеты могут быть добавлены, удалены и перемещены на домашнем экране</string>
-    <string name="settings_edit_widgets_error">Невозможно добавить виджеты на домашний экран</string>
+    <string name="settings_edit_widgets_error">Невозможно добавить виджеты на главный экран</string>
     <!-- Hide labels -->
     <string name="desktop_show_labels">Подписи значков на рабочем столе</string>
     <string name="drawer_show_labels">Подписи значков в меню</string>

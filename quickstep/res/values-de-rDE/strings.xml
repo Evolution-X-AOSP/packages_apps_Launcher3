@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2017 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Application name -->
+    <!-- Options for recent tasks -->
+    <!-- Title for an option to keep an app pinned to the screen until it is unpinned -->
+    <string name="recent_task_option_pin">Pin</string>
+    <!-- Title for an option to enter freeform mode for a given app -->
+    <string name="recent_task_option_freeform">Freies Format</string>
+    <!-- Recents: The empty recents string. [CHAR LIMIT=NONE] -->
+    <string name="recents_empty_message">Keine kürzlich verwendeten Elemente</string>
+    <!-- Content description for the recent apps's accessibility option that opens its usage settings. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_app_usage_settings">App-Nutzungdetails</string>
+    <!-- Recents: Title of a button that clears the task list, i.e. closes all tasks. [CHAR LIMIT=30] -->
+    <string name="recents_clear_all">Alle schließen</string>
+    <!-- Accessibility title for the list of recent apps [CHAR_LIMIT=none] -->
+    <string name="accessibility_recent_apps">Zuletzt verwendete Apps</string>
+    <!-- Accessibility confirmation for task closed -->
+    <string name="task_view_closed">Task schließen</string>
+    <!-- Accessibility title for an app card in Recents for apps that have time limit set
+     [CHAR_LIMIT=none] -->
+    <string name="task_contents_description_with_remaining_time"><xliff:g id="task_description" example="GMail">%1$s</xliff:g> <xliff:g id="remaining_time" example="7 minutes left today">%2$s</xliff:g></string>
+    <!-- Text to show total app usage per day if it is less than 1 minute ("&lt;" is the
+     escaped form of '<'). [CHAR LIMIT=15] -->
+    <string name="shorter_duration_less_than_one_minute">&lt; 1 Minute</string>
+    <!-- Annotation shown on an app card in Recents, telling that the app has a usage limit set by
+    the user, and a given time is left for it today [CHAR LIMIT=22] -->
+    <string name="time_left_for_app"><xliff:g id="duration" example="3 Minuten"> %s </xliff:g> verbleibend</string>
+    <!-- Accessibility title for the row of all-apps containing app predictions. [CHAR LIMIT=50] -->
+    <string name="title_app_suggestions">App-Vorschläge</string>
+    <!-- Text of the tip when user lands in all apps view for the first time, indicating where the tip toast points to is the predicted apps section. [CHAR_LIMIT=50] -->
+    <string name="all_apps_prediction_tip">Vorhergesagte Apps</string>
+    <!-- Content description for a close button. [CHAR LIMIT=NONE] -->
+    <!-- Hotseat educational strings for users who don't qualify for migration -->
+    <string name="hotseat_edu_title_migrate">App-Vorschläge in der unteren Zeile Ihres Startbildschirms erhalten</string>
+    <string name="hotseat_edu_title_migrate_landscape">App-Vorschläge in der unteren Zeile Ihres Startbildschirms erhalten</string>
+    <string name="hotseat_edu_message_migrate">Einfach auf Ihre am meisten genutzten Apps direkt auf dem Startbildschirm zugreifen. Vorschläge werden basierend auf Ihren Routinen geändert. Apps in der unteren Reihe bewegen sich auf Ihrem Home-Bildschirm. </string>
+    <string name="hotseat_edu_message_migrate_landscape">Einfach auf Ihre am meisten genutzten Apps direkt auf dem Startbildschirm zugreifen. Vorschläge werden basierend auf Ihren Routinen geändert. Apps in der unteren Reihe bewegen sich auf Ihrem Home-Bildschirm. </string>
+    <!-- Button text to opt in for fully predicted hotseat -->
+    <string name="hotseat_edu_accept">App-Vorschläge erhalten</string>
+    <!-- Button text to dismiss opt in for fully predicted hotseat -->
+    <string name="hotseat_edu_dismiss">Nein danke</string>
+    <!-- action shown to toggle predictions after onboarding -->
+    <string name="hotseat_prediction_settings">Einstellungen</string>
+    <!-- tip shown if user has no items in hotseat to migrate -->
+    <string name="hotseat_auto_enrolled">Die am häufigsten verwendeten Apps erscheinen hier und ändern sich basierend auf dem Nutzungsverhalten</string>
+    <!-- tip shown if user declines migration and has no open spots for prediction -->
+    <string name="hotseat_tip_no_empty_slots">Apps aus der unteren Zeile ziehen, um App-Vorschläge zu erhalten</string>
+    <!-- tip shown if user declines migration and has some open spots for prediction -->
+    <string name="hotseat_tip_gaps_filled">App-Vorschläge zu leerem Raum hinzugefügt</string>
+    <!-- tip shown when user migrates and predictions are enabled in hotseat -->
+    <string name="hotsaet_tip_prediction_enabled">App-Vorschläge aktiviert</string>
+    <!-- tip shown when hotseat edu is requested while predictions are disabled -->
+    <string name="hotsaet_tip_prediction_disabled">App-Vorschläge sind deaktiviert</string>
+    <!-- content description for hotseat items -->
+    <string name="hotseat_prediction_content_description">Geplante App: <xliff:g id="title" example="Chrome">%1$s</xliff:g></string>
+    <!-- Feedback shown during interactive parts of Back gesture tutorial for right edge when the gesture is too far from the edge. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_swipe_too_far_from_edge">Stellen Sie sicher, dass Sie von der äußersten rechten oder linken Kante wischen.</string>
+    <!-- Feedback shown during interactive parts of Back gesture tutorial for right edge when the gesture is cancelled. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_cancelled">Stellen Sie sicher, dass Sie vom rechten oder linken Rand zur Mitte des Bildschirms wischen und loslassen.</string>
+    <!-- Feedback shown after completing the back gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_complete_with_overview_follow_up">Du hast gelernt, wie du von rechts wischen kannst, um wieder zurück zu gehen. Als nächstes erfährst du, wie du Apps wechselst.</string>
+    <!-- Feedback shown after completing the back gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_complete_without_follow_up">Du hast die Rückwärtsgeste abgeschlossen.</string>
+    <!-- Feedback shown during interactive parts of Back gesture tutorial when the gesture is within the nav bar region. [CHAR LIMIT=100] -->
+    <string name="back_gesture_feedback_swipe_in_nav_bar">Stellen Sie sicher, dass Sie nicht zu nah am unteren Bildschirmrand wischen.</string>
+    <!-- Subtitle shown on the confirmation screen after successful gesture. [CHAR LIMIT=60] -->
+    <string name="back_gesture_tutorial_confirm_subtitle">Um die Empfindlichkeit der Rückseite zu ändern, gehen Sie zu Einstellungen</string>
+    <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is started too far from the edge. [CHAR LIMIT=100] -->
+    <!-- Introduction title for the Back gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="back_gesture_intro_title">Nach links wischen um zurück zu gehen</string>
+    <!-- Introduction subtitle for the Back gesture tutorial. [CHAR LIMIT=200] -->
+    <string name="back_gesture_intro_subtitle">Um zum letzten Bildschirm zurückzukehren, wischen Sie vom linken oder rechten Rand in die Mitte des Bildschirms.</string>
+    <!-- Introduction subtitle for the Back gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=200] -->
+    <string name="back_gesture_spoken_intro_subtitle">Um zum letzten Bildschirm zurückzukehren, wischen Sie mit 2 Fingern vom linken oder rechten Rand bis zur Mitte des Bildschirms.</string>
+    <string name="home_gesture_feedback_swipe_too_far_from_edge">Stellen Sie sicher, dass Sie vom unteren Rand des Bildschirms nach oben wischen.</string>
+    <!-- Feedback shown during interactive parts of Home gesture tutorial when the Overview gesture is detected. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_overview_detected">Vergewissern Sie sich, dass Sie nicht pausieren, bevor Sie loslassen.</string>
+    <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_wrong_swipe_direction">Stellen Sie sicher, dass Sie gerade nach oben wischen.</string>
+    <!-- Feedback shown after completing the home gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_complete_with_follow_up">Du hast die \"go Home\" Geste abgeschlossen. Als nächstes erfährst du, wie du zurück gehst.</string>
+    <!-- Feedback shown after completing the home gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
+    <string name="home_gesture_feedback_complete_without_follow_up">Du hast die Rückwärtsgeste abgeschlossen.</string>
+    <!-- Introduction title for the Home gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="home_gesture_intro_title">Nach links wischen um zurück zu gehen</string>
+    <!-- Introduction subtitle for the Home gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="home_gesture_intro_subtitle">Wischen Sie von unten auf Ihrem Bildschirm. Diese Geste bringt Sie immer zum Startbildschirm.</string>
+    <!-- Introduction subtitle for the Home gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=100] -->
+    <string name="home_gesture_spoken_intro_subtitle">Wischen Sie mit 2 Fingern von unten nach oben. Diese Geste bringt Sie immer zum Startbildschirm.</string>
+    <!-- Feedback shown during interactive parts of Overview gesture tutorial when the gesture is started too far from the edge. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_swipe_too_far_from_edge">Stellen Sie sicher, dass Sie vom unteren Rand des Bildschirms nach oben wischen.</string>
+    <!-- Feedback shown during interactive parts of Overview gesture tutorial when the Home gesture is detected. The window refers to the current app's window during the gesture. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_home_detected">Versuchen Sie, das Fenster länger zu halten, bevor Sie loslegen.</string>
+    <!-- Feedback shown during interactive parts of Overview gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_wrong_swipe_direction">Stellen Sie sicher, dass Sie gerade nach oben wischen.</string>
+    <!-- Feedback shown after completing the overview gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_complete_with_follow_up">Du hast gelernt, Gesten zu verwenden. Um Gesten abzuschalten, gehe in Einstellungen.</string>
+    <!-- Feedback shown after completing the overview gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_feedback_complete_without_follow_up">Du hast die Rückwärtsgeste abgeschlossen.</string>
+    <!-- Introduction title for the Overview gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_intro_title">Nach oben wischen für App-Übersicht</string>
+    <!-- Introduction subtitle for the Overview gesture tutorial. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_intro_subtitle">Um zwischen den Apps zu wechseln, wischen Sie von unten auf Ihrem Bildschirm nach oben, halten Sie Halten Sie bitte gewartet.</string>
+    <!-- Introduction subtitle for the Overview gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=100] -->
+    <string name="overview_gesture_spoken_intro_subtitle">Um zwischen den Apps zu wechseln, wischen Sie von unten auf Ihrem Bildschirm nach oben, halten Sie Halten Sie bitte gewartet.</string>
+    <!-- Title shown during interactive part of Assistant gesture tutorial. [CHAR LIMIT=30] -->
+    <!-- Subtitle shown during interactive parts of Assistant gesture tutorial. [CHAR LIMIT=60] -->
+    <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture is started too far from the corner. [CHAR LIMIT=100] -->
+    <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture doesn't go diagonally enough. [CHAR LIMIT=100] -->
+    <!-- Feedback shown during interactive parts of Assistant gesture tutorial when the gesture doesn't go far enough. [CHAR LIMIT=100] -->
+    <!-- Title shown in sandbox mode part of gesture tutorial. [CHAR LIMIT=30] -->
+    <!-- Subtitle shown in sandbox mode part of gesture tutorial. [CHAR LIMIT=60] -->
+    <!-- Feedback shown in sandbox mode when the back gesture is successfully issued. [CHAR LIMIT=60] -->
+    <!-- Feedback shown in sandbox mode when the assistant gesture is a successfully issued. [CHAR LIMIT=60] -->
+    <!-- Feedback shown in sandbox mode when the home gesture is a successfully issued. [CHAR LIMIT=60] -->
+    <!-- Feedback shown in sandbox mode when the overview gesture is a successfully issued. [CHAR LIMIT=60] -->
+    <!-- Feedback shown in sandbox mode when the back gesture swipe is too far from the edge. [CHAR LIMIT=60] -->
+    <!-- Title shown on the confirmation screen after successful gesture. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_confirm_title">Alles festgelegt</string>
+    <!-- Button text shown on a button on the feedback popup to complete the gesture tutorial. [CHAR LIMIT=14] -->
+    <string name="gesture_tutorial_action_button_label">Beendet</string>
+    <!-- Button text shown on a button to go to Settings. [CHAR LIMIT=14] -->
+    <string name="gesture_tutorial_action_button_label_settings">Einstellungen</string>
+    <!-- Feedback title to try again. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_try_again">Noch einmal versuchen</string>
+    <!-- Feedback title for a successful gesture. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_nice">Super!</string>
+    <!-- Feedback subtext displaying the current step and the total number of steps for the tutorial. [CHAR LIMIT=30] -->
+    <string name="gesture_tutorial_step">Anleitung <xliff:g id="current">%1$d</xliff:g>/<xliff:g id="total">%2$d</xliff:g></string>
+    <!-- Title of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_title">Fertig!</string>
+    <!-- Hint string at the bottom of "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_hint">Nach oben wischen um zurück zu gehen</string>
+    <!-- Description of "All Set" page on phones [CHAR LIMIT=NONE] -->
+    <string name="allset_description">Jetzt sind Sie bereit das System zu verwenden</string>
+    <!-- Description of "All Set" page on tablets [CHAR LIMIT=NONE] -->
+    <string name="allset_description_tablet">Jetzt sind Sie bereit das Tablet zu verwenden</string>
+    <!-- String linking to navigation settings on "All Set" page [CHAR LIMIT=NONE] -->
+    <string name="allset_navigation_settings"><annotation id="link">\" Benutzerdefinierte Einstellungen\"</annotation></string>
+    <!-- ******* Overview ******* -->
+    <!-- Label for a button that causes the current overview app to be shared. [CHAR_LIMIT=40] -->
+    <string name="action_share">Teilen</string>
+    <!-- Label for a button that causes a screen shot of the current app to be taken. [CHAR_LIMIT=40] -->
+    <string name="action_screenshot">Bildschirmaufnahme</string>
+    <!-- Label for a button that enters split screen selection mode. [CHAR_LIMIT=20] -->
+    <string name="action_split">Teilen</string>
+    <!-- Label for toast with instructions for split screen selection mode. [CHAR_LIMIT=50] -->
+    <string name="toast_split_select_app">Tippen Sie auf eine andere App, um den geteilten Bildschirm zu verwenden</string>
+    <!-- Label for toast when app selected for split isn't supported. [CHAR_LIMIT=50] -->
+    <string name="toast_split_app_unsupported">Das Teilen des Bildschirms wird in dieser App nicht unterstützt.</string>
+    <!-- Message shown when an action is blocked by a policy enforced by the app or the organization managing the device. [CHAR_LIMIT=NONE] -->
+    <string name="blocked_by_policy">Die App oder Ihr Unternehmen lässt das Erstellen von Screenshots nicht zu</string>
+    <!-- ******* Skip tutorial dialog ******* -->
+    <!-- Title for the dialog that allows the user to skip the gesture navigation tutorial. [CHAR_LIMIT=40] -->
+    <string name="skip_tutorial_dialog_title">Navigationshilfe überspringen?</string>
+    <!-- Subtitle for the dialog that allows the user to skip the gesture navigation tutorial. This directs the user to where they can find the gesture tutorial again. [CHAR_LIMIT=100] -->
+    <string name="skip_tutorial_dialog_subtitle">Sie können dies später in der <xliff:g id="name">%1$s</xliff:g> App finden</string>
+    <!-- Button text shown on a button on the tutorial skip dialog to return to the tutorial. [CHAR LIMIT=14] -->
+    <string name="gesture_tutorial_action_button_label_cancel">Abbrechen</string>
+    <!-- Button text shown on a button on the tutorial skip dialog to exit the tutorial. [CHAR LIMIT=14] -->
+    <string name="gesture_tutorial_action_button_label_skip">Überspringen</string>
+    <!-- Accessibility label for the rotation suggestion button -->
+    <string name="accessibility_rotate_button">Bildschirm drehen</string>
+    <!-- ******* Taskbar Edu ******* -->
+    <!-- Accessibility text spoken when the taskbar education panel appears [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_opened">Taskbar Ausbildung erschienen</string>
+    <!-- Accessibility text spoken when the taskbar education panel disappears [CHAR_LIMIT=NONE] -->
+    <string name="taskbar_edu_closed">Taskbar Ausbildung geschlossen</string>
+    <!-- Text in dialog that lets a user know how they can use the taskbar to switch apps on their device.
+         [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_switch_apps">Verwende die Taskleiste, um Apps zu wechseln</string>
+    <!-- Text in dialog that lets a user know how they can use the taskbar to use multiple apps at once on their device.
+         [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_splitscreen">Auf die Seite ziehen, um zwei Apps gleichzeitig zu verwenden</string>
+    <!-- Text in dialog that lets a user know how they can hide the taskbar on their device.
+         [CHAR_LIMIT=60] -->
+    <string name="taskbar_edu_stashing">Tippen und halten, um die Taskleiste auszublenden</string>
+    <!-- Text on button to go to the next screen of a tutorial [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_next">Nächste</string>
+    <!-- Text on button to go to the previous screen of a tutorial [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_previous">Zurück</string>
+    <!-- Text on button to exit a tutorial [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_close">Schließen</string>
+    <!-- Text on button to finish a tutorial [CHAR_LIMIT=16] -->
+    <string name="taskbar_edu_done">Beendet</string>
+    <!-- Content description for home button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_home">Startseite</string>
+    <!-- Content description for accessibility button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_a11y">Bedienungshilfen</string>
+    <!-- Content description for back button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_back">Zurück</string>
+    <!-- Content description for ime switcher button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_ime_switcher">IME Umschalter</string>
+    <!-- Content description for recents button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_recents">Anwendungsverlauf</string>
+    <!-- Content description for notifications button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_notifications">Benachrichtigungen</string>
+    <!-- Content description for quick settings button [CHAR_LIMIT=16] -->
+    <string name="taskbar_button_quick_settings">Schnelleinstellungen</string>
+    <!-- Label for moving drop target to the top or left side of the screen, depending on orientation (from the taskbar only). -->
+    <string name="move_drop_target_top_or_left">Nach oben&#47;verschieben</string>
+    <!-- Label for moving drop target to the bottom or right side of the screen, depending on orientation (from the taskbar only). -->
+    <string name="move_drop_target_bottom_or_right">Nach unten&#47;rechts verschieben</string>
+</resources>

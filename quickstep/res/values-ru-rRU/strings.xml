@@ -95,11 +95,11 @@
     <!-- Feedback shown during interactive parts of Home gesture tutorial when the gesture is horizontal instead of vertical. [CHAR LIMIT=100] -->
     <string name="home_gesture_feedback_wrong_swipe_direction">Проведите по экрану ровно вверх.</string>
     <!-- Feedback shown after completing the home gesture step if the user is following the full gesture tutorial flow. [CHAR LIMIT=100] -->
-    <string name="home_gesture_feedback_complete_with_follow_up">Вы выполнили жест для перехода на Домашний экран. Далее мы расскажем, как вернуться назад.</string>
+    <string name="home_gesture_feedback_complete_with_follow_up">Вы выполнили жест для перехода на домашний экран. Далее мы расскажем, как вернуться назад.</string>
     <!-- Feedback shown after completing the home gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
-    <string name="home_gesture_feedback_complete_without_follow_up">Вы выполнили жест для перехода на Домашний экран.</string>
+    <string name="home_gesture_feedback_complete_without_follow_up">Вы выполнили жест для перехода на домашний экран.</string>
     <!-- Introduction title for the Home gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="home_gesture_intro_title">Переход на домашний экран</string>
+    <string name="home_gesture_intro_title">Проведите по экрану, чтобы вернуться домой</string>
     <!-- Introduction subtitle for the Home gesture tutorial. [CHAR LIMIT=100] -->
     <string name="home_gesture_intro_subtitle">Проведите вверх от нижнего края дисплея. Этот жест открывает домашний экран.</string>
     <!-- Introduction subtitle for the Home gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=100] -->
@@ -115,7 +115,7 @@
     <!-- Feedback shown after completing the overview gesture step if the user started this tutorial individually. [CHAR LIMIT=100] -->
     <string name="overview_gesture_feedback_complete_without_follow_up">Вы выполнили жест для переключения между приложениями.</string>
     <!-- Introduction title for the Overview gesture tutorial. [CHAR LIMIT=100] -->
-    <string name="overview_gesture_intro_title">Переключение между приложениями</string>
+    <string name="overview_gesture_intro_title">Проведите, чтобы переключится между приложениями</string>
     <!-- Introduction subtitle for the Overview gesture tutorial. [CHAR LIMIT=100] -->
     <string name="overview_gesture_intro_subtitle">Чтобы переключиться между приложениями‚ проведите по экрану снизу вверх, задержите палец, а затем отпустите.</string>
     <!-- Introduction subtitle for the Overview gesture tutorial that will be spoken by screen readers. [CHAR LIMIT=100] -->
@@ -147,7 +147,7 @@
     <!-- Title of "All Set" page [CHAR LIMIT=NONE] -->
     <string name="allset_title">Готово!</string>
     <!-- Hint string at the bottom of "All Set" page [CHAR LIMIT=NONE] -->
-    <string name="allset_hint">Проведите вверх, для перехода на Домашний экран</string>
+    <string name="allset_hint">Проведите вверх, для перехода на домашний экран</string>
     <!-- Description of "All Set" page on phones [CHAR LIMIT=NONE] -->
     <string name="allset_description">Вы\u2019 готовы, начать использовать ваш телефон</string>
     <!-- Description of "All Set" page on tablets [CHAR LIMIT=NONE] -->
@@ -191,7 +191,7 @@
     <string name="taskbar_edu_splitscreen">Перетащите в сторону, чтобы использовать два приложения сразу</string>
     <!-- Text in dialog that lets a user know how they can hide the taskbar on their device.
          [CHAR_LIMIT=60] -->
-    <string name="taskbar_edu_stashing">Нажмите &amp; держите для скрытия панели задач</string>
+    <string name="taskbar_edu_stashing">Нажмите и; держите для скрытия панели задач</string>
     <!-- Text on button to go to the next screen of a tutorial [CHAR_LIMIT=16] -->
     <string name="taskbar_edu_next">Далее</string>
     <!-- Text on button to go to the previous screen of a tutorial [CHAR_LIMIT=16] -->

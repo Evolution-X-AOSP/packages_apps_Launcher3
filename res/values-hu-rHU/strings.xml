@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <!-- Application name -->
+    <string name="app_name">Launcher3</string>
+    <!-- Work folder name -->
+    <string name="work_folder_name">Munka</string>
+    <!-- Displayed when user selects a shortcut for an app that was uninstalled [CHAR_LIMIT=none]-->
+    <string name="activity_not_found">Az alkalmazás nincs telepítve.</string>
+    <!-- Displayed when user selects a shortcut for an app that is current not available [CHAR_LIMIT=none]-->
+    <string name="activity_not_available">Az alkalmazás nem érhető el</string>
+    <!-- SafeMode shortcut error string -->
+    <string name="safemode_shortcut_error">Csökkentett módban letiltott a letöltött alkalmazás</string>
+    <!-- SafeMode widget error string -->
+    <string name="safemode_widget_error">Csökkentett módban letiltott a kisalkalmazás</string>
+    <!-- Message shown when a shortcut is not available. It could have been temporarily disabled and may start working again after some time. -->
+    <string name="shortcut_not_available">A parancsikon nem érhető el</string>
+    <!-- User visible name for the launcher/home screen. [CHAR_LIMIT=30] -->
+    <string name="home_screen">Kezdőképernyő</string>
+    <!-- Options for recent tasks -->
+    <!-- Title for an option to enter split screen mode for a given app -->
+    <string name="recent_task_option_split_screen">Osztott képernyő</string>
+    <string name="split_screen_position_top">Felülre osztott</string>
+    <string name="split_screen_position_left">Balra osztott</string>
+    <string name="split_screen_position_right">Jobbra osztott</string>
+    <string name="split_app_info_accessibility">%1$s-alkalmazásinfók</string>
+    <!-- Widgets -->
+    <!-- Message to tell the user to press and hold on a widget to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_widget_to_add">A kisalkalmazás mozgatásához érintse meg és tartsa lenyomva.</string>
+    <!-- Accessibility spoken hint message in widget picker, which allows user to add a widget. Custom action is the label for additional accessibility actions available in this mode [CHAR_LIMIT=100] -->
+    <string name="long_accessible_way_to_add">A kisalkalmazás mozgatásához duplán érintse meg és tartsa lenyomva vagy használjon egyéni műveletet.</string>
+    <!-- The format string for the dimensions of a widget in the drawer -->
+    <!-- There is a special version of this format string for Farsi -->
+    <string name="widget_dims_format">%1$d \u00d7 %2$d</string>
+    <!-- Accessibility spoken message format for the dimensions of a widget in the drawer -->
+    <string name="widget_accessible_dims_format">%1$d széles %2$d magas</string>
+    <!-- Spoken text for a screen reader. The placeholder text is the widget name.
+         [CHAR_LIMIT=none]-->
+    <string name="widget_preview_context_description"><xliff:g id="widget_name" example="Calendar month view">%1$s</xliff:g>-kisalkalmazás</string>
+    <!-- Message to tell the user to press and hold a widget/icon to add it to the home screen.
+         [CHAR LIMIT=NONE]  -->
+    <string name="add_item_request_drag_hint">Érintse meg és tartsa lenyomva a kisalkalmazást a Kezdőképernyőn való mozgatáshoz</string>
+    <!-- Button label to automatically add a widget to home screen [CHAR_LIMIT=50] -->
+    <string name="add_to_home_screen">Hozzáadás a kezdőképernyőhöz</string>
+    <!-- Accessibility spoken message announced when a widget gets added to the home screen using a
+         button in a dialog. [CHAR_LIMIT=none] -->
+    <string name="added_to_home_screen_accessibility_text"><xliff:g id="widget_name" example="Calendar month view">%1$s</xliff:g>-kisalkalmazás hozzáadva a Kezdőképernyőhöz</string>
+    <!-- Label for showing the number of widgets an app has in the full widgets picker.
+         [CHAR_LIMIT=25][ICU SYNTAX] -->
+    <string name="widgets_count">        {count, plural,=1{# kisalkalmazás} other{# kisalkalmazás}} 
+    </string>
+    <!-- Label for showing the number of shortcut an app has in the full widgets picker.
+         [CHAR_LIMIT=25][ICU SYNTAX] -->
+    <string name="shortcuts_count">        {count, plural,=1{# parancsikon} other{# parancsikon}} 
+    </string>
+    <!-- Label for showing both the number of widgets and shortcuts an app has in the full widgets
+         picker. [CHAR_LIMIT=50] -->
+    <string name="widgets_and_shortcuts_count"><xliff:g id="widgets_count" example="5 widgets">%1$s</xliff:g>, <xliff:g id="shortcuts_count" example="1 shortcut">%2$s</xliff:g></string>
+    <!-- Text for both the tile of a popup view, which shows all available widgets installed on
+         the device, and the text of a button, which opens this popup view. [CHAR LIMIT=30]-->
+    <string name="widget_button_text">Kisalkalmazás</string>
+    <!-- Search bar text shown in the popup view showing all available widgets installed on the
+         device. [CHAR_LIMIT=50] -->
+    <string name="widgets_full_sheet_search_bar_hint">Keresés</string>
+    <!-- Spoken text for screen readers. This text lets a user know that the button is used to clear
+         the text that the user entered in the search box. [CHAR_LIMIT=none] -->
+    <string name="widgets_full_sheet_cancel_button_description">Szövegtörlés a keresőmezőből</string>
+    <!-- Text shown when there are no widgets or shortcuts that can be added to the device.
+         [CHAR_LIMIT=none] -->
+    <string name="no_widgets_available">Nincsenek elérhető Kisalkalmazások és Parancsikonok</string>
+    <!-- Text shown when there are no matching widget or shortcut search results for user's search
+         query. [CHAR_LIMIT=none] -->
+    <string name="no_search_results">Nem találhaó sem Kisalkalmazás, sem Parancsikon</string>
+    <!-- Tab label. A user can tap this tab to access their personal widgets. [CHAR_LIMIT=25] -->
+    <string name="widgets_full_sheet_personal_tab">Személyes</string>
+    <!-- Tab label. A user can tap this tab to access their work widgets. [CHAR_LIMIT=25] -->
+    <string name="widgets_full_sheet_work_tab">Munka</string>
+    <!-- A widget category label for grouping widgets related to battery. [CHAR_LIMIT=30] -->
+    <string name="widget_category_battery">Akkumulátor</string>
+    <!-- A widget category label for grouping widgets related to conversations. [CHAR_LIMIT=30] -->
+    <string name="widget_category_conversations">Beszélgetések</string>
+    <!-- A widget category label for grouping widgets related to weather. [CHAR_LIMIT=30] -->
+    <string name="widget_category_weather">Időjárás</string>
+    <!-- Title of a dialog. This dialog lets a user know how they can use widgets on their phone.
+         [CHAR_LIMIT=NONE] -->
+    <string name="widget_education_header">Hasznos infók az Ön ujjhegyeinek</string>
+    <!-- Dialog text. This dialog lets a user know how they can use widgets on their phone.
+         [CHAR_LIMIT=NONE] -->
+    <string name="widget_education_content">Megnyitás nélkül informálódhat és kisalkalmazásokat adhat a Kezdőképernyőhöz</string>
+    <!-- Text on an educational tip on widget informing users that they can change widget settings.
+         [CHAR_LIMIT=NONE] -->
+    <string name="reconfigurable_widget_education_tip">Érintse meg a beállítások módosításához</string>
+    <!-- Text on the button that closes the education dialog about widgets. [CHAR_LIMIT=50] -->
+    <string name="widget_education_close_button">Megértettem</string>
+    <!-- Spoken text for screen readers. This text is for an icon that lets the user change a
+         widget's settings. [CHAR_LIMIT=50] -->
+    <string name="widget_reconfigure_button_content_description">A kisalkalmazások beállításainak módosítása</string>
+    <!-- All Apps -->
+    <!-- Search bar text in the apps view. [CHAR_LIMIT=50] -->
+    <string name="all_apps_search_bar_hint">Alkalmazáskeresés</string>
+    <!-- Loading apps text. [CHAR_LIMIT=50] -->
+    <string name="all_apps_loading_message">Betöltés&#8230;</string>
+    <!-- No-search-results text. [CHAR_LIMIT=50] -->
+    <!-- Label for an icon representing any generic app. [CHAR_LIMIT=50] -->
+    <string name="label_application">Alkalmazás</string>
+    <!-- Label for the header text of the All Apps section in All Apps view, used to separate Predicted Apps and Actions section from All Apps section. [CHAR_LIMIT=50] -->
+    <string name="all_apps_label">Az összes alkalmazás</string>
+    <!-- Popup items -->
+    <!-- Text to display as the header above notifications. [CHAR_LIMIT=30] -->
+    <string name="notifications_header">Értesítések</string>
+    <!-- Drag and drop -->
+    <!-- Message to tell the user to press and hold on a shortcut to add it [CHAR_LIMIT=50] -->
+    <string name="long_press_shortcut_to_add">A parancsikon mozgatásához érintse meg és tartsa lenyomva.</string>
+    <!-- Accessibility spoken hint message in deep shortcut menu, which allows user to add a shortcut. Custom action is the label for additional accessibility actions available in this mode [CHAR_LIMIT=200] -->
+    <string name="long_accessible_way_to_add_shortcut">A parancsikon mozgatásához duplán érintse meg és tartsa lenyomva vagy használjon egyéni műveletet.</string>
+    <!-- Error message when a user can't add more apps, widgets, or shortcuts to a Home screen. -->
+    <string name="out_of_space">Nincs több hely ezen a Kezdőképernyőn</string>
+    <!-- Error message when user has filled the hotseat -->
+    <string name="hotseat_out_of_space">Nincs több hely a Kedvencek tálcán</string>
+    <!-- All applications label -->
+    <string name="all_apps_button_label">Alkalmazáslista</string>
+    <string name="all_apps_search_results">Keresési eredmények</string>
+    <string name="all_apps_button_personal_label">Személyes alkalmazáslista</string>
+    <string name="all_apps_button_work_label">Munkahelyi alkalmazáslista</string>
+    <!-- Label for remove drop target (from the homescreen only).
+         May appear next to uninstall_drop_target_label [CHAR_LIMIT=20] -->
+    <string name="remove_drop_target_label">Eltávolítás</string>
+    <!-- Label for uninstall drop target (from the device).
+         May appear next to remove_drop_target_label [CHAR_LIMIT=20]-->
+    <string name="uninstall_drop_target_label">Teljes eltávolítás</string>
+    <!-- Label for app info drop target. [CHAR_LIMIT=20] -->
+    <string name="app_info_drop_target_label">Alkalmazásinformáció</string>
+    <!-- Label for install drop target. [CHAR_LIMIT=20] -->
+    <string name="install_drop_target_label">Telepítés</string>
+    <!-- Label for install dismiss prediction. -->
+    <string name="dismiss_prediction_label">Ne javasoljon alkalmazást</string>
+    <!-- Label for pinning predicted app. -->
+    <string name="pin_prediction">Jelzettek rögzítése</string>
+    <!-- Permissions: -->
+    <!-- Permission short label -->
+    <string name="permlab_install_shortcut">parancsikon-telepítés</string>
+    <!-- Permission description -->
+    <string name="permdesc_install_shortcut">Lehetővé teszi egy alkalmazás számára, hogy felhasználói beavatkozás nélkül adjon hozzá parancsikonokat.</string>
+    <!-- Permission short label -->
+    <string name="permlab_read_settings">kezdőképernyő beállítások és parancsikonok olvasása</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Lehetővé teszi az alkalmazás számára, hogy beolvassa a kezdőképernyő beállításait és parancsikonjait.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">kezdőképernyő beállítások és parancsikonok írása</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Lehetővé teszi az alkalmazás számára, hogy módosítsa a kezdőképernyő beállításait és parancsikonjait.</string>
+    <!-- Toast shown on clicking a direct call shortcut. [CHAR_LIMIT=80] -->
+    <string name="msg_no_phone_permission"><xliff:g id="app_name" example="Launcher3">%1$s</xliff:g> nem kezdeményezhet mobilhívásokat</string>
+    <!-- Widgets: -->
+    <!-- Error text that lets a user know that the widget can't load. -->
+    <string name="gadget_error_text">A kisalkalmazás betöltése sikertelen</string>
+    <!-- Button text. This button lets a user change a widget's settings. -->
+    <string name="gadget_setup_text">Kisalkalmazás-beállítások</string>
+    <!-- Instructional text to encourage a user to finish setting up the widget. -->
+    <string name="gadget_complete_setup_text">Érintse meg a beállítás befejezéséhez</string>
+    <!-- Text to inform the user that they can't uninstall a system application -->
+    <string name="uninstall_system_app_text">Ez egy rendszeralkalmazás és nem távolítható el.</string>
+    <!-- Default folder title -->
+    <string name="folder_hint_text">Névszerkesztés</string>
+    <!-- Accessibility -->
+    <!-- The format string for when an app is temporarily disabled. -->
+    <string name="disabled_app_label"><xliff:g id="app_name" example="Messenger">%1$s</xliff:g> letiltva</string>
+    <!-- The format string for when an app has a notification dot (meaning it has associated notifications). [ICU_FORMAT]-->
+    <string name="dotted_app_label">        {count, plural,
+            =1      {{app_name} # értesítéssel}
+            other   {{app_name} # értesítéssel}
+        }
+    </string>
+    <!-- The format string for default page scroll text [CHAR_LIMIT=none] -->
+    <string name="default_scroll_format">%1$d. oldal a %2$d oldalból</string>
+    <!-- The format string for Workspace page scroll text [CHAR_LIMIT=none] -->
+    <string name="workspace_scroll_format">%1$d. oldal a %2$d kezdőképernyőből</string>
+    <!-- Description for a new page on homescreen[CHAR_LIMIT=none] -->
+    <string name="workspace_new_page">Új kezdőképernyő-oldal</string>
+    <!-- Folder accessibility -->
+    <!-- The format string for when a folder is opened, speaks the dimensions -->
+    <string name="folder_opened">Mappa megnyitva, <xliff:g id="width" example="5">%1$d</xliff:g> x <xliff:g id="height" example="3">%2$d</xliff:g></string>
+    <!-- Instruction that clicking outside will close folder -->
+    <string name="folder_tap_to_close">Érintse meg a mappa bezárásához</string>
+    <!-- Instruction that clicking outside will commit folder rename -->
+    <string name="folder_tap_to_rename">Érintse meg a név elmentéséhez</string>
+    <!-- Indication that folder closed -->
+    <string name="folder_closed">A mappa bezárva</string>
+    <!-- Folder renamed format -->
+    <string name="folder_renamed">Átnevezve, a mappa új neve: <xliff:g id="name" example="Games">%1$s</xliff:g></string>
+    <!-- Folder name format when folder has less than 4 items -->
+    <string name="folder_name_format_exact"><xliff:g id="name" example="Games">%1$s</xliff:g>-mappa: <xliff:g id="size" example="2">%2$d</xliff:g> elemmel</string>
+    <!-- Folder name format when folder has 4 or more items shown in preview-->
+    <string name="folder_name_format_overflow"><xliff:g id="name" example="Games">%1$s</xliff:g>-mappa: <xliff:g id="size" example="2">%2$d</xliff:g> vagy több elemmel</string>
+    <!-- Strings for the customization mode -->
+    <!-- Text for wallpaper change button [CHAR LIMIT=30]-->
+    <string name="wallpaper_button_text">Háttérképek</string>
+    <!-- Text for wallpaper change button [CHAR LIMIT=30]-->
+    <string name="styles_wallpaper_button_text">Háttérkép és stílus</string>
+    <!-- Text for settings button [CHAR LIMIT=20]-->
+    <string name="settings_button_text">Kezdőoldal-beállítások</string>
+    <!-- Message shown when a feature is disabled by the administrator -->
+    <string name="msg_disabled_by_admin">A rendszergazda letiltotta</string>
+    <!-- Strings for settings -->
+    <!-- Title for Allow Rotation setting. [CHAR LIMIT=50] -->
+    <string name="allow_rotation_title">A kezdőképernyő elforgatásának engedélyezése</string>
+    <!-- Text explaining when the home screen will get rotated. [CHAR LIMIT=100] -->
+    <string name="allow_rotation_desc">A telefon elforgatásakor</string>
+    <!-- Title for Notification dots setting. Tapping this will link to the system Notifications settings screen where the user can turn off notification dots globally. [CHAR LIMIT=50] -->
+    <string name="notification_dots_title">Értesítésszámláló pöttyök</string>
+    <!-- Text to indicate that the system notification dots setting is on [CHAR LIMIT=100] -->
+    <string name="notification_dots_desc_on">Be</string>
+    <!-- Text to indicate that the system notification dots setting is off [CHAR LIMIT=100] -->
+    <string name="notification_dots_desc_off">Ki</string>
+    <!-- Title for the dialog shown when the app does not has notification access, explaining the requirement for notification access [CHAR LIMIT=50] -->
+    <string name="title_missing_notification_access">Értesítési hozzáférésre van szükség</string>
+    <!-- Message explaining to the user that the notification access is required by the app for showing 'Notification dots' [CHAR LIMIT=NONE] -->
+    <string name="msg_missing_notification_access">Az értesítési pöttyök megjelenítéséhez kapcsolja be a(z) <xliff:g id="name" example="My App">%1$s</xliff:g> alkalmazás értesítéseit</string>
+    <!-- Button text in the confirmation dialog which would take the user to the system settings [CHAR LIMIT=50] -->
+    <string name="title_change_settings">Beállításmódosítás</string>
+    <!-- Summary for Notification dots setting. Tapping this will link enable/disable notification dots feature on the home screen. [CHAR LIMIT=50] -->
+    <string name="notification_dots_service_title">Az értesítésszámláló pöttyök megjelenítése</string>
+    <!-- Title for Developer Options setting. [CHAR LIMIT=50] -->
+    <string name="developer_options_title">Fejlesztői funkciók</string>
+    <!-- Label for the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=60] -->
+    <string name="auto_add_shortcuts_label">Ikonhozzáadás a Kezdőképernyőhöz</string>
+    <!-- Text description of the setting that allows the automatic placement of launcher shortcuts for applications and games installed on the device [CHAR LIMIT=NONE] -->
+    <string name="auto_add_shortcuts_description">Új alkalmazások esetében</string>
+    <!-- Label on an icon that references an uninstalled package, for which we have no information about when it might be installed. [CHAR_LIMIT=15] -->
+    <string name="package_state_unknown">Ismeretlen</string>
+    <!-- Button for abandoned promises dialog, to removes this abandoned promise icon. -->
+    <string name="abandoned_clean_this">Eltávolítás</string>
+    <!-- Button for abandoned promise dialog, to search in the market for the missing package. -->
+    <string name="abandoned_search">Keresés</string>
+    <!-- Title for abandoned promise dialog. -->
+    <string name="abandoned_promises_title">Ez az alkalmazás nincs telepítve</string>
+    <!-- Explanation for abandoned promise dialog. "The first 'it' refers to the shortcut icon.
+    The second "it" refers to the app. -->
+    <string name="abandoned_promise_explanation">Az ikonhoz tartozó alkalmazás nincs telepítve.
+      Törölheti az ikont, vagy keresse meg és manuálisan telepítheti azt.
+    </string>
+    <!-- Title for an app which is being installed. -->
+    <string name="app_installing_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g>-telepítés, <xliff:g id="progress" example="30%">%2$s</xliff:g> kész</string>
+    <!-- Title for an app which is being downloaded. -->
+    <string name="app_downloading_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g>-letöltés, <xliff:g id="progress" example="30%">%2$s</xliff:g> kész</string>
+    <!-- Title for an app whose download has been started. -->
+    <string name="app_waiting_download_title"><xliff:g id="name" example="Messenger">%1$s</xliff:g> telepítésre várakozik</string>
+    <!-- Title shown on the alert dialog prompting the user to update the application in market
+     in order to re-enable the disabled shortcuts -->
+    <string name="dialog_update_title">Az alkalmazás frissítése szükséges</string>
+    <!-- Message shown on the alert dialog prompting the user to update the application -->
+    <string name="dialog_update_message">Az ikonhoz tartozó alkalmazás nem frissült. Manuálisan frissítheti a parancsikon újbóli engedélyezésével, vagy eltávolíthatja az ikont.</string>
+    <!-- Message for the update button in the alert dialog, will bring the user to market -->
+    <string name="dialog_update">Frissítés</string>
+    <!-- Message for the remove button in the alert dialog -->
+    <string name="dialog_remove">Eltávolítás</string>
+    <!-- Strings for widgets & more in the popup container/bottom sheet -->
+    <!-- Accessibility title for the popup containing a list of widgets. [CHAR_LIMIT=50] -->
+    <string name="widgets_list">Kisalkalmazáslista</string>
+    <!-- Text announced by accessibility when the popup containing the list of widgets is closed. [CHAR_LIMIT=100] -->
+    <string name="widgets_list_closed">Kisalkalmazáslista lezárva</string>
+    <!-- Strings for accessibility actions -->
+    <!-- Accessibility action to add an app to workspace. [CHAR_LIMIT=30] -->
+    <string name="action_add_to_workspace">Hozzáadás a kezdőképernyőhöz</string>
+    <!-- Accessibility action to move item to the current location. [CHAR_LIMIT=30] -->
+    <string name="action_move_here">Elem áthelyezése ide</string>
+    <!-- Accessibility confirmation for item added to workspace. -->
+    <string name="item_added_to_workspace">Az elem hozzáadva a kezdőképernyőhöz</string>
+    <!-- Accessibility confirmation for item removed. [CHAR_LIMIT=50]-->
+    <string name="item_removed">Az elem eltávolítva</string>
+    <!-- Action shown in snackbar to undo item removal. [CHAR_LIMIT=20] -->
+    <string name="undo">Visszavonás</string>
+    <!-- Accessibility action to move an item on the workspace. [CHAR_LIMIT=30] -->
+    <string name="action_move">Elemáthelyezés</string>
+    <!-- Accessibility description to move item to empty cell. -->
+    <string name="move_to_empty_cell_description">Áthelyezés <xliff:g id="number" example="1">%1$s</xliff:g>. sorba, <xliff:g id="number" example="1">%2$s</xliff:g>. oszlopba a következő helyen: <xliff:g id="string" example="Home screen 2 of 4">%3$s</xliff:g></string>
+    <!-- Accessibility description to move item inside a folder. -->
+    <string name="move_to_position">Áthelyezés a(z) <xliff:g id="number" example="1">%1$s</xliff:g>. pozícióba</string>
+    <!-- Accessibility description to move item to the hotseat. -->
+    <string name="move_to_hotseat_position">Áthelyezés a kedvencek <xliff:g id="number" example="1">%1$s</xliff:g>. pozíciójába</string>
+    <!-- Accessibility confirmation for item move. -->
+    <string name="item_moved">Az elem áthelyezve</string>
+    <!-- Accessibility description to move item into an existing folder. -->
+    <string name="add_to_folder"><xliff:g id="name" example="Games">%1$s</xliff:g> mappához adás</string>
+    <!-- Accessibility description to move item into an existing folder containing an app. -->
+    <string name="add_to_folder_with_app">Hozzáadás a mappához a következővel: <xliff:g id="name" example="Messenger">%1$s</xliff:g></string>
+    <!-- Accessibility confirmation for item added to folder. -->
+    <string name="added_to_folder">Az elem hozzáadva a mappához</string>
+    <!-- Accessibility description to create folder with another item. -->
+    <string name="create_folder_with">Mappa létrehozása a következővel: <xliff:g id="name" example="Game">%1$s</xliff:g></string>
+    <!-- Accessibility confirmation for folder created. -->
+    <string name="folder_created">A Mappa létrehozva</string>
+    <!-- Accessibility action to move an item from folder to workspace. [CHAR_LIMIT=30] -->
+    <string name="action_move_to_workspace">Áthelyezés a Kezdőképernyőre</string>
+    <!-- Accessibility action to resize a widget. [CHAR_LIMIT=30] -->
+    <string name="action_resize">Átméretezés</string>
+    <!-- Accessibility action to increase width of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_increase_width">Szélesség növelése</string>
+    <!-- Accessibility action to increase height of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_increase_height">Magasság növelése</string>
+    <!-- Accessibility action to decrease width of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_decrease_width">Szélesség csökkentése</string>
+    <!-- Accessibility action to decrease height of a widget. [CHAR_LIMIT=30] -->
+    <string name="action_decrease_height">Magasság csökkentése</string>
+    <!-- Accessibility confirmation for widget resize. -->
+    <string name="widget_resized">Kisalkalmazás átméretezve <xliff:g id="number" example="2">%1$s</xliff:g> szélességre és <xliff:g id="number" example="1">%2$s</xliff:g> magasságra</string>
+    <!-- Accessibility action to show quick actions menu for an icon. [CHAR_LIMIT=30] -->
+    <string name="action_deep_shortcut">Parancsikonok</string>
+    <!-- Accessibility description when the context menu of a launcher icon that has notifications as well as shortcuts (providing quick access to app's actions). The "shortcuts" translation should be consistent with the one for action_deep_shortcut. [CHAR_LIMIT=50] -->
+    <string name="shortcuts_menu_with_notifications_description">Parancsikonok és értesítések
+    </string>
+    <!-- Accessibility action to dismiss a notification in the shortcuts menu for an icon. [CHAR_LIMIT=30] -->
+    <string name="action_dismiss_notification">Elvetés</string>
+    <!-- Content description for arrow tip close button. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_close">Bezárás</string>
+    <!-- Accessibility confirmation for notification being dismissed. -->
+    <string name="notification_dismissed">Értesítés elvetve</string>
+    <!-- Label of tab to indicate personal apps -->
+    <string name="all_apps_personal_tab">Személyes</string>
+    <!-- Label of tab to indicate work apps -->
+    <string name="all_apps_work_tab">Munka</string>
+    <!-- This string is in the work profile tab when a user has All Apps open on their phone. This is a label for a toggle to turn the work profile on and off. "Work profile" means a separate profile on a user's phone that's specifically for their work apps and managed by their company. "Work" is used as an adjective.-->
+    <string name="work_profile_toggle_label">Munkaprofil</string>
+    <!--- User onboarding title for work profile apps -->
+    <string name="work_profile_edu_work_apps">A munkahelyi alkalmazások és adatok láthatók a rendszergazda számára</string>
+    <!-- Action label to finish work profile edu-->
+    <string name="work_profile_edu_accept">Megértettem</string>
+    <!--- heading shown when user opens work apps tab while work apps are paused -->
+    <string name="work_apps_paused_title">Munkahelyi alkalmazások szüneteltetve</string>
+    <!--- body shown when user opens work apps tab while work apps are paused -->
+    <string name="work_apps_paused_body">A munkahelyi alkalmazások nem küldhetnek értesítéseket, nem használhatják az akkut, és nem férhetnek hozzá a helyadatokhoz</string>
+    <!-- content description for paused work apps list -->
+    <string name="work_apps_paused_content_description">A munkaprofil szüneteltetve. A profil alkalmazásai nem küldhetnek értesítést, nem használnak akkut és nem férnek hozzá a tartózkodási helyéhez</string>
+    <!-- string shown in educational banner about work profile -->
+    <string name="work_apps_paused_edu_banner">A munkahelyi alkalmazások és adataik láthatóak a rendszergazda számára</string>
+    <!-- button string shown to dismiss work tab education -->
+    <string name="work_apps_paused_edu_accept">Megértettem</string>
+    <!-- button string shown pause work profile -->
+    <string name="work_apps_pause_btn_text">A munkahelyi alkalmazások szüneteltetése</string>
+    <!-- button string shown enable work profile -->
+    <string name="work_apps_enable_btn_text">A munkahelyi alkalmazások bekapcsolása</string>
+    <!-- A hint shown in launcher settings develop options filter box -->
+    <string name="developer_options_filter_hint">Szűrés</string>
+    <!-- Title for preference screen show in Home Settings related to smart search preferences. [CHAR LIMIT=50]-->
+    <string name="search_pref_screen_title">Telefonkeresés</string>
+    <!-- Title for preference screen show in Home Settings related to smart search preferences. [CHAR LIMIT=50]-->
+    <string name="search_pref_screen_title_tablet">Táblagépkeresés</string>
+    <!-- Failed action error message: e.g. Failed: Pause -->
+    <string name="remote_action_failed"><xliff:g id="what" example="Pause">%1$s</xliff:g> meghiúsult</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value"><xliff:g id="v">%s</xliff:g> értékű</string>
+    <string name="custom_seekbar_default_value">Alapértelmezett</string>
+    <string name="custom_seekbar_default_value_to_set">Alapértelmezetten <xliff:g id="v">%s</xliff:g> értékű\nNyomja hosszan a beállításhoz</string>
+    <string name="custom_seekbar_default_value_is_set">Az alapértelmezett érték beállítva</string>
+</resources>

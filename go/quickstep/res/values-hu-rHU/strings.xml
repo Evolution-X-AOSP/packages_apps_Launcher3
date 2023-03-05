@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Label for app share drop target. [CHAR_LIMIT=20] -->
+    <string name="app_share_drop_target_label">Alkalmazás-megosztás</string>
+    <!-- ******* Overview ******* -->
+    <!-- Label for a button that lets the user listen to the content of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_listen">Meghallgatás</string>
+    <!-- Label for a button that translates a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_translate">Fordítás</string>
+    <!-- Label for a button that triggers Search on a screenshot of the current app. [CHAR_LIMIT=40] -->
+    <string name="action_search">Keresés</string>
+    <!-- ******* Dialogs ******* -->
+    <!-- Label for a button that acknowledges the contents of the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_acknowledge">MEGÉRTETTEM</string>
+    <!-- Label for a button that cancels the dialog. [CHAR_LIMIT=40] -->
+    <string name="dialog_cancel">MÉGSE</string>
+    <!-- Label for a button that redirects the user to Settings. [CHAR_LIMIT=40] -->
+    <string name="dialog_settings">BEÁLLÍTÁSOK</string>
+    <!-- ******* NIU Actions First-Run Confirmation Dialog ******* -->
+    <!-- Dialog title -->
+    <string name="niu_actions_confirmation_title">Szövegfordítás vagy meghallgatás a képernyőről</string>
+    <!-- Dialog content -->
+    <string name="niu_actions_confirmation_text">A képernyőn megjelenő szövegek, webcímek és képernyőképek a Google-hoz kerülhetnek.\n\nA <b>Beállítások &gt; Alkalmazások &gt; Alapértelmezett &gt; Digitális segéd</b> menüben változtathatja meg mik kerüljenek a Google-hoz.</string>
+    <!-- ******* NIU Actions Default Assistant Error Dialogs ******* -->
+    <!-- Assistant not selected: Dialog title -->
+    <string name="assistant_not_selected_title">Válasszon egy segédet, hogy használhassa ezt a funkciót</string>
+    <!-- Assistant not selected: Dialog content -->
+    <string name="assistant_not_selected_text">Képernyőfordításhoz vagy meghallgatáshoz válasszon egy digitális segédet a Beállításokban</string>
+    <!-- Assistant not supported: Dialog title -->
+    <string name="assistant_not_supported_title">Változtassa meg a segédet, hogy használhassa ezt a funkciót</string>
+    <!-- Assistant not supported: Dialog content -->
+    <string name="assistant_not_supported_text">Képernyőfordításhoz vagy meghallgatáshoz változtassa meg a digitális segédet a Beállításokban</string>
+    <!-- ******* NIU Actions Tooltip ******* -->
+    <!-- Tooltip to highlight and explain the Listen button -->
+    <string name="tooltip_listen">A képernyőszöveg meghallgatásához kattintson ide</string>
+    <!-- Tooltip to highlight and explain the Translate button -->
+    <string name="tooltip_translate">A képernyőszöveg fordításához kattintson ide</string>
+    <!-- ******* Toast Messages ******* -->
+    <!-- Toast to indicate that an app cannot be shared -->
+    <string name="toast_p2p_app_not_shareable">Ez az alkalmazás nem osztható meg</string>
+</resources>
