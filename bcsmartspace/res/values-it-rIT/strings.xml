@@ -3,7 +3,7 @@
     <string name="accessibility_next_alarm">Prossima sveglia alle ore %s</string>
     <string name="accessibility_smartspace_page">Pagina %1$d di %2$d</string>
     <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
-    <string name="smartspace_flight_card_gate_header">Gate</string>
+    <string name="smartspace_flight_card_gate_header">Cancello</string>
     <string name="smartspace_flight_card_seat_header">Posto</string>
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">Ora</string>
