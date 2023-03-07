@@ -38,7 +38,7 @@
             style="@style/OverviewActionButton"
             android:layout_width="60dp"
             android:layout_height="36dp"
-            android:foreground="@drawable/ic_screenshot_recents"
+            android:foreground="@drawable/ic_screenshot"
             android:foregroundGravity="center" />
 
         <Space
