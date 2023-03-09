@@ -48,6 +48,7 @@
     <uses-permission android:name="android.permission.SUSPEND_APPS" />
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
     <!-- for rotating surface by arbitrary degree -->
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
     <uses-permission android:name="android.permission.ROTATE_SURFACE_FLINGER" />
     <uses-permission android:name="android.permission.WAKEUP_SURFACE_FLINGER" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
