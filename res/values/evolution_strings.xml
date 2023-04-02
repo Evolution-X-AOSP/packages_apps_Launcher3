@@ -181,4 +181,7 @@
     <!-- Force monochrome icons -->
     <string name="pref_force_monochrome_themed_icons_title">Force themed icons</string>
     <string name="pref_force_monochrome_themed_icons_summary">Generate themed icon for apps that do not have one (requires re-toggling of themed icons)</string>
+
+    <!-- QSB -->
+    <string name="qsb_search_hint">Search this phone and more…</string>
 </resources>
