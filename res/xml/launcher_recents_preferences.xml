@@ -50,7 +50,7 @@
         <SwitchPreference
             android:key="pref_recents_lens"
             android:title="@string/recents_lens_title"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:persistent="true" />
 
         <SwitchPreference
