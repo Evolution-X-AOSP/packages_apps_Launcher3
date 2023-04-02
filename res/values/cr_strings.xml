@@ -400,4 +400,7 @@
     <!-- Weather -->
     <string name="weather_settings_title">Weather settings</string>
     <string name="weather_settings_summary">Setup icon pack and weather service</string>
+
+    <!-- QSB -->
+    <string name="qsb_search_hint">Search this phone and more…</string>
 </resources>
