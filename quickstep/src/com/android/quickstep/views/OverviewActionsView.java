@@ -148,7 +148,7 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
         SharedPreferences prefs = LauncherPrefs.getPrefs(context);
         mScreenshot = prefs.getBoolean(KEY_RECENTS_SCREENSHOT, true);
         mClearAll = prefs.getBoolean(KEY_RECENTS_CLEAR_ALL, true);
-        mLens = prefs.getBoolean(KEY_RECENTS_LENS, false);
+        mLens = prefs.getBoolean(KEY_RECENTS_LENS, true);
         prefs.registerOnSharedPreferenceChangeListener(this);
         mShakeUtils = new ShakeUtils(context);
         mShakeClearAll = prefs.getBoolean(KEY_RECENTS_SHAKE_CLEAR_ALL, false);
