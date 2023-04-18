@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 crDroid Android Project
-                   2022 The Evolution X Project
+                   2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <!-- Folder titles -->
     <!-- General -->
     <string name="settings_title">Налаштування лаунчера Evo X</string>
     <!-- Categories -->
@@ -42,15 +41,6 @@
     <string name="msg_minus_one_on_left">На головному екрані проведіть ліворуч, щоб відкрити додаток Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Під час гортання ліворуч від головного екрану</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Приховані та захищені додатки</string>
-    <string name="trust_apps_auth_manager">Розблокуйте, щоб керувати прихованими та захищеними додатками</string>
-    <string name="trust_apps_auth_open_app">Авторизуйтесь, щоб відкрити %1$s</string>
-    <string name="trust_apps_loading">Завантаження\u2026</string>
-    <string name="trust_apps_no_lock_error">Будь ласка, встановіть надійне блокування екрану, щоб обмежити доступ до додатків</string>
-    <string name="trust_apps_help">Допомога</string>
-    <string name="trust_apps_info_hidden">Приховані додатки та їхні віджети сховані зі списку додатків</string>
-    <string name="trust_apps_info_protected">Захищені додатки потребують авторизації, щоб бути запущеними</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Двічі торкніться для блокування екрана</string>
     <string name="pref_sleep_gesture_summary">Двічі торкніться порожнього місця для вимкнення екрана</string>
@@ -61,6 +51,11 @@
     <string name="paused_apps_dialog_title">Додаток призупинено</string>
     <string name="paused_apps_dialog_message">%1$s був зупинений безпосередньо з лаунчера</string>
     <string name="paused_apps_drop_target_label">Призупинити додаток</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Значення: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">за замовчуванням</string>
+    <string name="custom_seekbar_default_value_to_set">Значення за замовчуванням: <xliff:g id="v">%s</xliff:g>\nУтримуйте для встановлення</string>
+    <string name="custom_seekbar_default_value_is_set">Значення за замовчуванням встановлено</string>
     <!-- Icon size -->
     <string name="icon_size_title">Розмір іконок</string>
     <!-- Font size -->
@@ -78,7 +73,6 @@
     <string name="dock_theme_title">Тематичні іконки</string>
     <string name="dock_theme_summary">Використовувати тематичні іконки для рядка пошуку</string>
     <string name="search_radius_title">Радіус заокруглення кутів</string>
-    <string name="qsb_search_hint">Шукати по всьому телефону та далі</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Фон багатокористувацького режиму</string>
     <string name="hotseat_bg_summary">Додати напівпрозорий фон в рядок додатків</string>
@@ -109,7 +103,6 @@
     <string name="recents_screenshot_title">Знімок екрану</string>
     <string name="recents_clear_all_title">Очистити все</string>
     <string name="recents_lens_title">Об\'єктив</string>
-    <string name="recents_lock_title">Закріпити додаток</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Тематичні іконки</string>
     <string name="pref_themed_icons_summary">Тематичні піктограми, які використовуються на головному екрані</string>
@@ -124,21 +117,21 @@
     <string name="icon_pack_default_label">За замовчуванням</string>
     <string name="icon_pack_add">Встановити ще</string>
     <string name="icon_pack_no_market">Немає доступного магазину додатків</string>
-    <!-- Smartspace -->
-    <string name="smartspace_pref_title">Віджет At a Glance</string>
-    <string name="smartspace_pref_summary">Показувати смарт-простір у верхній частині головного екрану</string>
-    <!-- App drawer searchbar -->
-    <string name="drawer_searchbar_title">Увімкнути рядок пошуку в списку додатків</string>
-    <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Темний рядок стану</string>
-    <string name="perf_dark_status_bar_summary">Використовувати темний рядок стану на головному екрані</string>
-    <!-- Scroll Vibration -->
-    <string name="pref_scroll_vibration_title">Вібрація при прокрутці</string>
-    <string name="pref_scroll_vibration_summary">Вібровідгук під час прокрутки нещодавніх додатків, якщо підтримується</string>
-    <!-- Restart launcher -->
-    <string name="pref_restart_title">Перезавантажити</string>
-    <string name="pref_restart_summary">Перезавантажити інтерфейс</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Закрити</string>
+    <string name="recents_app_killed">Програму закрито</string>
     <!-- Memory info -->
     <string name="meminfo_text">%1$s Доступно | %2$s Загалом</string>
     <string name="recents_meminfo_title">Статус пам\'яті</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Панель пошуку додатків</string>
+    <string name="drawer_search_summary">Рядок пошуку зверху списку додатків</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Перезавантажити</string>
+    <string name="pref_restart_summary">Перезавантажити інтерфейс</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Струсніть телефон, щоб очистити всі завдання</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Віджет At a Glance</string>
+    <string name="smartspace_pref_summary">Показувати смарт-простір у верхній частині головного екрану</string>
 </resources>
