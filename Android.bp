@@ -157,6 +157,7 @@ android_library {
         "com.google.android.material_material",
         "iconloader_base",
         "libGoogleFeed",
+        "libParticles",
         "monet",
         "bcsmartspace-google",
         "SystemUIPluginLib",
@@ -240,6 +241,13 @@ java_import {
     name: "libGoogleFeed",
     jars: [
         "libs/libGoogleFeed.jar",
+    ],
+}
+
+java_import {
+    name: "libParticles",
+    jars: [
+        "libs/libParticles.jar",
     ],
 }
 
