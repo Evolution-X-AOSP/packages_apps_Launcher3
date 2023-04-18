@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 crDroid Android Project
-                   2022 The Evolution X Project
+                   2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <!-- Folder titles -->
     <!-- General -->
     <string name="settings_title">Impostazioni Evo X Launcher</string>
     <!-- Categories -->
@@ -24,7 +23,7 @@
     <string name="interface_category_title">Interfaccia</string>
     <string name="search_bar_category_title">Barra di ricerca</string>
     <string name="actions_category_title">Azioni rapide</string>
-    <string name="quickspace_category_title">At A Glance</string>
+    <string name="quickspace_category_title">At a Glance</string>
     <!-- Developer options -->
     <string name="dev_options_title">Opzioni sviluppatore</string>
     <string name="dev_options_summary">Abilita alcune funzioni nascoste a tuo rischio</string>
@@ -42,15 +41,6 @@
     <string name="msg_minus_one_on_left">Dalla schermata Home, scorri a sinistra per aprire l\'app Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Dalla schermata Home, scorri a destra per aprire l\'app Google</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">App protette e nascoste</string>
-    <string name="trust_apps_auth_manager">Sblocca per gestire le app nascoste e protette</string>
-    <string name="trust_apps_auth_open_app">Autenticati per aprire %1$s</string>
-    <string name="trust_apps_loading">Caricamento\u2026</string>
-    <string name="trust_apps_no_lock_error">Imposta una schermata di blocco sicura per limitare l\'accesso alle app</string>
-    <string name="trust_apps_help">Aiuto</string>
-    <string name="trust_apps_info_hidden">Le app nascoste e i loro widget sono nascosti dal drawer</string>
-    <string name="trust_apps_info_protected">Le applicazioni protette richiedono l\'autenticazione per essere aperte dal launcher</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Doppio tocco per spegnere</string>
     <string name="pref_sleep_gesture_summary">Tocca due volte sullo spazio vuoto per spegnere lo schermo</string>
@@ -61,6 +51,11 @@
     <string name="paused_apps_dialog_title">App in pausa</string>
     <string name="paused_apps_dialog_message">%1$s è stato messo in pausa direttamente dal launcher</string>
     <string name="paused_apps_drop_target_label">Pausa app</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valore: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">impostazione predefinita</string>
+    <string name="custom_seekbar_default_value_to_set">Valore predefinito: <xliff:g id="v">%s</xliff:g>\nTocca a lungo per impostare</string>
+    <string name="custom_seekbar_default_value_is_set">Valore predefinito impostato</string>
     <!-- Icon size -->
     <string name="icon_size_title">Dimensione icona</string>
     <!-- Font size -->
@@ -78,7 +73,6 @@
     <string name="dock_theme_title">Icone a tema</string>
     <string name="dock_theme_summary">Usa icone a tema per la barra di ricerca</string>
     <string name="search_radius_title">Raggio angoli</string>
-    <string name="qsb_search_hint">Cerca nel tuo telefono e altro ancora</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Sfondo barra inferiore</string>
     <string name="hotseat_bg_summary">Aggiunge uno sfondo traslucido al dock delle app</string>
@@ -109,7 +103,6 @@
     <string name="recents_screenshot_title">Cattura schermo</string>
     <string name="recents_clear_all_title">Cancella tutto</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">Blocca app</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Icone a tema</string>
     <string name="pref_themed_icons_summary">Segui le icone a tema usate nella schermata home</string>
@@ -124,21 +117,21 @@
     <string name="icon_pack_default_label">Predefinito</string>
     <string name="icon_pack_add">Installa altri</string>
     <string name="icon_pack_no_market">Nessun app store disponibile</string>
-    <!-- Smartspace -->
-    <string name="smartspace_pref_title">At a Glance</string>
-    <string name="smartspace_pref_summary">Mostra smartspace nella parte superiore della schermata home</string>
-    <!-- App drawer searchbar -->
-    <string name="drawer_searchbar_title">Abilita la barra di ricerca del drawer</string>
-    <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Barra di stato scura</string>
-    <string name="perf_dark_status_bar_summary">Usa la barra di stato scura sulla schermata home</string>
-    <!-- Scroll Vibration -->
-    <string name="pref_scroll_vibration_title">Vibrazione allo scorrimento</string>
-    <string name="pref_scroll_vibration_summary">Feedback aptico durante lo scorrimento delle app recenti, se supportato</string>
-    <!-- Restart launcher -->
-    <string name="pref_restart_title">Riavvia</string>
-    <string name="pref_restart_summary">Riavvia il launcher</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Termina</string>
+    <string name="recents_app_killed">App terminata</string>
     <!-- Memory info -->
     <string name="meminfo_text">%1$s disponibile | %2$s totale</string>
     <string name="recents_meminfo_title">Info memoria</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Barra di ricerca app</string>
+    <string name="drawer_search_summary">Barra di ricerca sopra il drawer delle app</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Riavvia</string>
+    <string name="pref_restart_summary">Riavvia il launcher</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Scuoti il telefono per cancellare tutte le attività</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">At a Glance</string>
+    <string name="smartspace_pref_summary">Mostra smartspace nella parte superiore della schermata home</string>
 </resources>
