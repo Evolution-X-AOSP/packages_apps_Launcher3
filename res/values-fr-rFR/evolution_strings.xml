@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 crDroid Android Project
-                   2022 The Evolution X Project
+                   2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <!-- Folder titles -->
     <!-- General -->
     <string name="settings_title">Paramètres d\'écran d\'accueil</string>
     <!-- Categories -->
@@ -42,15 +41,6 @@
     <string name="msg_minus_one_on_left">Lors d\'un balayage vers la droite sur l\'écran d\'accueil principal</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Lors d\'un balayage vers la gauche sur l\'écran d\'accueil principal</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Applications cachées &amp; protégées</string>
-    <string name="trust_apps_auth_manager">Déverrouiller pour gérer les applications cachées et protégées</string>
-    <string name="trust_apps_auth_open_app">Authentifiez-vous pour ouvrir %1$s</string>
-    <string name="trust_apps_loading">Chargement\u2026</string>
-    <string name="trust_apps_no_lock_error">Veuillez configurer un écran de verrouillage sécurisé pour restreindre l\'accès à l\'application</string>
-    <string name="trust_apps_help">Aide</string>
-    <string name="trust_apps_info_hidden">Les applications masquées et leurs widgets sont masqués dans le tiroir d\'applications</string>
-    <string name="trust_apps_info_protected">Les applications protégées nécessitent une authentification pour être ouvertes depuis le lanceur</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Double appui pour mettre en veille</string>
     <string name="pref_sleep_gesture_summary">Appuyez deux fois sur un emplacement libre pour éteindre l\'écran</string>
@@ -61,6 +51,11 @@
     <string name="paused_apps_dialog_title">Application suspendue</string>
     <string name="paused_apps_dialog_message">%1$s a été suspendu directement depuis le lanceur</string>
     <string name="paused_apps_drop_target_label">Suspendre l\'application</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valeur : <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">par défaut</string>
+    <string name="custom_seekbar_default_value_to_set">Valeur par défaut : <xliff:g id="v">%s</xliff:g>\nRester appuyer pour définir</string>
+    <string name="custom_seekbar_default_value_is_set">Valeur par défaut définie</string>
     <!-- Icon size -->
     <string name="icon_size_title">Taille de l\'icône</string>
     <!-- Font size -->
@@ -78,7 +73,6 @@
     <string name="dock_theme_title">Icônes thématiques</string>
     <string name="dock_theme_summary">Utiliser les icônes thématiques pour la barre de recherche</string>
     <string name="search_radius_title">Courbure des angles</string>
-    <string name="qsb_search_hint">Recherchez sur votre téléphone et plus</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Contraster le dock</string>
     <string name="hotseat_bg_summary">Ajouter un arrière-plan translucide au dock d\'applications</string>
@@ -109,7 +103,6 @@
     <string name="recents_screenshot_title">Capture d\'écran</string>
     <string name="recents_clear_all_title">Tout effacer</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">Épingler l\'application</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Icônes thématiques</string>
     <string name="pref_themed_icons_summary">Suivre les icônes thématiques utilisées sur l\'écran d\'accueil</string>
@@ -124,21 +117,21 @@
     <string name="icon_pack_default_label">Défaut</string>
     <string name="icon_pack_add">Installer plus</string>
     <string name="icon_pack_no_market">Il n\'y a aucun magasin d\'applications disponible</string>
-    <!-- Smartspace -->
-    <string name="smartspace_pref_title">At a Glance</string>
-    <string name="smartspace_pref_summary">Afficher smartspace en haut de l\'écran d\'accueil</string>
-    <!-- App drawer searchbar -->
-    <string name="drawer_searchbar_title">Activer la barre de recherche du tiroir d\'applications</string>
-    <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Barre d\'état sombre</string>
-    <string name="perf_dark_status_bar_summary">Assombrir la barre d\'état sur l\'écran d\'accueil</string>
-    <!-- Scroll Vibration -->
-    <string name="pref_scroll_vibration_title">Vibration lors du défilement</string>
-    <string name="pref_scroll_vibration_summary">Retour tactile lors du défilement des applications récentes, si supporté</string>
-    <!-- Restart launcher -->
-    <string name="pref_restart_title">Redémarrer</string>
-    <string name="pref_restart_summary">Redémarrer le lanceur d\'applications</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Tuer</string>
+    <string name="recents_app_killed">Application tuée</string>
     <!-- Memory info -->
     <string name="meminfo_text">%1$s disponibles sur/%2$s au total</string>
     <string name="recents_meminfo_title">Informations sur la RAM</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Barre de recherche d\'applications</string>
+    <string name="drawer_search_summary">Barre de recherche en haut du tiroir d\'applications</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Redémarrer</string>
+    <string name="pref_restart_summary">Redémarrer le lanceur d\'applications</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Secouer le téléphone pour effacer toutes les tâches</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">At a Glance</string>
+    <string name="smartspace_pref_summary">Afficher smartspace en haut de l\'écran d\'accueil</string>
 </resources>
