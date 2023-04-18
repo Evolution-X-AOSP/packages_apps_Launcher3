@@ -155,6 +155,7 @@ android_library {
         "iconloader_base",
         "libGoogleFeed",
         "SettingsLib",
+        "libParticles",
         "view_capture"
     ],
     manifest: "AndroidManifest-common.xml",
@@ -238,6 +239,13 @@ java_import {
     name: "libGoogleFeed",
     jars: [
         "libs/libGoogleFeed.jar",
+    ],
+}
+
+java_import {
+    name: "libParticles",
+    jars: [
+        "libs/libParticles.jar",
     ],
 }
 
