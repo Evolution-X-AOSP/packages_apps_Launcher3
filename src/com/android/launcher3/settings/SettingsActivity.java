@@ -20,6 +20,9 @@ import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.ACTIO
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -45,17 +48,22 @@ import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.LauncherPrefs;
 import com.android.launcher3.R;
+import com.android.launcher3.util.ShakeUtils;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.model.WidgetsModel;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+
+import com.plattysoft.leonids.ParticleSystem;
+
+import java.util.Random;
 
 /**
  * Settings activity for Launcher.
  */
 public class SettingsActivity extends CollapsingToolbarBaseActivity
         implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback,
-        SharedPreferences.OnSharedPreferenceChangeListener{
+        SharedPreferences.OnSharedPreferenceChangeListener, ShakeUtils.OnShakeListener{
 
     public static final String EXTRA_FRAGMENT_ARG_KEY = ":settings:fragment_args_key";
     public static final String EXTRA_SHOW_FRAGMENT_ARGS = ":settings:show_fragment_args";
@@ -66,6 +74,8 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
     static final String EXTRA_FRAGMENT = ":settings:fragment";
     @VisibleForTesting
     static final String EXTRA_FRAGMENT_ARGS = ":settings:fragment_args";
+
+    private static ShakeUtils mShakeUtils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +104,39 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
             fm.beginTransaction().replace(com.android.settingslib.widget.R.id.content_frame, f).commit();
         }
         LauncherPrefs.getPrefs(getApplicationContext()).registerOnSharedPreferenceChangeListener(this);
+        mShakeUtils = new ShakeUtils(this);
+        mShakeUtils.bindShakeListener(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mShakeUtils.unBindShakeListener(this);
+    }
+
+    @Override
+    public void onShake(double speed) {
+        // Trigger the particle effect easter egg on shake
+        Random rand = new Random();
+        int firstRandom = rand.nextInt(91-0);
+        int secondRandom = rand.nextInt(181-90)+90;
+        int thirdRandom = rand.nextInt(181-0);
+
+        Drawable easteregg = getResources().getDrawable(R.drawable.easteregg,null);
+        int randomColor;
+        randomColor = Color.rgb(
+                Color.red(rand.nextInt(0xFFFFFF)),
+                Color.green(rand.nextInt(0xFFFFFF)),
+                Color.blue(rand.nextInt(0xFFFFFF)));
+        easteregg.setTint(randomColor);
+
+        ParticleSystem ps = new ParticleSystem(this, 50, easteregg, 2000);
+        ps.setScaleRange(0.7f,1.3f);
+        ps.setSpeedRange(0.1f,0.25f);
+        ps.setAcceleration(0.0001f,thirdRandom);
+        ps.setRotationSpeedRange(firstRandom,secondRandom);
+        ps.setFadeOut(300);
+        ps.oneShot(this.findViewById(android.R.id.content),50);
     }
 
     @Override
