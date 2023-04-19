@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 crDroid Android Project
-                   2022 The Evolution X Project
+                   2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <!-- Folder titles -->
     <!-- General -->
     <string name="settings_title">Configurações da tela inical</string>
     <!-- Categories -->
@@ -39,18 +38,9 @@
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Deslize para acessar o feed do Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_left">Na tela inicial, deslize para a direita para acessar o feed do Google</string>
+    <string name="msg_minus_one_on_left">Na tela inicial, deslize para a esquerda para acessar o feed do Google</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
-    <string name="msg_minus_one_on_right">Na tela inicial, deslize para a esquerda para acessar o feed do Google</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Aplicativos ocultos e protegidos</string>
-    <string name="trust_apps_auth_manager">Desbloquear para gerenciar os aplicativos ocultos e protegidos</string>
-    <string name="trust_apps_auth_open_app">Autenticar para abrir %1$s</string>
-    <string name="trust_apps_loading">Carregando...</string>
-    <string name="trust_apps_no_lock_error">Configure uma tela de bloqueio para restringir o acesso aos aplicativos</string>
-    <string name="trust_apps_help">Ajuda</string>
-    <string name="trust_apps_info_hidden">Aplicativos ocultos e seus widgets estão escondidos do menu de apps</string>
-    <string name="trust_apps_info_protected">Aplicativos protegidos exigem autenticação para serem abertos a partir do launcher</string>
+    <string name="msg_minus_one_on_right">Na tela inicial, deslize para a direita para acessar o feed do Google</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Toque duplo para dormir</string>
     <string name="pref_sleep_gesture_summary">Toque duas vezes no espaço vazio para desligar a tela</string>
@@ -61,6 +51,11 @@
     <string name="paused_apps_dialog_title">App pausado</string>
     <string name="paused_apps_dialog_message">%1$s foi pausado diretamente pelo launcher</string>
     <string name="paused_apps_drop_target_label">Pausar app</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">por padrão</string>
+    <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nToque longo para definir</string>
+    <string name="custom_seekbar_default_value_is_set">Valor padrão definido</string>
     <!-- Icon size -->
     <string name="icon_size_title">Tamanho do ícone</string>
     <!-- Font size -->
@@ -78,7 +73,6 @@
     <string name="dock_theme_title">Ícones temáticos</string>
     <string name="dock_theme_summary">Usar ícones temáticos para a barra de pesquisa</string>
     <string name="search_radius_title">Raio de canto</string>
-    <string name="qsb_search_hint">Pesquisa no smartphone</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Fundo da dock inferior</string>
     <string name="hotseat_bg_summary">Adicionar fundo translúcido para a dock de apps</string>
@@ -109,7 +103,6 @@
     <string name="recents_screenshot_title">Captura de tela</string>
     <string name="recents_clear_all_title">Limpar tudo</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">Fixar aplicativo</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Ícones temáticos</string>
     <string name="pref_themed_icons_summary">Seguir ícones temáticos usados na tela inicial</string>
@@ -124,21 +117,21 @@
     <string name="icon_pack_default_label">Padrão</string>
     <string name="icon_pack_add">Instalar mais</string>
     <string name="icon_pack_no_market">Não há uma loja de aplicativos disponível</string>
-    <!-- Smartspace -->
-    <string name="smartspace_pref_title">Resumo</string>
-    <string name="smartspace_pref_summary">Mostrar espaço inteligente na parte superior da tela inicial</string>
-    <!-- App drawer searchbar -->
-    <string name="drawer_searchbar_title">Ativar barra de pesquisa na gaveta de aplicativos</string>
-    <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Barra de status escura</string>
-    <string name="perf_dark_status_bar_summary">Usar barra de status escura na tela inicial</string>
-    <!-- Scroll Vibration -->
-    <string name="pref_scroll_vibration_title">Vibração de rolagem</string>
-    <string name="pref_scroll_vibration_summary">Retorno tátil ao navegar pela guia de aplicativos recentes, se suportado</string>
-    <!-- Restart launcher -->
-    <string name="pref_restart_title">Reiniciar</string>
-    <string name="pref_restart_summary">Reiniciar o launcher</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Encerrar</string>
+    <string name="recents_app_killed">Aplicativo encerrado</string>
     <!-- Memory info -->
     <string name="meminfo_text">%1$s Disponível - %2$s Total</string>
     <string name="recents_meminfo_title">Informações da memória</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Barra de pesquisa de aplicativos</string>
+    <string name="drawer_search_summary">Barra de pesquisa na parte superior da gaveta de aplicativos</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Reiniciar</string>
+    <string name="pref_restart_summary">Reiniciar manualmente o launcher para aplicar qualquer configuração pendente</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Agite o telefone para limpar todas as tarefas</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Resumo</string>
+    <string name="smartspace_pref_summary">Mostrar espaço inteligente na parte superior da tela inicial</string>
 </resources>
