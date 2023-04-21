@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 crDroid Android Project
-                   2022 The Evolution X Project
+                   2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <!-- Folder titles -->
     <!-- General -->
     <string name="settings_title">Starteinstellungen</string>
     <!-- Categories -->
@@ -42,15 +41,6 @@
     <string name="msg_minus_one_on_left">Wenn du vom Startbildschirm aus nach rechts wischst</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Wenn du vom Startbildschirm aus nach links wischst</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Versteckte &amp; Geschützte Apps</string>
-    <string name="trust_apps_auth_manager">Entsperren, um die versteckten und geschützten Apps zu verwalten</string>
-    <string name="trust_apps_auth_open_app">Authentifizieren, um %1$s zu öffnen</string>
-    <string name="trust_apps_loading">Wird geladen\u2026</string>
-    <string name="trust_apps_no_lock_error">Bitte richten Sie einen sicheren Sperrbildschirm ein, um den App-Zugriff zu beschränken</string>
-    <string name="trust_apps_help">Hilfe</string>
-    <string name="trust_apps_info_hidden">Versteckte Apps und ihre Widgets werden in der App-Übersicht nicht angezeigt</string>
-    <string name="trust_apps_info_protected">Geschützte Apps erfordern eine Authentifizierung, um gestartet werden zu können</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Doppeltippen zum Sperren</string>
     <string name="pref_sleep_gesture_summary">Zum Sperren auf einen leeren Bereich doppeltippen</string>
@@ -61,6 +51,11 @@
     <string name="paused_apps_dialog_title">App pausiert</string>
     <string name="paused_apps_dialog_message">%1$s ist mithilfe des Launchers pausiert worden</string>
     <string name="paused_apps_drop_target_label">App pausieren</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Wert: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">Standardmäßig</string>
+    <string name="custom_seekbar_default_value_to_set">Standardwert: <xliff:g id="v">%s</xliff:g>\nZum Einstellen lange gedrückt halten</string>
+    <string name="custom_seekbar_default_value_is_set">Standardwert ist gesetzt</string>
     <!-- Icon size -->
     <string name="icon_size_title">Symbolgröße</string>
     <!-- Font size -->
@@ -78,7 +73,6 @@
     <string name="dock_theme_title">Eingefärbte Symbole</string>
     <string name="dock_theme_summary">Eingefärbte Symbole in der Suchleiste verwenden</string>
     <string name="search_radius_title">Eckradius</string>
-    <string name="qsb_search_hint">Durchsuche dein Telefon und mehr</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Hintergrund im Dock</string>
     <string name="hotseat_bg_summary">Transparenten Hintergrund im Dock anzeigen</string>
@@ -109,7 +103,6 @@
     <string name="recents_screenshot_title">Bildschirmfoto</string>
     <string name="recents_clear_all_title">Alle schließen</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">App anheften</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Eingefärbte Symbole</string>
     <string name="pref_themed_icons_summary">Stil der eingefärbte Symbole auf dem Startbildschirm folgen</string>
@@ -124,21 +117,21 @@
     <string name="icon_pack_default_label">Standard</string>
     <string name="icon_pack_add">Weitere installieren</string>
     <string name="icon_pack_no_market">Es ist kein App-Store verfügbar</string>
-    <!-- Smartspace -->
-    <string name="smartspace_pref_title">Auf einen Blick (At a Glance)</string>
-    <string name="smartspace_pref_summary">Smartspace am oberen Bildschirmrand anzeigen</string>
-    <!-- App drawer searchbar -->
-    <string name="drawer_searchbar_title">App-Übersicht-Suchleiste aktivieren</string>
-    <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Dunkle Statusleiste</string>
-    <string name="perf_dark_status_bar_summary">Dunkle Statusleiste auf Startbildschirm verwenden</string>
-    <!-- Scroll Vibration -->
-    <string name="pref_scroll_vibration_title">Scroll-Vibration</string>
-    <string name="pref_scroll_vibration_summary">Haptisches Feedback während des Scrollen durch den Anwendungsverlauf, falls unterstützt</string>
-    <!-- Restart launcher -->
-    <string name="pref_restart_title">Neustart</string>
-    <string name="pref_restart_summary">Launcher neu starten</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Beenden erzwingen</string>
+    <string name="recents_app_killed">App beendet</string>
     <!-- Memory info -->
     <string name="meminfo_text">%1$s Verfügbar | %2$s Gesamt</string>
     <string name="recents_meminfo_title">Speicher-Info</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">App-Suchleiste</string>
+    <string name="drawer_search_summary">Suchleiste oben in der App-Übersicht</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Neustart</string>
+    <string name="pref_restart_summary">Launcher neu starten</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Telefon schütteln zum Schließen aller Apps</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Auf einen Blick (At a Glance)</string>
+    <string name="smartspace_pref_summary">Smartspace am oberen Bildschirmrand anzeigen</string>
 </resources>
