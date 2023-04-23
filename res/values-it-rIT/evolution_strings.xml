@@ -129,6 +129,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Riavvia</string>
     <string name="pref_restart_summary">Riavvia il launcher</string>
+    <string name="restarting_launcher">Riavvio launcher...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Scuoti il telefono per cancellare tutte le attività</string>
     <!-- Smartspace -->
