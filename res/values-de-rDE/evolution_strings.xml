@@ -129,6 +129,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Neustart</string>
     <string name="pref_restart_summary">Launcher neu starten</string>
+    <string name="restarting_launcher">Launcher neu starten...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Telefon schütteln zum Schließen aller Apps</string>
     <!-- Smartspace -->

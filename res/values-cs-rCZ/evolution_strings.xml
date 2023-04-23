@@ -129,6 +129,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Restartovat</string>
     <string name="pref_restart_summary">Restartujte spouštěč ručně, abyste použili všechna následná nastavení</string>
+    <string name="restarting_launcher">Restartuji spouštěč...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Vymazat všechny úlohy zatřepáním telefonem</string>
     <!-- Smartspace -->
