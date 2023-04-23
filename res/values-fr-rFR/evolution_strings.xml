@@ -129,6 +129,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Redémarrer</string>
     <string name="pref_restart_summary">Redémarrer le lanceur d\'applications</string>
+    <string name="restarting_launcher">Redémarrage du lanceur d\'applications...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Secouer le téléphone pour effacer toutes les tâches</string>
     <!-- Smartspace -->

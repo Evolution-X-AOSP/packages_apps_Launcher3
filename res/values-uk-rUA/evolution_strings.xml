@@ -129,6 +129,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Перезавантажити</string>
     <string name="pref_restart_summary">Перезавантажити інтерфейс</string>
+    <string name="restarting_launcher">Перезавантажити інтерфейс...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Струсніть телефон, щоб очистити всі завдання</string>
     <!-- Smartspace -->
