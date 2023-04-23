@@ -129,6 +129,7 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Újraindítás</string>
     <string name="pref_restart_summary">A Launcher újraindítása hogy a változtatások érvénybe lépjenek</string>
+    <string name="restarting_launcher">A Launcher újraindítása...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Az összes feladat törléséhez rázza meg a telefont</string>
     <!-- Smartspace -->
