@@ -105,7 +105,18 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
         }
         LauncherPrefs.getPrefs(getApplicationContext()).registerOnSharedPreferenceChangeListener(this);
         mShakeUtils = new ShakeUtils(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         mShakeUtils.bindShakeListener(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mShakeUtils.unBindShakeListener(this);
     }
 
     @Override
