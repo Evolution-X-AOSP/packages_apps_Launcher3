@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2022 crDroid Android Project
-                   2022 The Evolution X Project
+                   2023 The Evolution X Project
      SPDX-License-Identifier: Apache-2.0
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <!-- Folder titles -->
     <!-- General -->
     <string name="settings_title">Evo X Launcher Ayarları</string>
     <!-- Categories -->
@@ -42,15 +41,6 @@
     <string name="msg_minus_one_on_left">Google uygulamasını açmak için Ana ekrandan sola kaydırın</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_right">Google uygulamasını açmak için Ana ekrandan sağa kaydırın</string>
-    <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Gizli &amp; Korumalı uygulamalar</string>
-    <string name="trust_apps_auth_manager">Gizli ve korunan uygulamaları yönetmek için kilidi açın</string>
-    <string name="trust_apps_auth_open_app">%1$s açmak için kimlik doğrula</string>
-    <string name="trust_apps_loading">Yükleniyor\u2026</string>
-    <string name="trust_apps_no_lock_error">Uygulama erişimini kısıtlamak için lütfen güvenli bir kilit ekranı ayarlayın</string>
-    <string name="trust_apps_help">Yardım</string>
-    <string name="trust_apps_info_hidden">Gizli uygulamalar ve widgetler uygulama menüsünde görünmeyecek</string>
-    <string name="trust_apps_info_protected">Korunan uygulamaların başlatıcıdan açılması için kimlik doğrulama gerekir</string>
     <!-- DT2S -->
     <string name="pref_sleep_gesture_title">Uyutmak için iki kez dokunun</string>
     <string name="pref_sleep_gesture_summary">Ekranı kapatmak için boş bir yere çift dokunun</string>
@@ -61,6 +51,11 @@
     <string name="paused_apps_dialog_title">Uygulama duraklatıldı</string>
     <string name="paused_apps_dialog_message">%1$s doğrudan başlatıcıdan duraklatıldı</string>
     <string name="paused_apps_drop_target_label">Uygulamayı duraklat</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Değer: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">varsayılan olarak</string>
+    <string name="custom_seekbar_default_value_to_set">Varsayılan değer: <xliff:g id="v">%s</xliff:g>\nAyarlamak için uzun dokunun</string>
+    <string name="custom_seekbar_default_value_is_set">Varsayılan değer ayarlandı</string>
     <!-- Icon size -->
     <string name="icon_size_title">Simge boyutu</string>
     <!-- Font size -->
@@ -78,7 +73,6 @@
     <string name="dock_theme_title">Temalı simgeler</string>
     <string name="dock_theme_summary">Arama çubuğunda temalı simgeler kullan</string>
     <string name="search_radius_title">Köşe yarıçapı</string>
-    <string name="qsb_search_hint">Telefonunuzu ve daha fazlasını arayın</string>
     <!-- Hotseat Background -->
     <string name="hotseat_bg_title">Hotseat arka planı</string>
     <string name="hotseat_bg_summary">Uygulama yuvasına yarı şeffaf bir arka plan ekleyin</string>
@@ -109,7 +103,6 @@
     <string name="recents_screenshot_title">Ekran görüntüsü</string>
     <string name="recents_clear_all_title">Tümünü temizle</string>
     <string name="recents_lens_title">Lens</string>
-    <string name="recents_lock_title">Uygulamayı sabitle</string>
     <!-- All apps themed icons -->
     <string name="pref_themed_icons_title">Temalı simgeler</string>
     <string name="pref_themed_icons_summary">Ana ekranda kullanılan temalı simgeleri takip edin</string>
@@ -124,21 +117,22 @@
     <string name="icon_pack_default_label">Varsayılan</string>
     <string name="icon_pack_add">Daha fazla yükle</string>
     <string name="icon_pack_no_market">Kullanılabilir uygulama mağazası yok</string>
-    <!-- Smartspace -->
-    <string name="smartspace_pref_title">Bir bakışta</string>
-    <string name="smartspace_pref_summary">Akıllı alanı ana ekranın üst kısmında göster</string>
-    <!-- App drawer searchbar -->
-    <string name="drawer_searchbar_title">Uygulama çekmecesi arama çubuğunu etkinleştir</string>
-    <!-- Dark Status Bar -->
-    <string name="perf_dark_status_bar_title">Koyu durum çubuğu</string>
-    <string name="perf_dark_status_bar_summary">Ana ekranda koyu durum çubuğunu kullan</string>
-    <!-- Scroll Vibration -->
-    <string name="pref_scroll_vibration_title">Kaydırma titreşimi</string>
-    <string name="pref_scroll_vibration_summary">Destekleniyorsa, son uygulamalar arasında gezinirken dokunumsal geri bildirim</string>
-    <!-- Restart launcher -->
-    <string name="pref_restart_title">Yeniden başlat</string>
-    <string name="pref_restart_summary">Başlatıcıyı yeniden başlat</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Sonlandır</string>
+    <string name="recents_app_killed">Uygulama sonlandırıldı</string>
     <!-- Memory info -->
     <string name="meminfo_text">%1$s Kullanılabilir | %2$s Toplam</string>
     <string name="recents_meminfo_title">Bellek bilgisi</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Uygulama arama çubuğu</string>
+    <string name="drawer_search_summary">Uygulama sayfasının üstündeki arama çubuğu</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Yeniden başlat</string>
+    <string name="pref_restart_summary">Başlatıcıyı yeniden başlat</string>
+    <string name="restarting_launcher">Başlatıcı yeniden başlatılıyor...</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Tümünü temizlemek için cihazı sallayın</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Bir bakışta</string>
+    <string name="smartspace_pref_summary">Akıllı alanı ana ekranın üst kısmında göster</string>
 </resources>
