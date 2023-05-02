@@ -1,5 +1,7 @@
 package com.android.launcher3.qsb;
 
+import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
+
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.graphics.Rect;
@@ -17,30 +19,29 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
 
     private final Launcher mLauncher;
     private BcSmartspaceView mSmartspaceView;
-    private SmartspaceState mSmartspaceState = new SmartspaceState();
-    private Rect mLauncherSmartspaceBounds = new Rect();
-    private Rect mLockscreenSmartspaceBounds = new Rect();
+    private final SmartspaceState mSmartspaceState = new SmartspaceState();
+    private final Rect mLauncherSmartspaceBounds = new Rect();
+    private final Rect mLockscreenSmartspaceBounds = new Rect();
+
+    private AnimatorSet mUnlockAnimatorSet;
     private final ValueAnimator mSmartspaceAnimator;
     private final ValueAnimator mWorkspaceAnimator;
     private final WorkspaceUnlockAnim mWorkspaceUnlockAnim;
     private boolean mShouldAnimateSmartspace;
-    private boolean mUnlockAnimationPlaying;
 
     public LauncherUnlockAnimationController(Launcher launcher) {
         mLauncher = launcher;
+
         mSmartspaceAnimator = ValueAnimator.ofFloat(0.0f, 1.0f);
         mSmartspaceAnimator.setInterpolator(Interpolators.EMPHASIZED);
-        mSmartspaceAnimator.addUpdateListener(animation -> {
-            setSmartspaceProgressToLauncherPosition(
-                ((Float) animation.getAnimatedValue()).floatValue());
-        });
+        mSmartspaceAnimator.addUpdateListener(animation -> setSmartspaceProgressToLauncherPosition(
+                (Float) animation.getAnimatedValue()));
+
         mWorkspaceUnlockAnim = new WorkspaceUnlockAnim(launcher);
         mWorkspaceAnimator = ValueAnimator.ofFloat(0.0f, 1.0f);
         mWorkspaceAnimator.setInterpolator(com.android.launcher3.anim.Interpolators.EMPHASIZED_DECELERATE);
-        mWorkspaceAnimator.addUpdateListener(animation -> {
-            mWorkspaceUnlockAnim.setUnlockAmount(
-                ((Float) animation.getAnimatedValue()).floatValue(), false);
-        });
+        mWorkspaceAnimator.addUpdateListener(animation -> mWorkspaceUnlockAnim.setUnlockAmount(
+                (Float) animation.getAnimatedValue(), false));
     }
 
     public void setSmartspaceView(BcSmartspaceView view) {
@@ -58,10 +59,12 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
     }
 
     @Override
-    public void prepareForUnlock(boolean animateSmartspace,
-            Rect lockscreenSmartspaceBounds, int selectedPage) {
+    public void prepareForUnlock(boolean animateSmartspace, Rect lockscreenSmartspaceBounds,
+            int selectedPage) {
         mShouldAnimateSmartspace = animateSmartspace;
         mLockscreenSmartspaceBounds.set(lockscreenSmartspaceBounds);
+
+        mWorkspaceUnlockAnim.prepareForUnlock();
 
         if (mSmartspaceView == null) {
             return;
@@ -71,17 +74,15 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
         setSmartspaceProgressToLauncherPosition(animateSmartspace ? 0f : 1f);
         setSmartspaceSelectedPage(selectedPage);
 
-        Workspace workspace = mLauncher.getWorkspace();
+        Workspace<?> workspace = mLauncher.getWorkspace();
         CellLayout currentPage = workspace.getScreenWithId(
                 workspace.getScreenIdForPageIndex(workspace.getCurrentPage()));
         currentPage.getShortcutsAndWidgets().setClipChildren(!animateSmartspace);
-
-        if (animateSmartspace) mWorkspaceUnlockAnim.prepareForUnlock();
     }
 
     @Override
     public void setUnlockAmount(float amount, boolean forceIfAnimating) {
-        if (!mUnlockAnimationPlaying || forceIfAnimating) {
+        if (mUnlockAnimatorSet == null || !mUnlockAnimatorSet.isStarted() || forceIfAnimating) {
             mWorkspaceUnlockAnim.setUnlockAmount(amount, false);
             setSmartspaceProgressToLauncherPosition(amount);
         }
@@ -89,17 +90,24 @@ public final class LauncherUnlockAnimationController extends ILauncherUnlockAnim
 
     @Override
     public void playUnlockAnimation(boolean unlocked, long duration, long startDelay) {
-        if (mSmartspaceView != null && mShouldAnimateSmartspace) {
-            mUnlockAnimationPlaying = true;
-            mSmartspaceView.post(() -> {
-                AnimatorSet s = new AnimatorSet();
+        MAIN_EXECUTOR.post(() -> {
+            if (mUnlockAnimatorSet != null && mUnlockAnimatorSet.isStarted()) {
+                mUnlockAnimatorSet.cancel();
+            }
+
+            mWorkspaceAnimator.setStartDelay(startDelay);
+            mWorkspaceAnimator.setDuration(duration);
+
+            mUnlockAnimatorSet = new AnimatorSet();
+            AnimatorSet.Builder builder = mUnlockAnimatorSet.play(mWorkspaceAnimator);
+
+            if (mSmartspaceView != null && mShouldAnimateSmartspace) {
                 mSmartspaceAnimator.setDuration(startDelay + duration);
-                mWorkspaceAnimator.setStartDelay(startDelay);
-                mWorkspaceAnimator.setDuration(duration);
-                s.play(mSmartspaceAnimator).with(mWorkspaceAnimator);
-                s.start();
-            });
-        }
+                builder.with(mSmartspaceAnimator);
+            }
+
+            mUnlockAnimatorSet.start();
+        });
     }
 
     @Override
