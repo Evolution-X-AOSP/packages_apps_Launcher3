@@ -22,17 +22,24 @@ import static android.view.View.MeasureSpec.makeMeasureSpec;
 import static com.android.launcher3.Utilities.prefixTextWithIcon;
 import static com.android.launcher3.icons.IconNormalizer.ICON_VISIBLE_AREA_FACTOR;
 
+import android.content.ComponentName;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.PaintDrawable;
 import android.graphics.Rect;
 import android.text.Selection;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.SystemClock;
 import android.text.SpannableStringBuilder;
 import android.text.method.TextKeyListener;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.ViewGroup.MarginLayoutParams;
 
 import com.android.launcher3.DeviceProfile;
@@ -125,6 +132,8 @@ public class AppsSearchContainerLayout extends ExtendedEditText
         Drawable gIcon = getContext().getDrawable(R.drawable.ic_super_g_color);
         Drawable gIconThemed = getContext().getDrawable(R.drawable.ic_super_g_themed);
         Drawable sIcon = getContext().getDrawable(R.drawable.ic_allapps_search);
+        Drawable lens = getContext().getDrawable(R.drawable.ic_lens_color);
+        Drawable lensThemed = getContext().getDrawable(R.drawable.ic_lens_themed);
         
         // Shift the widget horizontally so that its centered in the parent (b/63428078)
         View parent = (View) getParent();
@@ -135,12 +144,39 @@ public class AppsSearchContainerLayout extends ExtendedEditText
         setTranslationX(shift);
 
         if (Utilities.showQSB(getContext()) && !Utilities.isThemedIconsEnabled(getContext())) {
-          setCompoundDrawablesRelativeWithIntrinsicBounds(gIcon, null, null, null);
+          setCompoundDrawablesRelativeWithIntrinsicBounds(gIcon, null, lens, null);
         } else if (Utilities.showQSB(getContext()) && Utilities.isThemedIconsEnabled(getContext())) {
-          setCompoundDrawablesRelativeWithIntrinsicBounds(gIconThemed, null, null, null);
+          setCompoundDrawablesRelativeWithIntrinsicBounds(gIconThemed, null, lensThemed, null);
         } else {
-          setCompoundDrawablesRelativeWithIntrinsicBounds(sIcon, null, null, null);
+          setCompoundDrawablesRelativeWithIntrinsicBounds(sIcon, null, lens, null);
         }
+
+	setOnTouchListener(new OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                if (event.getRawX() >= (getRight() - getCompoundDrawables()[2].getBounds().width() - getPaddingEnd())) {
+            	    Intent lensIntent = new Intent();
+            	    Bundle bundle = new Bundle();
+            	    bundle.putString("caller_package", Utilities.GSA_PACKAGE);
+            	    bundle.putLong("start_activity_time_nanos", SystemClock.elapsedRealtimeNanos());
+            	    lensIntent.setComponent(new ComponentName(Utilities.GSA_PACKAGE, Utilities.LENS_ACTIVITY))
+            	        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            	        .setPackage(Utilities.GSA_PACKAGE)
+                        .setData(Uri.parse(Utilities.LENS_URI))
+                        .putExtra("lens_activity_params", bundle);
+            	    getContext().startActivity(lensIntent);
+                    return true;
+                } else if (event.getRawX() <= (getCompoundDrawables()[0].getBounds().width() + getPaddingStart())) {
+            	    Intent gIntent = getContext().getPackageManager().getLaunchIntentForPackage(Utilities.GSA_PACKAGE);
+            	    gIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            	    getContext().startActivity(gIntent);
+                    return true;
+                 }
+              }
+              return false;
+            }
+        });
 
         offsetTopAndBottom(mContentOverlap);
 
