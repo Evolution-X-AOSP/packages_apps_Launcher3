@@ -56,7 +56,7 @@ class MetadataExtractor {
 
     CharSequence getSource() {
         if (TextUtils.isEmpty(mSourcePkg)) {
-            return mContext.getString(R.string.app_info_source_system);
+            return mContext.getString(R.string.app_info_source_unknown);
         }
         try {
             ApplicationInfo pi = mPm.getApplicationInfo(mSourcePkg, 0);
