@@ -368,11 +368,6 @@ public final class FeatureFlags {
             "Enable the ability to tap a staged app during split select to launch it in full screen"
     );
 
-    public static final BooleanFlag ENABLE_FORCED_MONO_ICON = getDebugFlag(
-            "ENABLE_FORCED_MONO_ICON", false,
-            "Enable the ability to generate monochromatic icons, if it is not provided by the app"
-    );
-
     public static final BooleanFlag ENABLE_TASKBAR_EDU_TOOLTIP = getDebugFlag(
             "ENABLE_TASKBAR_EDU_TOOLTIP", false,
             "Enable the tooltip version of the Taskbar education flow.");
