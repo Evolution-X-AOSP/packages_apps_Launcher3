@@ -56,4 +56,11 @@
         settings:units=""
         android:defaultValue="1" />
 
+    <SwitchPreference
+        android:key="pref_forced_monochrome_icons"
+        android:title="@string/pref_force_monochrome_themed_icons_title"
+        android:summary="@string/pref_force_monochrome_themed_icons_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
+
 </androidx.preference.PreferenceScreen>
