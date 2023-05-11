@@ -24,4 +24,7 @@
 
     <!-- For Themed icon support -->
     <dimen name="theme_icon_size">24dp</dimen>
+    
+    <!-- Search bar margin -->
+    <dimen name="all_apps_search_bar_margin_top">28dp</dimen>
 </resources>

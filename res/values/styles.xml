@@ -354,5 +354,5 @@
         <item name="qsbIconTintSecondary">@color/qsb_secondary</item>
         <item name="qsbIconTintTertiary">@color/qsb_tertiary</item>
     </style>
-
+    
 </resources>
