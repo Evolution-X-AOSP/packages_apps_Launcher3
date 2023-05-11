@@ -74,6 +74,7 @@ public class AppsSearchContainerLayout extends ExtendedEditText
     private final int mContentOverlap;
 
     private final int searchtopMargin;
+    private final int searchSideMargin;
 
     public AppsSearchContainerLayout(Context context) {
         this(context, null);
@@ -96,6 +97,8 @@ public class AppsSearchContainerLayout extends ExtendedEditText
                 getResources().getDimensionPixelSize(R.dimen.all_apps_search_bar_content_overlap);
         searchtopMargin =
                 getResources().getDimensionPixelSize(R.dimen.all_apps_search_bar_margin_top);
+        searchSideMargin =
+                getResources().getDimensionPixelSize(R.dimen.all_apps_search_bar_margin_side);
     }
 
     @Override
@@ -171,7 +174,7 @@ public class AppsSearchContainerLayout extends ExtendedEditText
                         .putExtra("lens_activity_params", bundle);
             	    getContext().startActivity(lensIntent);
                     return true;
-                } else if (event.getRawX() <= (getCompoundDrawables()[0].getBounds().width() + getPaddingStart())) {
+                } else if (event.getRawX() <= (getCompoundDrawables()[0].getBounds().width() + getPaddingStart() + searchSideMargin)) {
             	    Intent gIntent = getContext().getPackageManager().getLaunchIntentForPackage(Utilities.GSA_PACKAGE);
             	    gIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             	    getContext().startActivity(gIntent);
