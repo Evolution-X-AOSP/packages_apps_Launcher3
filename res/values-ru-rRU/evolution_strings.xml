@@ -23,7 +23,7 @@
     <string name="interface_category_title">Интерфейс</string>
     <string name="search_bar_category_title">Панель поиска</string>
     <string name="actions_category_title">Быстрые действия</string>
-    <string name="quickspace_category_title">С первого взгляда</string>
+    <string name="quickspace_category_title">At A Glance</string>
     <!-- Developer options -->
     <string name="dev_options_title">Для разработчиков</string>
     <string name="dev_options_summary">Включить некоторые скрытые функции на свой страх и риск</string>
@@ -133,6 +133,6 @@
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Встряхнуть, для очистки всех задач</string>
     <!-- Smartspace -->
-    <string name="smartspace_pref_title">С первого взгляда</string>
+    <string name="smartspace_pref_title">At a Glance</string>
     <string name="smartspace_pref_summary">Показывать умное пространство в верхней части главного экрана</string>
 </resources>
