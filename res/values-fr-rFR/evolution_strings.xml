@@ -7,7 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
     <!-- General -->
-    <string name="settings_title">Paramètres d\'écran d\'accueil</string>
+    <string name="settings_title">Paramètres du lanceur Evo X</string>
     <!-- Categories -->
     <string name="home_category_title">Ecran d\'accueil</string>
     <string name="home_category_summary">Définir le panneau Google Now et plus</string>
