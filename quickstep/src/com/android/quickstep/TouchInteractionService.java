@@ -33,6 +33,7 @@ import static com.android.systemui.shared.system.QuickStepContract.KEY_EXTRA_UNL
 import static com.android.systemui.shared.system.QuickStepContract.SYSUI_STATE_FREEFORM_ACTIVE_IN_DESKTOP_MODE;
 import static com.android.systemui.shared.system.QuickStepContract.SYSUI_STATE_NOTIFICATION_PANEL_EXPANDED;
 import static com.android.systemui.shared.system.QuickStepContract.SYSUI_STATE_QUICK_SETTINGS_EXPANDED;
+import static com.android.systemui.shared.system.QuickStepContract.SYSUI_STATE_SCREEN_PINNING;
 import static com.android.systemui.shared.system.QuickStepContract.SYSUI_STATE_TRACING_ENABLED;
 import static com.android.wm.shell.sysui.ShellSharedConstants.KEY_EXTRA_SHELL_BACK_ANIMATION;
 import static com.android.wm.shell.sysui.ShellSharedConstants.KEY_EXTRA_SHELL_DESKTOP_MODE;
@@ -399,6 +400,7 @@ public class TouchInteractionService extends Service
 
     private TaskbarManager mTaskbarManager;
     private Function<GestureState, AnimatedFloat> mSwipeUpProxyProvider = i -> null;
+    private boolean mCancelGesture = false;
 
     @Override
     public void onCreate() {
@@ -555,6 +557,17 @@ public class TouchInteractionService extends Service
                 mTaskAnimationManager.endLiveTile();
             }
 
+            if ((lastSysUIFlags & SYSUI_STATE_SCREEN_PINNING) !=
+                    (systemUiStateFlags & SYSUI_STATE_SCREEN_PINNING)) {
+                if ((systemUiStateFlags & SYSUI_STATE_SCREEN_PINNING) != 0) {
+                    // cancel in-progress gesture, if any. users must not reach recents
+                    mCancelGesture = true;
+                } else {
+                    // If user has tried no gesture since blocking the gesture, we need to reset this
+                    mCancelGesture = false;
+                }
+            }
+
             if ((lastSysUIFlags & SYSUI_STATE_TRACING_ENABLED) !=
                     (systemUiStateFlags & SYSUI_STATE_TRACING_ENABLED)) {
                 // Update the tracing state
@@ -679,8 +692,10 @@ public class TouchInteractionService extends Service
             }
         }
 
-        boolean cancelGesture = mGestureState.getActivityInterface() != null
-                && mGestureState.getActivityInterface().shouldCancelCurrentGesture();
+        boolean myCancel = mCancelGesture;
+        if (myCancel) mCancelGesture = false;
+        boolean cancelGesture = (mGestureState.getActivityInterface() != null
+                && mGestureState.getActivityInterface().shouldCancelCurrentGesture()) || myCancel;
         boolean cleanUpConsumer = (action == ACTION_UP || action == ACTION_CANCEL || cancelGesture)
                 && mConsumer != null
                 && !mConsumer.getActiveConsumerInHierarchy().isConsumerDetachedFromGesture();
