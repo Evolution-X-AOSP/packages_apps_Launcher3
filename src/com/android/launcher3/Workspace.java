@@ -582,7 +582,8 @@ public class Workspace<T extends View & PageIndicator> extends PagedView<T>
         }
 
         int cellHSpan = mLauncher.getDeviceProfile().inv.numSearchContainerColumns;
-        CellLayoutLayoutParams lp = new CellLayoutLayoutParams(0, 0, cellHSpan, 1, FIRST_SCREEN_ID);
+        int cellYSpan = mLauncher.getDeviceProfile().inv.numRows <= 5 ? 1 : 2; // let's add an extra span for grids with more than 5 rows, so smartspace has enough place to be drawn
+        CellLayoutLayoutParams lp = new CellLayoutLayoutParams(0, 0, cellHSpan, cellYSpan, FIRST_SCREEN_ID);
         lp.canReorder = false;
         if (!firstPage.addViewToCellLayout(
                 mFirstPagePinnedItem, 0, R.id.search_container_workspace, lp, true)) {
