@@ -106,18 +106,27 @@ public class QsbLayout extends FrameLayout {
     }
 
     private void setUpMainSearch() {
-        String searchPackage = QsbContainerView.getSearchWidgetPackageName(mContext);
+        Intent pixelSearchIntent = mContext.getPackageManager().getLaunchIntentForPackage("rk.android.app.pixelsearch");
         setOnClickListener(view -> {
-            mContext.startActivity(new Intent("android.search.action.GLOBAL_SEARCH").addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
-                Intent.FLAG_ACTIVITY_CLEAR_TASK).setPackage(searchPackage));
+            if (pixelSearchIntent != null) {
+                pixelSearchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                mContext.startActivity(pixelSearchIntent);
+            } else {
+                String searchPackage = QsbContainerView.getSearchWidgetPackageName(mContext);
+                Intent searchIntent = new Intent("android.search.action.GLOBAL_SEARCH")
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    .setPackage(searchPackage);
+                mContext.startActivity(searchIntent);
+            }
         });
     }
 
     private void setupGIcon() {
+        Intent pixelSearchIntent = mContext.getPackageManager().getLaunchIntentForPackage("rk.android.app.pixelsearch");
         Intent intent = mContext.getPackageManager().getLaunchIntentForPackage(Utilities.GSA_PACKAGE);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         gIcon.setOnClickListener(view -> {
-            mContext.startActivity(intent);
+            mContext.startActivity(pixelSearchIntent != null ? pixelSearchIntent : intent);
         });
     }
 
