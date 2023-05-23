@@ -420,6 +420,6 @@ public class PackageUpdatedTask extends BaseModelUpdateTask {
     }
 
     private boolean isTargetPackage(String packageName) {
-        return packageName.equals(Utilities.GSA_PACKAGE);
+        return packageName.equals(Utilities.GSA_PACKAGE) || packageName.equals("rk.android.app.pixelsearch");
     }
 }
