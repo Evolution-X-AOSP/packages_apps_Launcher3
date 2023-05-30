@@ -40,4 +40,4 @@
     android:singleLine="true"
     android:textColor="?android:attr/textColorSecondary"
     android:textColorHint="@drawable/all_apps_search_hint"
-    android:textSize="16sp" />
+    android:textSize="15sp" />
