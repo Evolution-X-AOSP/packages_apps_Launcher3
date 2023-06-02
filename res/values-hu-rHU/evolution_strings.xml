@@ -108,7 +108,6 @@
     <string name="pref_themed_icons_summary">A kezdőképernyőn használt tematikus ikonokhoz igazodik</string>
     <!-- AppInfo -->
     <string name="app_info_source">Forrás</string>
-    <string name="app_info_source_system">Rendszer</string>
     <string name="app_info_last_update">Utolsó frissítés</string>
     <string name="app_info_version">Verzió</string>
     <string name="app_info_more">Továbbiak</string>
@@ -135,4 +134,12 @@
     <!-- Smartspace -->
     <string name="smartspace_pref_title">Bepillantás</string>
     <string name="smartspace_pref_summary">\'Bepillantás\' megjelenítése a kezdőképernyő tetején</string>
+    <!-- Parallax -->
+    <string name="short_parallax_title">Rövid paralaxis engedélyezése</string>
+    <string name="short_parallax_summary">Engedélyezze a teljes háttérképgörgetési hatását kisebb oldalszámon a háttérkép levágása helyett</string>
+    <string name="single_page_center_title">Centerezett egyoldalas</string>
+    <string name="single_page_center_summary">Helyezze középre a háttérképet, ha csak egyetlen oldalt használ</string>
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Ikontémázás kényszerítése</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Témázott ikon létrehozása olyan alkalmazásokhoz, amelyek nem rendelkeznek ilyennel (újra kell be kapcsolni a témázást)</string>
 </resources>
