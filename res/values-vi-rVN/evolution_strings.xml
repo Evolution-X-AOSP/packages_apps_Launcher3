@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 crDroid Android Project
+                   2023 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Application name -->
+    <!-- General -->
+    <string name="settings_title">Cài đặt Evo X Launcher</string>
+    <!-- Categories -->
+    <string name="home_category_title">Màn hình chính</string>
+    <string name="home_category_summary">Đặt bảng điều khiển Google và nhiều hơn</string>
+    <string name="icons_category_title">Biểu tượng</string>
+    <string name="icons_category_summary">Đặt kích cỡ biểu tượng và hơn thế nữa</string>
+    <string name="app_drawer_category_title">Ngăn chứa ứng dụng</string>
+    <string name="app_drawer_category_summary">Tùy chỉnh ngăn chứa ứng dụng</string>
+    <string name="recents_category_title">Gần đây</string>
+    <string name="recents_category_summary">Tùy chỉnh màn hình đa nhiệm</string>
+    <string name="misc_category_title">Cài đặt khác</string>
+    <string name="misc_category_summary">Tùy chọn khác</string>
+    <string name="general_category_title">Chung</string>
+    <string name="interface_category_title">Giao diện</string>
+    <string name="search_bar_category_title">Thanh tìm kiếm</string>
+    <string name="actions_category_title">Thao tác nhanh</string>
+    <string name="quickspace_category_title">Xem nhanh</string>
+    <!-- Developer options -->
+    <string name="dev_options_title">Cài đặt nhà phát triển</string>
+    <string name="dev_options_summary">Bật một số tính năng ẩn, có thể gây rủi ro</string>
+    <!-- Edit workspace -->
+    <string name="settings_lock_layout_title">Khóa bố cục</string>
+    <string name="settings_lock_layout_summary_on">Các biểu tượng và tiện ích không thể được thêm, xóa và di chuyển trên màn hình chính</string>
+    <string name="settings_lock_layout_summary_off">Các biểu tượng và tiện ích có thể được thêm, xóa và di chuyển trên màn hình chính</string>
+    <string name="settings_edit_widgets_error">Không thể thêm Tiện ích vào màn hình chính</string>
+    <!-- Hide labels -->
+    <string name="desktop_show_labels">Nhãn biểu tượng trên màn hình chính</string>
+    <string name="drawer_show_labels">Nhãn biểu tượng trong ngăn chứa ứng dụng</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Vuốt để truy cập ứng dụng Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Từ Màn hình chính, vuốt sang trái để mở ứng dụng Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Từ Màn hình chính, vuốt sang phải để mở ứng dụng Google</string>
+    <!-- DT2S -->
+    <string name="pref_sleep_gesture_title">Chạm hai lần để tắt màn hình</string>
+    <string name="pref_sleep_gesture_summary">Chạm hai lần vào khoảng trống để tắt màn hình</string>
+    <!-- Pause apps shortcut -->
+    <string name="pause">Tạm dừng</string>
+    <string name="pause_apps_dialog_title">Tạm dừng %1$s?</string>
+    <string name="pause_apps_dialog_message">Thông báo cho %1$s sẽ bị tạm dừng</string>
+    <string name="paused_apps_dialog_title">Ứng dụng đã bị tạm dừng</string>
+    <string name="paused_apps_dialog_message">%1$s đã bị tạm dừng trực tiếp từ trình khởi chạy</string>
+    <string name="paused_apps_drop_target_label">Tạm dừng ứng dụng</string>
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Giá trị: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">mặc định</string>
+    <string name="custom_seekbar_default_value_to_set">Giá trị mặc định: <xliff:g id="v">%s</xliff:g>\nNhấn giữ để đặt</string>
+    <string name="custom_seekbar_default_value_is_set">Giá trị mặc định đã được đặt</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Kích thước biểu tượng</string>
+    <!-- Font size -->
+    <string name="font_size_title">Kích thước phông chữ</string>
+    <!-- App label - max lines -->
+    <string name="icon_max_lines_title">Số dòng tối đa cho tên ứng dụng</string>
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Tìm kiếm</string>
+    <string name="label_lens">Google Ống kính</string>
+    <string name="label_voice_search">Tìm kiếm bằng giọng nói</string>
+    <string name="dock_music_search_title">Tìm kiếm nhạc</string>
+    <string name="dock_music_search_summary">Tìm kiếm nhạc khi ấn vào biểu tượng</string>
+    <string name="dock_search_title">Thanh tìm kiếm Google</string>
+    <string name="dock_search_summary">Thanh tìm kiếm phía dưới thanh công cụ</string>
+    <string name="dock_theme_title">Biểu tượng theo chủ đề</string>
+    <string name="dock_theme_summary">Dùng biểu tượng theo chủ đề cho thanh tìm kiếm</string>
+    <string name="search_radius_title">Bo góc thanh tìm kiếm</string>
+    <!-- Hotseat Background -->
+    <string name="hotseat_bg_title">Nền thanh công cụ</string>
+    <string name="hotseat_bg_summary">Thêm nền mờ vào thanh công cụ</string>
+    <!-- Wallpaper scrolling -->
+    <string name="allow_wallpaper_scrolling">Cuộn hình nền</string>
+    <string name="allow_wallpaper_scrolling_summary">Hiệu ứng cuộn hình nền cho nhiều màn hình</string>
+    <!-- Wallpaper zooming -->
+    <string name="allow_wallpaper_zooming">Thu phóng hình nền</string>
+    <string name="allow_wallpaper_zooming_summary">Thu to nhỏ hình nền khi dùng ngăn chứa ứng dụng hoặc ứng dụng gần đây</string>
+    <!-- Homescreen Statusbar -->
+    <string name="show_statusbar_title">Thanh trạng thái</string>
+    <!-- Top shadow -->
+    <string name="show_top_shadow">Bóng trên cùng</string>
+    <!-- Row Height -->
+    <string name="row_height_title">Chiều cao hàng</string>
+    <!-- Background blur -->
+    <string name="background_blur_title">Độ mờ hình nền</string>
+    <string name="background_blur_summary">Thiết lập độ mờ của hình nền cho ứng dụng gần đây và ngăn chứa ứng dụng</string>
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Đề xuất</string>
+    <string name="suggestion_pref_screen_desc">Đề xuất ở màn hình chính &amp; ngăn chứ ứng dụng</string>
+    <!-- Background opacity -->
+    <string name="background_opacity_title">Độ trong suốt của hình nền</string>
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Sử dụng thanh tác vụ</string>
+    <string name="pref_allow_phone_taskbar_summary">Để truy cập và chuyển đổi ứng dụng ở mọi nơi</string>
+    <!-- Recents icons -->
+    <string name="recents_screenshot_title">Chụp màn hình</string>
+    <string name="recents_clear_all_title">Xoá tất cả</string>
+    <string name="recents_lens_title">Ống Kính</string>
+    <!-- All apps themed icons -->
+    <string name="pref_themed_icons_title">Biểu tượng theo chủ đề</string>
+    <string name="pref_themed_icons_summary">Sử dụng biểu tượng theo chủ đề trên màn hình chính</string>
+    <!-- AppInfo -->
+    <string name="app_info_source">Mã nguồn</string>
+    <string name="app_info_last_update">Cập nhật lần cuối</string>
+    <string name="app_info_version">Phiên bản</string>
+    <string name="app_info_more">Thêm</string>
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Gói biểu tượng</string>
+    <string name="icon_pack_default_label">Mặc định</string>
+    <string name="icon_pack_add">Cài đặt thêm</string>
+    <string name="icon_pack_no_market">Không có sẵn cửa hàng ứng dụng</string>
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Đóng hoạt động</string>
+    <string name="recents_app_killed">Ứng dụng đã tắt</string>
+    <!-- Memory info -->
+    <string name="meminfo_text">%1$s Trống | %2$s Tổng cộng</string>
+    <string name="recents_meminfo_title">Thông tin bộ nhớ</string>
+    <!-- App drawer searchbar -->
+    <string name="drawer_search_title">Hiện thanh tìm kiếm</string>
+    <string name="drawer_search_summary">Thanh tìm kiếm trên đầu ngăn kéo ứng dụng</string>
+    <!-- Restart launcher -->
+    <string name="pref_restart_title">Khởi động lại</string>
+    <string name="pref_restart_summary">Khởi động lại trình khởi chạy để áp dụng các cài đặt đang chờ xử lý</string>
+    <string name="restarting_launcher">Đang khởi động lại trình khởi chạy...</string>
+    <!-- Shake Clear Recents -->
+    <string name="recents_shake_clear_all_title">Lắc điện thoại để xóa hết các tác vụ</string>
+    <!-- Smartspace -->
+    <string name="smartspace_pref_title">Xem nhanh</string>
+    <string name="smartspace_pref_summary">Hiển thị không gian thông minh ở trên cùng màn hình chính</string>
+    <!-- Parallax -->
+    <string name="short_parallax_title">Độ lệch của góc ngắn</string>
+    <string name="short_parallax_summary">Dùng hiệu ứng để cuộn trên các trang khác thay vì cắt hình nền</string>
+    <string name="single_page_center_title">Căn chỉnh ở giữa</string>
+    <string name="single_page_center_summary">Căn chỉnh trang chủ giữa hình nền nếu chỉ có một</string>
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Biểu tượng theo chủ đề trong ngăn ứng dụng</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Tạo biểu tượng theo chủ đề cho các ứng dụng không có biểu tượng (yêu cầu chuyển đổi lại các biểu tượng theo chủ đề)</string>
+</resources>
