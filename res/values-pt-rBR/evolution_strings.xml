@@ -7,7 +7,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
     <!-- General -->
-    <string name="settings_title">Configurações da tela inical</string>
+    <string name="settings_title">Configurações da tela inicial</string>
     <!-- Categories -->
     <string name="home_category_title">Tela inicial</string>
     <string name="home_category_summary">Definir o Feed do Google e mais</string>
@@ -108,7 +108,6 @@
     <string name="pref_themed_icons_summary">Seguir ícones temáticos usados na tela inicial</string>
     <!-- AppInfo -->
     <string name="app_info_source">Fonte</string>
-    <string name="app_info_source_system">Sistema</string>
     <string name="app_info_last_update">Última atualização</string>
     <string name="app_info_version">Versão</string>
     <string name="app_info_more">Mais</string>
@@ -135,4 +134,12 @@
     <!-- Smartspace -->
     <string name="smartspace_pref_title">Resumo</string>
     <string name="smartspace_pref_summary">Mostrar espaço inteligente na parte superior da tela inicial</string>
+    <!-- Parallax -->
+    <string name="short_parallax_title">Permitir sobreposição curta</string>
+    <string name="short_parallax_summary">Ativar o efeito de rolagem de papel de parede completo em um número menor de páginas, em vez de cortar o papel de parede</string>
+    <string name="single_page_center_title">Página única centralizada</string>
+    <string name="single_page_center_summary">Centraliza o papel de parede ao usar apenas uma página</string>
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Forçar ícones temáticos</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Gerar novos ícones com tema para aplicativos que não possuem um (alterne novamente o interruptor de ícones temáticos)</string>
 </resources>

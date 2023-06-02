@@ -108,7 +108,6 @@
     <string name="pref_themed_icons_summary">Suivre les icônes thématiques utilisées sur l\'écran d\'accueil</string>
     <!-- AppInfo -->
     <string name="app_info_source">Source</string>
-    <string name="app_info_source_system">Système</string>
     <string name="app_info_last_update">Dernière mise à jour</string>
     <string name="app_info_version">Version</string>
     <string name="app_info_more">Plus</string>
@@ -135,4 +134,12 @@
     <!-- Smartspace -->
     <string name="smartspace_pref_title">At a Glance</string>
     <string name="smartspace_pref_summary">Afficher smartspace en haut de l\'écran d\'accueil</string>
+    <!-- Parallax -->
+    <string name="short_parallax_title">Autoriser la parallaxe courte</string>
+    <string name="short_parallax_summary">Activer l\'effet de défilement du fond d\'écran complet sur un nombre plus petit de pages au lieu de recadrer le fond d\'écran</string>
+    <string name="single_page_center_title">Centre de page unique</string>
+    <string name="single_page_center_summary">Centrer le fond d\'écran si seulement en utilisant une seule page</string>
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Forcer les icônes thématiques</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Générer une icône de thème pour les applications qui n\'en ont pas (nécessite de réactiver les icônes de thèmes)</string>
 </resources>

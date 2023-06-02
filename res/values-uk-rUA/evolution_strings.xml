@@ -108,7 +108,6 @@
     <string name="pref_themed_icons_summary">Тематичні піктограми, які використовуються на головному екрані</string>
     <!-- AppInfo -->
     <string name="app_info_source">Джерело</string>
-    <string name="app_info_source_system">Система</string>
     <string name="app_info_last_update">Останнє оновлення</string>
     <string name="app_info_version">Версія</string>
     <string name="app_info_more">Більше</string>
@@ -135,4 +134,12 @@
     <!-- Smartspace -->
     <string name="smartspace_pref_title">Віджет At a Glance</string>
     <string name="smartspace_pref_summary">Показувати смарт-простір у верхній частині головного екрану</string>
+    <!-- Parallax -->
+    <string name="short_parallax_title">Дозволити короткий паралакс</string>
+    <string name="short_parallax_summary">Увімкнути можливість повної прокрутки при гортанні на меншу кількість сторінок замість обрізання шпалер</string>
+    <string name="single_page_center_title">У центрі на одній сторінці</string>
+    <string name="single_page_center_summary">Центрувати шпалери, якщо тільки одна сторінка</string>
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Примусові тематичні іконки</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Створити тему іконок для програм, які не мають однієї (потребує повторної зміни теми)</string>
 </resources>
