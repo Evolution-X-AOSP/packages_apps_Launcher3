@@ -137,7 +137,7 @@
     <!-- AppInfo -->
     <string name="app_info_version_value" translatable="false">%1$s (%2$d)</string>
     <string name="app_info_source">Source</string>
-    <string name="app_info_source_unknown" translatable="false">Unknown</string>
+    <string name="app_info_source_unknown">Unknown</string>
     <string name="app_info_last_update">Last update</string>
     <string name="app_info_version">Version</string>
     <string name="app_info_more">More</string>
