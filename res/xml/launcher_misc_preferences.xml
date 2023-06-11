@@ -23,6 +23,13 @@
         android:key="pref_allow_phone_taskbar"
         android:title="@string/pref_allow_phone_taskbar_title"
         android:summary="@string/pref_allow_phone_taskbar_summary" />
+        
+    <SwitchPreference
+        android:key="pref_transient_taskbar"
+        android:title="@string/pref_transient_taskbar_title"
+        android:summary="@string/pref_transient_taskbar_summary"
+        android:dependency="pref_allow_phone_taskbar"
+        android:defaultValue="false" />
 
     <SwitchPreference
         android:key="pref_allowRotation"

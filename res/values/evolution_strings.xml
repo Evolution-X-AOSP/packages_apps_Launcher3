@@ -124,6 +124,8 @@
     <!-- Taskbar -->
     <string name="pref_allow_phone_taskbar_title">Use taskbar</string>
     <string name="pref_allow_phone_taskbar_summary">For opening and switching apps anywhere</string>
+    <string name="pref_transient_taskbar_title">Transient Taskbar</string>
+    <string name="pref_transient_taskbar_summary">Use new transient taskbar style</string>
 
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Screenshot</string>

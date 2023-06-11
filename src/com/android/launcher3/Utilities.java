@@ -185,6 +185,7 @@ public final class Utilities {
     public static final String KEY_SHORT_PARALLAX = "pref_short_parallax";
     public static final String KEY_SINGLE_PAGE_CENTER = "pref_single_page_center";
     public static final String KEY_FORCE_MONOCHROME_ICONS = "pref_forced_monochrome_icons";
+    public static final String KEY_TRANSIENT_TASKBAR = "pref_transient_taskbar";
 
     @IntDef({TRANSLATE_UP, TRANSLATE_DOWN, TRANSLATE_LEFT, TRANSLATE_RIGHT})
     public @interface AdjustmentDirection{}
@@ -959,6 +960,11 @@ public final class Utilities {
     public static boolean enableMonoChromeThemedIcons(Context context) {
     	SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
     	return prefs.getBoolean(KEY_FORCE_MONOCHROME_ICONS, false);
+    }
+
+    public static boolean isTransientTaskBarEnabled(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_TRANSIENT_TASKBAR, false);
     }
 
     /**
