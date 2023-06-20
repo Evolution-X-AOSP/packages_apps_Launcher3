@@ -99,6 +99,8 @@
     <!-- Taskbar -->
     <string name="pref_allow_phone_taskbar_title">Показувати панель завдань</string>
     <string name="pref_allow_phone_taskbar_summary">Для відкриття та перемикання додатків в будь-якому місці</string>
+    <string name="pref_transient_taskbar_title">Перехідна панель завдань</string>
+    <string name="pref_transient_taskbar_summary">Використовувати новий стиль панелі завдань</string>
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Знімок екрану</string>
     <string name="recents_clear_all_title">Очистити все</string>
@@ -129,6 +131,7 @@
     <string name="pref_restart_title">Перезавантажити</string>
     <string name="pref_restart_summary">Перезавантажити інтерфейс</string>
     <string name="restarting_launcher">Перезавантажити інтерфейс...</string>
+    <string name="updating_launcher_components">Оновлення компонентів панелі запуску...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Струсніть телефон, щоб очистити всі завдання</string>
     <!-- Smartspace -->
@@ -142,4 +145,15 @@
     <!-- Force monochrome icons -->
     <string name="pref_force_monochrome_themed_icons_title">Примусові тематичні іконки</string>
     <string name="pref_force_monochrome_themed_icons_summary">Створити тему іконок для програм, які не мають однієї (потребує повторної зміни теми)</string>
+    <!-- QSB -->
+    <string name="qsb_search_hint">Пошук у цьому телефоні та багато іншого…</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Приховані &amp; Захищені програми</string>
+    <string name="trust_apps_auth_manager">Розблокуйте, щоб керувати прихованими та захищеними додатками</string>
+    <string name="trust_apps_auth_open_app">Авторизуйтесь, щоб відкрити %1$s</string>
+    <string name="trust_apps_loading">Завантаження\u2026</string>
+    <string name="trust_apps_no_lock_error">Будь ласка, встановіть надійне блокування екрану, щоб обмежити доступ до додатків</string>
+    <string name="trust_apps_help">Допомога</string>
+    <string name="trust_apps_info_hidden">Приховані додатки та їхні віджети сховані зі списку додатків</string>
+    <string name="trust_apps_info_protected">Захищені додатки потребують авторизації, щоб бути запущеними</string>
 </resources>

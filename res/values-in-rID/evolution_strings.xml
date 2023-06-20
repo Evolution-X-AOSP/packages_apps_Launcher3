@@ -99,8 +99,10 @@
     <!-- Taskbar -->
     <string name="pref_allow_phone_taskbar_title">Gunakan bilah tugas</string>
     <string name="pref_allow_phone_taskbar_summary">Untuk membuka dan beralih aplikasi di mana saja</string>
+    <string name="pref_transient_taskbar_title">Bilah Tugas Sementara</string>
+    <string name="pref_transient_taskbar_summary">Gunakan gaya bilah tugas sementara yang baru</string>
     <!-- Recents icons -->
-    <string name="recents_screenshot_title">Tangkapan Layar</string>
+    <string name="recents_screenshot_title">Tangkapan layar</string>
     <string name="recents_clear_all_title">Hapus semua</string>
     <string name="recents_lens_title">Lens</string>
     <!-- All apps themed icons -->
@@ -108,7 +110,7 @@
     <string name="pref_themed_icons_summary">Ikuti ikon bertema yang digunakan di layar beranda</string>
     <!-- AppInfo -->
     <string name="app_info_source">Sumber</string>
-    <string name="app_info_source_system">Sistem</string>
+    <string name="app_info_source_unknown">Tidak diketahui</string>
     <string name="app_info_last_update">Pembaruan terakhir</string>
     <string name="app_info_version">Versi</string>
     <string name="app_info_more">Selengkapnya</string>
@@ -129,9 +131,30 @@
     <!-- Restart launcher -->
     <string name="pref_restart_title">Mulai ulang</string>
     <string name="pref_restart_summary">Mulai ulang peluncur secara manual untuk menerapkan setelan yang tertunda</string>
+    <string name="restarting_launcher">Memulai ulang peluncur...</string>
+    <string name="updating_launcher_components">Memperbarui komponen peluncur...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Goyang ponsel untuk menghapus semua tugas</string>
     <!-- Smartspace -->
     <string name="smartspace_pref_title">Widget Beranda</string>
     <string name="smartspace_pref_summary">Tampilkan ruang pintar di bagian atas layar beranda</string>
+    <!-- Parallax -->
+    <string name="short_parallax_title">Izinkan paralaks pendek</string>
+    <string name="short_parallax_summary">Aktifkan efek gulir wallpaper penuh pada sejumlah kecil halaman alih-alih memotong wallpaper</string>
+    <string name="single_page_center_title">Pusat satu halaman</string>
+    <string name="single_page_center_summary">Pusatkan wallpaper jika hanya menggunakan satu halaman</string>
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Paksa ikon bertema</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Hasilkan ikon bertema untuk aplikasi yang tidak memilikinya (memerlukan aktif ulang ikon bertema)</string>
+    <!-- QSB -->
+    <string name="qsb_search_hint">Telusuri ponsel ini dan lainnya…</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Tersembunyi &amp; Aplikasi dilindungi</string>
+    <string name="trust_apps_auth_manager">Buka kunci untuk mengelola aplikasi yang disembunyikan dan dilindungi</string>
+    <string name="trust_apps_auth_open_app">Autentikasi untuk membuka %1$s</string>
+    <string name="trust_apps_loading">Memuat\u2026</string>
+    <string name="trust_apps_no_lock_error">Silakan mengatur kunci layar untuk membatasi akses aplikasi</string>
+    <string name="trust_apps_help">Bantuan</string>
+    <string name="trust_apps_info_hidden">Aplikasi tersembunyi beserta widgetnya akan disembunyikan dari laci aplikasi</string>
+    <string name="trust_apps_info_protected">Aplikasi yang dilindungi memerlukan autentikasi untuk dibuka dari peluncur</string>
 </resources>

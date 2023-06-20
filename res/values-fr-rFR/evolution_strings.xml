@@ -99,6 +99,8 @@
     <!-- Taskbar -->
     <string name="pref_allow_phone_taskbar_title">Utiliser la barre des tâches</string>
     <string name="pref_allow_phone_taskbar_summary">Pour ouvrir et changer d\'application n\'importe où</string>
+    <string name="pref_transient_taskbar_title">Nouvelle barre des tâches</string>
+    <string name="pref_transient_taskbar_summary">Utiliser un nouveau style de barre des tâches</string>
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Capture d\'écran</string>
     <string name="recents_clear_all_title">Tout effacer</string>
@@ -129,6 +131,7 @@
     <string name="pref_restart_title">Redémarrer</string>
     <string name="pref_restart_summary">Redémarrer le lanceur d\'applications</string>
     <string name="restarting_launcher">Redémarrage du lanceur d\'applications...</string>
+    <string name="updating_launcher_components">Mise à jour des composants du launcher...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Secouer le téléphone pour effacer toutes les tâches</string>
     <!-- Smartspace -->
@@ -142,4 +145,15 @@
     <!-- Force monochrome icons -->
     <string name="pref_force_monochrome_themed_icons_title">Forcer les icônes thématiques</string>
     <string name="pref_force_monochrome_themed_icons_summary">Générer une icône de thème pour les applications qui n\'en ont pas (nécessite de réactiver les icônes de thèmes)</string>
+    <!-- QSB -->
+    <string name="qsb_search_hint">Recherchez sur votre téléphone et plus…</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Applications cachées &amp; protégées</string>
+    <string name="trust_apps_auth_manager">Déverrouiller pour gérer les applications cachées et protégées</string>
+    <string name="trust_apps_auth_open_app">Authentifiez-vous pour ouvrir %1$s</string>
+    <string name="trust_apps_loading">Chargement\u2026</string>
+    <string name="trust_apps_no_lock_error">Veuillez configurer un écran de verrouillage sécurisé pour restreindre l\'accès à l\'application</string>
+    <string name="trust_apps_help">Aide</string>
+    <string name="trust_apps_info_hidden">Les applications masquées et leurs widgets sont masqués dans le tiroir d\'applications</string>
+    <string name="trust_apps_info_protected">Les applications protégées nécessitent une authentification pour être ouvertes depuis le lanceur</string>
 </resources>

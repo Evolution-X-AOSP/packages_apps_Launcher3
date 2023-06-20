@@ -99,6 +99,8 @@
     <!-- Taskbar -->
     <string name="pref_allow_phone_taskbar_title">Usar barra de tarefas</string>
     <string name="pref_allow_phone_taskbar_summary">Para abrir e alternar entre aplicativos em quaisquer lugar</string>
+    <string name="pref_transient_taskbar_title">Barra de tarefa móvel</string>
+    <string name="pref_transient_taskbar_summary">Usar nova barra de tarefa móvel</string>
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Captura de tela</string>
     <string name="recents_clear_all_title">Limpar tudo</string>
@@ -108,6 +110,7 @@
     <string name="pref_themed_icons_summary">Seguir ícones temáticos usados na tela inicial</string>
     <!-- AppInfo -->
     <string name="app_info_source">Fonte</string>
+    <string name="app_info_source_unknown">Desconhecido</string>
     <string name="app_info_last_update">Última atualização</string>
     <string name="app_info_version">Versão</string>
     <string name="app_info_more">Mais</string>
@@ -129,6 +132,7 @@
     <string name="pref_restart_title">Reiniciar</string>
     <string name="pref_restart_summary">Reiniciar manualmente o launcher para aplicar qualquer configuração pendente</string>
     <string name="restarting_launcher">Reiniciando o launcher...</string>
+    <string name="updating_launcher_components">Atualizando componentes do launcher...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Agite o telefone para limpar todas as tarefas</string>
     <!-- Smartspace -->
@@ -142,4 +146,15 @@
     <!-- Force monochrome icons -->
     <string name="pref_force_monochrome_themed_icons_title">Forçar ícones temáticos</string>
     <string name="pref_force_monochrome_themed_icons_summary">Gerar novos ícones com tema para aplicativos que não possuem um (alterne novamente o interruptor de ícones temáticos)</string>
+    <!-- QSB -->
+    <string name="qsb_search_hint">Pesquisa no smartphone</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Aplicativos ocultos e protegidos</string>
+    <string name="trust_apps_auth_manager">Desbloquear para gerenciar os aplicativos ocultos e protegidos</string>
+    <string name="trust_apps_auth_open_app">Autenticar para abrir %1$s</string>
+    <string name="trust_apps_loading">Carregando\u2026</string>
+    <string name="trust_apps_no_lock_error">Configure um bloqueio de tela para restringir o acesso aos aplicativos</string>
+    <string name="trust_apps_help">Ajuda</string>
+    <string name="trust_apps_info_hidden">Aplicativos ocultos e seus widgets estão escondidos do menu de apps</string>
+    <string name="trust_apps_info_protected">Aplicativos protegidos exigem autenticação para serem abertos a partir do launcher</string>
 </resources>
