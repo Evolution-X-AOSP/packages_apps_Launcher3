@@ -99,6 +99,8 @@
     <!-- Taskbar -->
     <string name="pref_allow_phone_taskbar_title">a Feladatkezelő használata</string>
     <string name="pref_allow_phone_taskbar_summary">Alkalmazásinditáshoz és váltáshoz bárhol</string>
+    <string name="pref_transient_taskbar_title">Átmenetes Feladatkezelő</string>
+    <string name="pref_transient_taskbar_summary">Átkapcsolhat az új stílusú tálcára</string>
     <!-- Recents icons -->
     <string name="recents_screenshot_title">Képernyőkép</string>
     <string name="recents_clear_all_title">Az összes törlése</string>
@@ -108,6 +110,7 @@
     <string name="pref_themed_icons_summary">A kezdőképernyőn használt tematikus ikonokhoz igazodik</string>
     <!-- AppInfo -->
     <string name="app_info_source">Forrás</string>
+    <string name="app_info_source_unknown">Ismeretlen</string>
     <string name="app_info_last_update">Utolsó frissítés</string>
     <string name="app_info_version">Verzió</string>
     <string name="app_info_more">Továbbiak</string>
@@ -129,6 +132,7 @@
     <string name="pref_restart_title">Újraindítás</string>
     <string name="pref_restart_summary">A Launcher újraindítása hogy a változtatások érvénybe lépjenek</string>
     <string name="restarting_launcher">A Launcher újraindítása...</string>
+    <string name="updating_launcher_components">Launcher-elemek frissítése...</string>
     <!-- Shake Clear Recents -->
     <string name="recents_shake_clear_all_title">Az összes feladat törléséhez rázza meg a telefont</string>
     <!-- Smartspace -->
@@ -142,4 +146,15 @@
     <!-- Force monochrome icons -->
     <string name="pref_force_monochrome_themed_icons_title">Ikontémázás kényszerítése</string>
     <string name="pref_force_monochrome_themed_icons_summary">Témázott ikon létrehozása olyan alkalmazásokhoz, amelyek nem rendelkeznek ilyennel (újra kell be kapcsolni a témázást)</string>
+    <!-- QSB -->
+    <string name="qsb_search_hint">Keresés a készüléken és egyebek...</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Rejtett és védett alkalmazások</string>
+    <string name="trust_apps_auth_manager">Feloldás a rejtett és védett alkalmazások kezeléséhez</string>
+    <string name="trust_apps_auth_open_app">%1$s indítása hitelesítéssel</string>
+    <string name="trust_apps_loading">Betöltés\u2026</string>
+    <string name="trust_apps_no_lock_error">Kérjük, állítson be biztonsági (védett) képernyőzárat az alkalmazás-hozzáférések korlátozására</string>
+    <string name="trust_apps_help">Súgó</string>
+    <string name="trust_apps_info_hidden">A rejtett alkalmazások és moduljaik az alkalmazásfiókban sem láthatóak</string>
+    <string name="trust_apps_info_protected">Egy védett alkalmazás megnyitása a launcherből hitelesítést igényel</string>
 </resources>
