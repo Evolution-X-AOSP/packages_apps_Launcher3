@@ -198,6 +198,7 @@ public final class Utilities {
     public static final String KEY_SHOW_QUICKSPACE_WEATHER = "pref_quickspace_weather";
     public static final String KEY_SHOW_QUICKSPACE_WEATHER_CITY = "pref_quickspace_weather_city";
     public static final String KEY_SHOW_QUICKSPACE_WEATHER_TEXT = "pref_quickspace_weather_text";
+    public static final String KEY_FORCE_MONOCHROME_ICONS = "pref_forced_monochrome_icons";
 
     /**
      * Returns true if theme is dark.
@@ -1052,4 +1053,9 @@ public final class Utilities {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_SHOW_QUICKSPACE_WEATHER_TEXT, true);
     }
+
+    public static boolean enableMonoChromeThemedIcons(Context context) {
+    	SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+    	return prefs.getBoolean(KEY_FORCE_MONOCHROME_ICONS, false);
+   }
 }

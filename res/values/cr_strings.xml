@@ -177,6 +177,10 @@
     <string name="app_info_version">Version</string>
     <string name="app_info_more">More</string>
 
+    <!-- Force monochrome icons -->
+    <string name="pref_force_monochrome_themed_icons_title">Force Monochrome themed icons</string>
+    <string name="pref_force_monochrome_themed_icons_summary">Generate monochromatic icons, if it is not provided by the app (requires re-toggling of themed icons)</string>
+    
     <!-- Icon pack -->
     <string name="icon_pack_title">Icon pack</string>
     <string name="icon_pack_default_label">Default</string>
