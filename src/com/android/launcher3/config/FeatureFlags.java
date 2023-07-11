@@ -219,7 +219,7 @@ public final class FeatureFlags {
             "PROMISE_APPS_IN_ALL_APPS", DISABLED, "Add promise icon in all-apps");
 
     public static final BooleanFlag KEYGUARD_ANIMATION = getDebugFlag(270390904,
-            "KEYGUARD_ANIMATION", DISABLED,
+            "KEYGUARD_ANIMATION", ENABLED,
             "Enable animation for keyguard going away on wallpaper");
 
     public static final BooleanFlag ENABLE_DEVICE_SEARCH = getReleaseFlag(270390907,
