@@ -278,12 +278,7 @@ public class QsbContainerView extends FrameLayout {
         }
 
         private void rebindFragment() {
-            // Exit if the embedded qsb is disabled
-            if (!isQsbEnabled()) {
-                return;
-            }
-
-            if (mWrapper != null && getContext() != null) {
+            if (mWrapper != null && getContext() != null && isQsbEnabled()) {
                 mWrapper.removeAllViews();
                 mWrapper.addView(createQsb(mWrapper));
             }
