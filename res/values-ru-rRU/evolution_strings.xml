@@ -139,7 +139,7 @@
     <string name="smartspace_pref_summary">Показывать умное пространство в верхней части главного экрана</string>
     <!-- Parallax -->
     <string name="short_parallax_title">Разрешить короткий параллакс</string>
-    <string name="short_parallax_summary">Включить эффекта полной прокрутки обоев на меньшем количестве страниц вместо обрезки обоев</string>
+    <string name="short_parallax_summary">Включить эффект полной прокрутки обоев на меньшем количестве страниц вместо обрезки обоев</string>
     <string name="single_page_center_title">Одностраничный центр</string>
     <string name="single_page_center_summary">Выравнивание обоев по центру, если используется только одна страница</string>
     <!-- Force monochrome icons -->
@@ -148,7 +148,7 @@
     <!-- QSB -->
     <string name="qsb_search_hint">Поиск на телефоне и другое…</string>
     <!-- Trust apps -->
-    <string name="trust_apps_manager_name">Скрытые и защищенные приложения</string>
+    <string name="trust_apps_manager_name">Скрытые &amp; Защищенные приложения</string>
     <string name="trust_apps_auth_manager">Разблокируйте для управления скрытыми и защищенными приложениями</string>
     <string name="trust_apps_auth_open_app">Авторизуйтесь для открытия %1$s</string>
     <string name="trust_apps_loading">Загрузка\u2026</string>
