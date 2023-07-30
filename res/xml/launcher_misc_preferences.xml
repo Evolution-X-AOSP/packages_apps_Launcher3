@@ -45,10 +45,10 @@
         android:title="@string/background_blur_title"
         android:summary="@string/background_blur_summary"
         android:persistent="true"
-        android:max="125"
+        android:max="175"
         android:min="0"
         settings:units="px"
-        android:defaultValue="125" />
+        android:defaultValue="65" />
 
     <Preference
         android:key="pref_trust_apps"
