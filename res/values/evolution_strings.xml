@@ -169,7 +169,7 @@
     <string name="updating_launcher_components">Updating launcher components...</string>
 
     <!-- Shake Clear Recents -->
-    <string name="recents_shake_clear_all_title">Shake phone to clear all tasks</string>
+    <string name="recents_shake_clear_all_title">Shake device to clear all tasks</string>
 
     <!-- Smartspace -->
     <string name="smartspace_pref_title">At a Glance</string>
@@ -186,7 +186,7 @@
     <string name="pref_force_monochrome_themed_icons_summary">Generate themed icon for apps that do not have one (requires re-toggling of themed icons)</string>
 
     <!-- QSB -->
-    <string name="qsb_search_hint">Search this phone and more…</string>
+    <string name="qsb_search_hint">Search this device and more…</string>
 
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
