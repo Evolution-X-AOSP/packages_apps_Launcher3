@@ -27,21 +27,6 @@
         android:orientation="horizontal">
 
         <Space
-            android:id="@+id/screenshot_space"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/action_screenshot"
-            style="@style/OverviewActionButton"
-            android:layout_width="60dp"
-            android:layout_height="36dp"
-            android:foreground="@drawable/ic_screenshot"
-            android:layout_gravity="center_vertical"
-            android:foregroundGravity="center" />
-
-        <Space
             android:id="@+id/action_split_space"
             android:layout_width="0dp"
             android:layout_height="1dp"
@@ -57,6 +42,21 @@
             android:layout_gravity="center_vertical"
             android:foregroundGravity="center"
             android:visibility="gone" />
+
+        <Space
+            android:id="@+id/screenshot_space"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/action_screenshot"
+            style="@style/OverviewActionButton"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:foreground="@drawable/ic_screenshot"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center" />
 
         <Space
             android:id="@+id/lens_space"
