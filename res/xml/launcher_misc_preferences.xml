@@ -42,7 +42,7 @@
         android:title="@string/background_blur_title"
         android:summary="@string/background_blur_summary"
         android:persistent="true"
-        android:max="175"
+        android:max="225"
         android:min="0"
         settings:units="px"
         android:defaultValue="23" />
