@@ -50,7 +50,7 @@ import com.android.launcher3.model.WidgetsModel;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-import com.android.internal.util.crdroid.OmniJawsClient;
+import com.android.internal.util.evolution.OmniJawsClient;
 
 /**
  * Settings activity for Launcher.

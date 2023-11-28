@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Application name -->
-    <string name="crdroid_app_name" translatable="false">crDroid Home</string>
+    <string name="evo_app_name" translatable="false">Evolution X Launcher</string>
 
     <!-- Folder titles -->
     <string name="google_folder_title" translatable="false">Google</string>
@@ -207,15 +207,15 @@
     <string name="quickspace_date_format_minimalistic" translatable="false">EEEE, MMMM d</string>
 
     <!-- QuickSpace: QuickEvent: Device Intro Event -->
-    <string name="quick_event_rom_intro_welcome">Welcome to crDroid!</string>
-    <string name="quick_event_rom_intro_welcome_ext">crDroid time!</string>
+    <string name="quick_event_rom_intro_welcome">Welcome to Evolution X!</string>
+    <string name="quick_event_rom_intro_welcome_ext">Time to evolve!</string>
     <string-array name="welcome_message_variants">
-        <item>Thank you for choosing us</item>
-        <item>Loving us? Send us a beer</item>
-        <item>Best Rom Ever.</item>
-        <item>Say hi to us on Telegram</item>
+        <item>Welcome back</item>
+        <item>Glad you are here</item>
+        <item>Best ROM in the world</item>
+        <item>See you soon in Telegram</item>
         <item>Tap here to begin</item>
-        <item>We love you 3000</item>
+        <item>It\'s clobbering time!</item>
     </string-array>
 
     <!-- QuickSpace: QuickEvent: Greetings -->
@@ -349,40 +349,26 @@
         <item>Your attitude determines your direction.</item>
     </string-array>
     <string-array name="quickspace_psa_random">
-        <item>Ignorance is Bliss</item>
         <item>Is it time to flash another update already?</item>
         <item>Make peace, not war</item>
         <item>Oh hey, what\'s up?</item>
         <item>Focus on your tasks</item>
         <item>How many screenshots do you take?</item>
-        <item>Open goodness with crDroid</item>
-        <item>Spread love, not havoc</item>
         <item>We didn\'t start the fire!</item>
         <item>Time for some good music</item>
-        <item>\u003C\u003C\u003C\u003C\u003C\u003C\u003C HEAD</item>
-        <item>You need crDroid Premium to see this</item>
-        <item>Remember the Lineage of the Unicorn</item>
-        <item>Enjoy Xtended battery life</item>
         <item>Starting from the ground zero</item>
-        <item>We love you 3000</item>
+        <item>It\'s clobbering time!</item>
         <item>Delicious even without Sushi</item>
         <item>Do something nice today</item>
-        <item>This is best Pixel Experience, isn\'t it?</item>
         <item>No illusions, welcome to reality!</item>
         <item>Thank you for your support</item>
-        <item>No festival for Derps - only perfection!</item>
         <item>One of the buildbot\'s best picks</item>
-        <item>Sanity for your Paranoia</item>
-        <item>Try Ice Cold desserts</item>
         <item>What a lovely experience, isn\'t it?</item>
-        <item>Evolution is a myth, right?</item>
-        <item>You are what you flash, don\'t be Potato</item>
         <item>What\'s on your mind?</item>
         <item>Expecto Patronum</item>
         <item>Wubba Lubba Dub Dub</item>
         <item>Winner Winner ....?</item>
         <item>rm -rf \/</item>
-        <item>Pringles aren\'t actually potato chips..</item>
         <item>Remember to check device\'s battery level!</item>
         <item>Check your email/messages.</item>
         <item>Check your to-do list if you have one.</item>
@@ -410,4 +396,8 @@
     <!-- Freed memory on clear all tasks -->
     <string name="freed_memory_text">Freed up %1$s</string>
     <string name="optimal_memory_text">Your system is now in optimal condition</string>
+
+    <!-- Weather -->
+    <string name="weather_settings_title">Weather settings</string>
+    <string name="weather_settings_summary">Setup icon pack and weather service</string>
 </resources>

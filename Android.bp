@@ -173,8 +173,7 @@ android_library {
     srcs: ["src_build_config/**/*.java"],
     static_libs: [
         "Launcher3ResLib",
-        "launcher-testing-shared",
-        "org.lineageos.platform"
+        "launcher-testing-shared"
     ],
     sdk_version: "current",
     min_sdk_version: min_launcher3_sdk_version,

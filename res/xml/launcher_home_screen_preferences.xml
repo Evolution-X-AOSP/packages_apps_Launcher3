@@ -151,6 +151,15 @@
             android:defaultValue="true"
             android:persistent="true" />
 
+        <Preference
+            android:title="@string/weather_settings_title"
+            android:summary="@string/weather_settings_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="org.omnirom.omnijaws"
+                android:targetClass="org.omnirom.omnijaws.SettingsActivity" />
+        </Preference>
+
         <SwitchPreference
             android:key="pref_quickspace_weather"
             android:title="@string/quick_event_ambient_weather_title"

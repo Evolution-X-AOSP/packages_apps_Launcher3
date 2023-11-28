@@ -68,8 +68,6 @@ import com.android.systemui.shared.system.QuickStepContract;
 import com.android.systemui.unfold.UnfoldTransitionProgressProvider;
 import com.android.systemui.unfold.util.ScopedUnfoldTransitionProgressProvider;
 
-import lineageos.providers.LineageSettings;
-
 import java.io.PrintWriter;
 import java.util.StringJoiner;
 
@@ -268,8 +266,8 @@ public class TaskbarManager implements OnSharedPreferenceChangeListener {
                 boolean enabled = LauncherPrefs.getPrefs(mContext).getBoolean(DeviceProfile.KEY_PHONE_TASKBAR, false);
                 SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
 
-                LineageSettings.System.putInt(mContext.getContentResolver(),
-                        LineageSettings.System.ENABLE_TASKBAR, enabled ? 1 : 0);
+                Settings.System.putInt(mContext.getContentResolver(),
+                        Settings.System.ENABLE_TASKBAR, enabled ? 1 : 0);
                 break;
         }
     }
