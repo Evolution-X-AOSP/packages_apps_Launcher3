@@ -83,16 +83,16 @@ public class DynamicClock extends BroadcastReceiver {
             ApplicationInfo applicationInfo = packageManager.getApplicationInfo("com.google.android.deskclock", PackageManager.GET_META_DATA | PackageManager.GET_UNINSTALLED_PACKAGES);
             Bundle metaData = applicationInfo.metaData;
             if (metaData != null) {
-                int levelPerTickIcon = metaData.getInt("com.google.android.apps.nexuslauncher.LEVEL_PER_TICK_ICON_ROUND", 0);
+                int levelPerTickIcon = metaData.getInt("com.android.launcher3.LEVEL_PER_TICK_ICON_ROUND", 0);
                 if (levelPerTickIcon != 0) {
                     Drawable drawableForDensity = packageManager.getResourcesForApplication(applicationInfo).getDrawableForDensity(levelPerTickIcon, iconDpi);
                     layers.setDrawable(drawableForDensity.mutate());
-                    layers.mHourIndex = metaData.getInt("com.google.android.apps.nexuslauncher.HOUR_LAYER_INDEX", -1);
-                    layers.mMinuteIndex = metaData.getInt("com.google.android.apps.nexuslauncher.MINUTE_LAYER_INDEX", -1);
-                    layers.mSecondIndex = metaData.getInt("com.google.android.apps.nexuslauncher.SECOND_LAYER_INDEX", -1);
-                    layers.mDefaultHour = metaData.getInt("com.google.android.apps.nexuslauncher.DEFAULT_HOUR", 0);
-                    layers.mDefaultMinute = metaData.getInt("com.google.android.apps.nexuslauncher.DEFAULT_MINUTE", 0);
-                    layers.mDefaultSecond = metaData.getInt("com.google.android.apps.nexuslauncher.DEFAULT_SECOND", 0);
+                    layers.mHourIndex = metaData.getInt("com.android.launcher3.HOUR_LAYER_INDEX", -1);
+                    layers.mMinuteIndex = metaData.getInt("com.android.launcher3.MINUTE_LAYER_INDEX", -1);
+                    layers.mSecondIndex = metaData.getInt("com.android.launcher3.SECOND_LAYER_INDEX", -1);
+                    layers.mDefaultHour = metaData.getInt("com.android.launcher3.DEFAULT_HOUR", 0);
+                    layers.mDefaultMinute = metaData.getInt("com.android.launcher3.DEFAULT_MINUTE", 0);
+                    layers.mDefaultSecond = metaData.getInt("com.android.launcher3.DEFAULT_SECOND", 0);
                     if (normalizeIcon) {
                         LauncherIcons obtain = LauncherIcons.obtain(context);
                         layers.bitmap = obtain.createBadgedIconBitmap(
